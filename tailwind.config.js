@@ -1,0 +1,58 @@
+module.exports = {
+  mode: "jit",
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
+  darkMode: "class",
+  theme: {
+    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    extend: {
+      colors: {
+        black: {
+          900: "#070710",
+          "900_b2": "#030303b2",
+          "900_1e": "#0000001e",
+          "900_e5_01": "#070710e5",
+          "900_01": "#000000",
+          "900_e5": "#030303e5",
+          "900_0f": "#0000000f",
+          "900_cc": "#070710cc",
+        },
+        gray: {
+          50: "#f8f8f8",
+          100: "#f8f7f2",
+          600: "#808080",
+          700: "#62615c",
+          900: "#1e1810",
+          "500_1e": "#9395981e",
+          "600_a0": "#808080a0",
+          "900_e5": "#1e1810e5",
+          "600_23": "#80808023",
+          "900_01": "#1f1a13",
+        },
+        white: { A700_11: "#ffffff11", A700_bc: "#ffffffbc", A700: "#ffffff" },
+        blue_gray: { 100: "#d9d9d9" },
+        amber: { 400: "#ffc01c" },
+        orange: { 300: "#f8b84e", 400: "#fcb131", 800: "#cb7908" },
+        red: { "900_a0_01": "#b40a0aa0", "900_a0": "#b40b0ba0" },
+      },
+      boxShadow: {
+        bs: "0px 2px  2px 0px #0000000f",
+        bs1: "0px 2px  2px 0px #0000001e",
+      },
+      fontFamily: {
+        heebo: "Heebo",
+        leckerlione: "Leckerli One",
+        lato: "Lato",
+        nunito: "Nunito",
+        poppins: "Poppins",
+        redhatdisplay: "Red Hat Display",
+        opensans: "Open Sans",
+        inter: "Inter",
+      },
+      backgroundImage: { gradient: "linear-gradient(0deg ,#fcb131,#cb7908)" },
+    },
+  },
+  plugins: [require("@tailwindcss/forms")],
+};

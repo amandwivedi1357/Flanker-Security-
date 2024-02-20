@@ -1,0 +1,19 @@
+
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/PoppinsBold.ttf"); font-family : "Poppins"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/LatoRegular.ttf"); font-family : "Lato"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/PoppinsRegular.ttf"); font-family : "Poppins"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/PoppinsMedium.ttf"); font-family : "Poppins"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/HeeboMedium.ttf"); font-family : "Heebo"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/RedHatDisplayRomanMedium.ttf"); font-family : "Red Hat Display"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/HeeboRegular.ttf"); font-family : "Heebo"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/RedHatDisplayRomanRegular.ttf"); font-family : "Red Hat Display"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/RedHatDisplayRomanBold.ttf"); font-family : "Red Hat Display"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/InterSemiBold.ttf"); font-family : "Inter"; font-weight : 600;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/PoppinsSemiBold.ttf"); font-family : "Poppins"; font-weight : 600;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/NunitoMedium.ttf"); font-family : "Nunito"; font-weight : 500;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/OpenSansRomanBold.ttf"); font-family : "Open Sans"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/OpenSansRomanSemiBold.ttf"); font-family : "Open Sans"; font-weight : 600;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/LatoBold.ttf"); font-family : "Lato"; font-weight : 700;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/OpenSansRomanRegular.ttf"); font-family : "Open Sans"; font-weight : 400;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/LatoLight.ttf"); font-family : "Lato"; font-weight : 300;  }
+ @font-face { font-display: swap; font-style : normal; src: url("assets/fonts/LeckerliOneRegular.ttf"); font-family : "Leckerli One"; font-weight : 400;  }
