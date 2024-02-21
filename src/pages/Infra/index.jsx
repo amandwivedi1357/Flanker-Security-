@@ -73,7 +73,7 @@ const Infra = () => {
             />
             <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto">
               <Text
-                className="capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
+                className="sm:text-3xl sm:w-4/5 sm:font-normal capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
                 size="txtPoppinsBold60"
               >
                 Security service for your personal safety
@@ -100,39 +100,32 @@ const Infra = () => {
                 className="mt-[37px] md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
                 size="txtOpenSansRomanBold32"
               >
-                InfraStructure{" "}
+               Security Infrastructure{" "}
               </Text>
               <Text
                 className="leading-[29.00px] mt-4 text-[15px] text-black-900_cc tracking-[0.50px] w-full"
                 size="txtLatoRegular15Black900cc"
               >
-                Drones, or Unmanned Aerial Vehicles (UAVs), have rapidly evolved
-                from recreational gadgets to transformative tools across various
-                industries. These unmanned aircraft are equipped with cameras,
-                sensors, and other technologies, offering unprecedented
-                capabilities in areas such as surveillance, mapping,
-                agriculture, and emergency response.
+                Security infrastructure is a comprehensive system designed to safeguard people, assets, and information within a given environment. It encompasses a range of elements, including physical, technological, and procedural components, working in tandem to create a secure environment. Here's a breakdown of key aspects related to security infrastructure:
               </Text>
               <Text
                 className="mt-[30px] text-black-900_cc text-xl tracking-[0.50px]"
                 size="txtOpenSansRomanBold20"
               >
-                Applications of Drones:
+                Key Points of Security Infrastructure:
               </Text>
               <Text
                 className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]"
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-base font-bold"> Surveillance and Security:</span>
+                 <span className="text-black-900_01 font-lato text-left text-base font-bold"> Physical Security:</span>
                   <br />
-                  Drones provide a bird&#39;s-eye view, enhancing surveillance
-                  capabilities for law enforcement, border control, and private
-                  security firms.
+                 <strong> Access Control Systems:</strong> Implementing measures like biometric access, key cards, or PIN codes to regulate entry.
                   <br />
-                  
-                  Monitoring large events, critical infrastructure, and
-                  expansive areas becomes more efficient and cost-effective.
+                 <strong> Perimeter Security:</strong> Fencing, barriers, and surveillance to secure the outer boundaries
+                  <br />
+                 <strong> Security Personnel: </strong>Trained guards strategically placed for observation and immediate response
                 </>
               </Text>
               <Text
@@ -141,18 +134,15 @@ const Infra = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-base font-bold">
                   <>
-                    Mapping and Surveying:
+                  Technological Solutions:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
                   <>
-                    Drones equipped with advanced mapping technologies
-                    contribute to accurate and rapid surveying of terrains,
-                    construction sites, and geographical features.
+                 <strong> Surveillance Systems:</strong> High-definition cameras and monitoring tools for real-time observation.
                     <br />
-                    This aids in disaster response, and infrastructure
-                    development.
+                    <strong>	Intrusion Detection Systems: </strong>Sensors and alarms that trigger alerts in the event of unauthorized access.
                   </>
                 </span>
               </Text>
@@ -162,32 +152,152 @@ const Infra = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-base font-bold">
                   <>
-                  Challenges and Concerns:
+                  Emergency Preparedness:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
+                  	Incident Response Plans: Clearly defined procedures for addressing security breaches or emergencies.
+                    <br />
+                    	Evacuation Plans: Ensuring the safety of occupants in the event of a threat or disaster.
+                    <br />
+                    	Communication Systems: Reliable channels for swift communication during emergencies.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                  <>
+                   Integration and Automation:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                  	
+                    ●	Security Management Platforms: Centralized systems to monitor and manage various security components.
+                    <br />
+                    ●	Automation of Responses: Using technology to automate certain security responses for efficiency.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                  <>
+                   Visitor Management:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                  	
+                    ●	Access Badges: Issuing temporary access credentials to visitors
+                    <br />
+                    ●	Check-In Systems: Recording and monitoring the entry and exit of visitors.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                  <>
+                   Regular Assessments and Updates:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                  ●	Risk Assessments: Periodic evaluations to identify and address potential vulnerabilities.
+                    <br />
+                    ●	Technology Upgrades: Keeping security systems up-to-date to address evolving threats.
+                   
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                  <>
+                  Collaboration with Law Enforcement:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                  ●	Establishing Protocols: Clear communication channels and cooperation with local law enforcement agencies.
+                   
+                   
+                    <br />
+                    ●	Information Sharing: Collaborating on intelligence to enhance overall security
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                  <>
+                  Environmental Considerations:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                  	Lighting: Well-lit areas to deter unauthorized access.
+                    <br />
+                    	Landscaping: Ensuring clear lines of sight and minimizing potential hiding spots.
+                    <br />
+                    Communication Systems: Reliable channels for swift communication during emergencies.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                  <>
+                  Privacy Considerations:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                  ●	Balancing Security and Privacy: Implementing measures that prioritize security without compromising individual privacy rights
+                    <br />
+                    ●	Compliance with Regulations: Adhering to legal requirements regarding the collection and handling of personal information
+                    
                   </>
                 </span>
               </Text>
               
             </div>
-            <div className="flex md:flex-1 flex-col items-center justify-start w-[30%] md:w-full">
-              <div className="bg-white-A700 flex flex-col items-center justify-start p-[49px] md:px-10 sm:px-5 rounded w-full">
-                <form onSubmit={sendEmail} className=" flex flex-col items-start justify-start mb-2 w-[89%] md:w-full">
-                  <div className="flex flex-col items-start justify-start w-full">
+            <div className="   flex md:flex-1 flex-col items-center justify-start w-[30%] md:w-full">
+              <div className="bg-white-A700 flex flex-col  items-center justify-start p-[49px] md:px-10 sm:px-5 rounded w-full">
+                <form onSubmit={sendEmail} className=" flex  flex-col items-start justify-start mb-2 w-[89%] md:w-full">
+                  <div className="flex flex-col items-start  justify-start w-full">
                     <Text
-                      className="text-2xl md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
+                      className="text-2xl sm:ml-16 md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
                       size="txtPoppinsSemiBold24"
                     >
                       Get in Touch!
                     </Text>
-                    <div className=" flex-col font-lato items-center justify-start mt-7 w-full">
+                    <div className=" flex-col  font-lato items-center justify-start mt-7 w-full">
                     <input required onChange={e => handleChange(e.target.value, { name: "name" })} value={formData.name} name="name"
  
-  className="w-[70%] border-b border-gray-600  pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] placeholder-gray-600_a0"
+  className="w-[70%] border-b border-gray-600 sm:ml-10  pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] placeholder-gray-600_a0"
   placeholder="Full name *"
 />
 
@@ -202,19 +312,19 @@ const Infra = () => {
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
                     <input required onChange={e => handleChange(e.target.value, { name: "email" })} value={formData.email}
-                        className="ml-[-65px] w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
+                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
                         placeholder="Email Id *"
                       />
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
                     <input required name="company" onChange={e => handleChange(e.target.value, { name: "company" })} value={formData.company}
-                        className="ml-[-65px] w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
+                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
                         placeholder="Company Name *"
                       />
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
                     <input required name="phoneNumber" onChange={e => handleChange(e.target.value, { name: "phoneNumber" })} value={formData.phoneNumber}
-                        className="w-[70%] ml-[-65px] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
+                        className="w-[70%] sm:ml-1 ml-[-65px] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
                         placeholder="Phone Number *"
                       />
                     </div>
@@ -225,7 +335,7 @@ const Infra = () => {
                     </button>
                   </div>
                   <Text
-                    className="mt-[87px] text-2xl md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
+                    className="mt-[87px] sm:mx-auto text-2xl md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
                     size="txtPoppinsSemiBold24"
                   >
                     Contact Info

@@ -52,3 +52,22 @@ transition: background-color 0.3s ease-in-out;
   .Single_cont:hover{
     background-color: #fcb131;
   }
+
+  @media (max-width: 768px) {
+    .ser_cont{
+        display: none;
+        
+    }
+    .ser_cont_sm {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .Single_cont {
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+    }
+  }
+  

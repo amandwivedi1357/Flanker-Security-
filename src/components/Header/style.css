@@ -1,0 +1,73 @@
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    background-color: #FFFFFF;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    margin-left: 5px;
+  }
+  
+  .header-title {
+    cursor: pointer;
+    background-clip: text;
+    background-image: linear-gradient(transparent, transparent);
+    color: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 2px;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+  }
+  
+  .nav-link li {
+    text-transform: capitalize;
+    list-style: none;
+  }
+  
+  .active {
+    border-bottom: 2px solid #FFD700;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .phone-icon {
+    background: linear-gradient(to bottom, #FFD700, #F7C602);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+  }
+  
+  .phone-icon .icon {
+    width: 11px;
+    height: 11px;
+  }
+  
+  .phone-number {
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  

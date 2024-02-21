@@ -8,6 +8,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useNavigate } from "react-router-dom";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import CardSlider from "./CardSlider";
+
 const ServicesOnePage = () => {
   const settings = {
     dots: false, // Hide navigation dots
@@ -112,7 +116,7 @@ const ServicesOnePage = () => {
             />
             <div className="absolute bottom-[30%] flex flex-col items-center justify-center w-full">
               <Text
-                className="capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[55%] sm:w-full"
+                className="capitalize sm:text-3xl sm:font-normal sm:w-4/5 leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[55%] sm:w-full"
                 size="txtPoppinsBold60"
               >
                 Our Services Make Your Business Secure
@@ -251,6 +255,7 @@ const ServicesOnePage = () => {
                 ))
               }
             </div>
+           
             {/* <Img
               className="h-2.5 md:ml-[0] ml-[604px] mt-20"
               src="images/img_contrast.svg"

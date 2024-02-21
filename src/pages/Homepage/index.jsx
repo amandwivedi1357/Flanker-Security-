@@ -370,8 +370,8 @@ const HomepagePage = () => {
                     className="h-[60px] mt-[35px] text-black-900"
                     src={
                       isHovered2
-                        ? "images/img_guard_black_900.svg"
-                        : "images/img_guard.svg"
+                        ? "images/drone.svg"
+                        : "images/drones_yellow.svg"
                     }
                     alt="guard_One"
                   />
@@ -422,13 +422,13 @@ const HomepagePage = () => {
             </List>
           </div>
           <Text
-            className="mt-[94px] text-gray-600 text-sm tracking-[2.00px] uppercase"
+            className="mt-[94px] text-gray-600 text-sm tracking-[2.00px] uppercase sm:ml-[-50%]"
             size="txtRedHatDisplayRomanMedium14"
           >
             why choose us
           </Text>
           <Text
-            className="capitalize leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[57%] sm:w-full transition-all duration-400"
+            className="capitalize leading-[49.00px] mt-[19px] sm:text-3xl sm:ml-10 text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[57%] sm:w-full transition-all duration-400"
             size="txtHeeboRegular36"
           >
             
@@ -442,14 +442,14 @@ const HomepagePage = () => {
               customers in various industries worldwide
             </span>
           </Text>
-          <div className="font-lato md:h-[503px] h-[553px] max-w-[1242px] mt-[62px] mx-auto md:px-5 relative w-full">
+          <div className=" font-lato md:h-[auto] h-[553px] max-w-[1242px] mt-[62px] mx-auto md:px-5 relative w-full">
             <Img
-              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%]"
+              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full"
               src="images/img_rectangle22083.png"
               alt="rectangle22083"
             />
             <Text
-              className="absolute leading-[29.00px] right-[3%] text-[15px] text-gray-700 top-[15%] tracking-[0.50px] w-[31%] sm:w-full"
+              className="absolute sm:hidden leading-[29.00px] right-[3%] text-[15px] text-gray-700 top-[15%] tracking-[0.50px] w-[31%] sm:w-full"
               size="txtLatoRegular15Gray700"
             >
               The Property Management Vertical encompasses the full spectrum of
@@ -458,7 +458,7 @@ const HomepagePage = () => {
               Mangers.
             </Text>
             <div
-              className="absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start p-[54px] md:px-10 sm:px-5 right-[0] w-[53%]"
+              className="sm:hidden absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start p-[54px] md:px-10 sm:px-5 right-[0] w-[53%]"
               style={{ backgroundImage: "url('images/img_group50520.svg')" }}
             >
               <div className="flex flex-col gap-[34px] items-start justify-start w-[94%] md:w-full">

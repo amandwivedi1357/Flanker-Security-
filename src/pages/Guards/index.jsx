@@ -73,7 +73,7 @@ const Guard = () => {
             />
             <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto">
               <Text
-                className="capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
+                className="sm:text-3xl sm:w-4/5 sm:font-normal capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
                 size="txtPoppinsBold60"
               >
                 Security service for your personal safety
@@ -233,13 +233,13 @@ const Guard = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-base font-bold">
                   <>
-                  Challenges and Concerns:
+                  Documentation and Reporting:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
+                  Emphasise the importance of accurate documentation and reporting. Security guards should maintain detailed logs of their activities, incidents, and observations.
                   </>
                 </span>
               </Text>
@@ -250,13 +250,13 @@ const Guard = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-base font-bold">
                   <>
-                  Challenges and Concerns:
+                  Collaboration with Law Enforcement:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
+                  Foster collaboration with local law enforcement agencies. Establish communication channels and protocols for reporting incidents that may require their involvement.
                   </>
                 </span>
               </Text>
@@ -267,13 +267,13 @@ const Guard = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-base font-bold">
                   <>
-                  Challenges and Concerns:
+                  Regular Training Updates:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
+                  Conduct regular training updates to keep security guards informed about the latest security threats, technologies, and best practices.
                   </>
                 </span>
               </Text>
@@ -284,13 +284,13 @@ const Guard = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-base font-bold">
                   <>
-                  Challenges and Concerns:
+                  Response to Incidents:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
+                  Clearly define the procedures for responding to incidents. This includes communication with management, law enforcement, and any necessary follow-up actions.
                   </>
                 </span>
               </Text>
@@ -301,13 +301,13 @@ const Guard = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-base font-bold">
                   <>
-                  Challenges and Concerns:
+                  Client and Employee Awareness:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
+                  Promote awareness among clients and employees regarding security measures in place. This can contribute to a collective effort in maintaining a secure environment.
                   </>
                 </span>
               </Text>
@@ -318,49 +318,35 @@ const Guard = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-base font-bold">
                   <>
-                  Challenges and Concerns:
+                  Continuous Improvement:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
+                  Regularly review and assess the effectiveness of security measures. Implement changes and improvements based on lessons learned from incidents or changing security landscapes.
                   </>
                 </span>
               </Text>
               
-              <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
-                size="txtLatoMedium20"
-              >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
-                  <>
-                  Challenges and Concerns:
-                    <br />
-                  </>
-                </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
-                  <>
-                  Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
-                  </>
-                </span>
-              </Text>
+             
+            
               
             </div>
-            <div className="flex md:flex-1 flex-col items-center justify-start w-[30%] md:w-full">
-              <div className="bg-white-A700 flex flex-col items-center justify-start p-[49px] md:px-10 sm:px-5 rounded w-full">
-                <form onSubmit={sendEmail} className=" flex flex-col items-start justify-start mb-2 w-[89%] md:w-full">
-                  <div className="flex flex-col items-start justify-start w-full">
+            <div className="  flex md:flex-1 flex-col items-center justify-start w-[30%] md:w-full">
+              <div className="bg-white-A700 flex flex-col  items-center justify-start p-[49px] md:px-10 sm:px-5 rounded w-full">
+                <form onSubmit={sendEmail} className=" flex  flex-col items-start justify-start mb-2 w-[89%] md:w-full">
+                  <div className="flex flex-col items-start  justify-start w-full">
                     <Text
-                      className="text-2xl md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
+                      className="text-2xl sm:ml-16 md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
                       size="txtPoppinsSemiBold24"
                     >
                       Get in Touch!
                     </Text>
-                    <div className=" flex-col font-lato items-center justify-start mt-7 w-full">
+                    <div className=" flex-col  font-lato items-center justify-start mt-7 w-full">
                     <input required onChange={e => handleChange(e.target.value, { name: "name" })} value={formData.name} name="name"
  
-  className="w-[70%] border-b border-gray-600  pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] placeholder-gray-600_a0"
+  className="w-[70%] border-b border-gray-600 sm:ml-10  pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] placeholder-gray-600_a0"
   placeholder="Full name *"
 />
 
@@ -375,19 +361,19 @@ const Guard = () => {
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
                     <input required onChange={e => handleChange(e.target.value, { name: "email" })} value={formData.email}
-                        className="ml-[-65px] w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
+                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
                         placeholder="Email Id *"
                       />
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
                     <input required name="company" onChange={e => handleChange(e.target.value, { name: "company" })} value={formData.company}
-                        className="ml-[-65px] w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
+                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
                         placeholder="Company Name *"
                       />
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
                     <input required name="phoneNumber" onChange={e => handleChange(e.target.value, { name: "phoneNumber" })} value={formData.phoneNumber}
-                        className="w-[70%] ml-[-65px] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
+                        className="w-[70%] sm:ml-1 ml-[-65px] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
                         placeholder="Phone Number *"
                       />
                     </div>
@@ -398,7 +384,7 @@ const Guard = () => {
                     </button>
                   </div>
                   <Text
-                    className="mt-[87px] text-2xl md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
+                    className="mt-[87px] sm:mx-auto text-2xl md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
                     size="txtPoppinsSemiBold24"
                   >
                     Contact Info

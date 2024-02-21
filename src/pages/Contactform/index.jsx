@@ -89,15 +89,15 @@ const ContactformPage = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center mb-[-20px] justify-start mx-auto w-full">
         <div className="md:h-[848px] h-[875px] md:px-5 relative w-full ">
-          <div className="absolute h-[848px] inset-[0] justify-center  w-full">
+          <div className="absolute h-[848px] inset-[0] justify-center sm:bg-[#1F1A13]  w-full">
             <Img
-              className="h-[848px] m-auto object-cover w-full"
+              className="h-[848px] m-auto object-cover w-full sm:hidden"
               src="images/img_rectangle21985_2.png"
               alt="rectangle21985"
             />
             <div className="absolute flex flex-col gap-[21px] h-max inset-[0] items-center justify-center m-auto">
               <Text
-                className="capitalize md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px]"
+                className="capitalize sm:text-3xl sm:w-4/5 sm:font-normal md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px]"
                 size="txtPoppinsBold60"
               >
                 We are here for you
@@ -112,7 +112,7 @@ const ContactformPage = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className="bg-gray-50 flex flex-col font-lato items-center justify-start p-[69px] md:px-10 sm:px-5 w-full">
+        <div className="bg-gray-50 flex flex-col font-lato items-center justify-start p-[69px] md:px-10 sm:px-5 w-full ">
           <div className="bg-white-A700 flex flex-col items-end justify-start max-w-[1240px] mb-9 mx-auto pl-[60px] md:px-5 rounded w-full">
             <div className="flex md:flex-col flex-row md:gap-10 gap-[93px] items-center justify-end w-full">
               <form onSubmit={sendEmail} className=" flex md:flex-1 flex-col gap-[53px] items-start justify-start w-[44%] md:w-full">
@@ -266,7 +266,7 @@ const ContactformPage = () => {
                   </Button>
                 </div>
               </form>
-              <div className="bg-orange-400 flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] items-center justify-center p-[54px] md:px-10 sm:px-5 w-[49%] md:w-full">
+              <div className="bg-orange-400 flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] items-center justify-center p-[54px] md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[410px]">
                 <Text
                   className="mt-[58px] text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[0.36px]"
                   size="txtPoppinsSemiBold36Black900"
@@ -281,7 +281,7 @@ const ContactformPage = () => {
                       alt="location"
                     />
                     <Text
-                      className="sm:flex-1 leading-[33.00px] text-black-900_e5_01 text-lg tracking-[0.25px] w-[88%] sm:w-full"
+                      className="sm:flex-1 sm:ml-[15%]  sm:mt-[-15%] leading-[33.00px] sm:text-base  text-black-900_e5_01 text-lg tracking-[0.25px] w-[88%] sm:w-[80%]"
                       size="txtLatoRegular18"
                     >
                       P 1, Karthik Enclave, Road No 1, KPHB Colony, Kukatpally,
@@ -296,7 +296,7 @@ const ContactformPage = () => {
                       alt="phone"
                     />
                     <Text
-                      className="text-black-900_e5_01 text-lg tracking-[0.25px]"
+                      className="text-black-900_e5_01 text-lg tracking-[0.25px] sm:text-base"
                       size="txtLatoRegular18"
                     >
                       +91 91007 92007
@@ -308,7 +308,7 @@ const ContactformPage = () => {
                   </div>
                   <div className="flex flex-row gap-[29px] items-start justify-start md:ml-[0] ml-[5px] mt-12 w-[58%] md:w-full">
                     <Img
-                      className="h-[17px] mt-2"
+                      className="h-[17px] mt-2 sm:ml-2"
                       src="images/img_lock_black_900.svg"
                       alt="lock"
                     />

@@ -8,10 +8,10 @@ const Footer = (props) => {
   return (
     <>
       <footer className={props.className}>
-        <div className="bg-gray-900_01 flex flex-col items-center justify-center p-[105px] md:px-10 sm:px-5 w-full">
-          <div className="flex flex-col gap-[7px] items-center justify-center mt-[13px] w-[97%] md:w-full">
-            <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full">
-              <div className="flex md:flex-1 flex-col gap-3.5 items-start justify-start w-1/4 md:w-full">
+        <div className="bg-gray-900_01 flex flex-col items-center justify-center p-[105px] md:px-10 sm:px-5 w-full ">
+          <div className="flex flex-col gap-[7px] items-center justify-center mt-[13px] w-[97%] md:w-full ">
+            <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full ">
+              <div className="flex md:flex-1 flex-col gap-3.5 items-start justify-start w-1/4 md:w-full ">
                 <Text
                   className="text-white-A700 text-xl tracking-[0.03px]"
                   size="txtPoppinsMedium20"

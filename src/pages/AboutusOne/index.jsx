@@ -65,11 +65,9 @@ const AboutusOnePage = () => {
                 className="leading-[29.00px] mt-5 text-[15px] text-black-900_cc tracking-[0.50px] w-full"
                 size="txtLatoRegular15Black900cc"
               >
-                Flanker Security and Property Management Services is led by an
-                Indian Air Force Veteran with a distinguished service of over 02
-                decades in the varied domains of Security, Vigilance, Provost,
-                Ground Defence, Air Defence, Facilities Management and the
-                fast-paced Air Operations.  
+                Flanker Security and Property Management Services is led by an Indian Air Force Veteran with a distinguished service of over 02 decades in the varied domains of Security, Vigilance, Provost, Ground Defence, Air Defence, Facilities Management and the fast-paced Air Operations.    
+                <br />
+                Flanker was established with a visionary approach of making Security Services Sector highly professional, tech oriented, and backed by Artificial Intelligence to provide unmatched security, safety and protection to individuals and enterprises.
               </Text>
               <Text
                 className="leading-[29.00px] mt-[15px] text-[15px] text-black-900_cc tracking-[0.50px] w-full"
