@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
-import { Button, Img, Text, Toast } from "components";
+import { Banner, Button, Img, Text, Toast } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import infra from "../../assets/Event_Sec/infra.png"
 const Infra = () => {
   const [toast, setToast] = useState(null);
   const [formData, setFormData] = useState({
@@ -89,11 +89,11 @@ const Infra = () => {
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
         <div className="bg-gray-50 flex flex-col items-center justify-start p-[82px] md:px-10 sm:px-5 w-full">
-          <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[172px] mx-auto w-full">
-            <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-[67%] md:w-full">
+          <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
+            <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
                 className="h-[488px] sm:h-auto object-cover w-full"
-                src="images/img_rectangle22116.png"
+                src={infra}
                 alt="rectangle22116"
               />
               <Text
@@ -103,23 +103,23 @@ const Infra = () => {
                Security Infrastructure{" "}
               </Text>
               <Text
-                className="leading-[29.00px] mt-4 text-[15px] text-black-900_cc tracking-[0.50px] w-full"
+                className="leading-[29.00px] mt-4 text-[18px] text-black-900_cc tracking-[0.50px] w-full"
                 size="txtLatoRegular15Black900cc"
               >
                 Security infrastructure is a comprehensive system designed to safeguard people, assets, and information within a given environment. It encompasses a range of elements, including physical, technological, and procedural components, working in tandem to create a secure environment. Here's a breakdown of key aspects related to security infrastructure:
               </Text>
               <Text
-                className="mt-[30px] text-black-900_cc text-xl tracking-[0.50px]"
+                className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
                 size="txtOpenSansRomanBold20"
               >
                 Key Points of Security Infrastructure:
               </Text>
               <Text
-                className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]"
+                className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]"
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-base font-bold"> Physical Security:</span>
+                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> Physical Security:</span>
                   <br />
                  <strong> Access Control Systems:</strong> Implementing measures like biometric access, key cards, or PIN codes to regulate entry.
                   <br />
@@ -132,13 +132,13 @@ const Infra = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
                   Technological Solutions:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                  <strong> Surveillance Systems:</strong> High-definition cameras and monitoring tools for real-time observation.
                     <br />
@@ -150,13 +150,13 @@ const Infra = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
                   Emergency Preparedness:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   	Incident Response Plans: Clearly defined procedures for addressing security breaches or emergencies.
                     <br />
@@ -170,18 +170,18 @@ const Infra = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
                    Integration and Automation:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   	
-                    ●	Security Management Platforms: Centralized systems to monitor and manage various security components.
+                     	Security Management Platforms: Centralized systems to monitor and manage various security components.
                     <br />
-                    ●	Automation of Responses: Using technology to automate certain security responses for efficiency.
+                     	Automation of Responses: Using technology to automate certain security responses for efficiency.
                   </>
                 </span>
               </Text>
@@ -189,18 +189,18 @@ const Infra = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
                    Visitor Management:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   	
-                    ●	Access Badges: Issuing temporary access credentials to visitors
+                     	Access Badges: Issuing temporary access credentials to visitors
                     <br />
-                    ●	Check-In Systems: Recording and monitoring the entry and exit of visitors.
+                     	Check-In Systems: Recording and monitoring the entry and exit of visitors.
                   </>
                 </span>
               </Text>
@@ -208,17 +208,17 @@ const Infra = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
                    Regular Assessments and Updates:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  ●	Risk Assessments: Periodic evaluations to identify and address potential vulnerabilities.
+                   	Risk Assessments: Periodic evaluations to identify and address potential vulnerabilities.
                     <br />
-                    ●	Technology Upgrades: Keeping security systems up-to-date to address evolving threats.
+                     	Technology Upgrades: Keeping security systems up-to-date to address evolving threats.
                    
                   </>
                 </span>
@@ -227,19 +227,19 @@ const Infra = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
                   Collaboration with Law Enforcement:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  ●	Establishing Protocols: Clear communication channels and cooperation with local law enforcement agencies.
+                   	Establishing Protocols: Clear communication channels and cooperation with local law enforcement agencies.
                    
                    
                     <br />
-                    ●	Information Sharing: Collaborating on intelligence to enhance overall security
+                     	Information Sharing: Collaborating on intelligence to enhance overall security
                   </>
                 </span>
               </Text>
@@ -247,13 +247,13 @@ const Infra = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
                   Environmental Considerations:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   	Lighting: Well-lit areas to deter unauthorized access.
                     <br />
@@ -267,24 +267,24 @@ const Infra = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
                   Privacy Considerations:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  ●	Balancing Security and Privacy: Implementing measures that prioritize security without compromising individual privacy rights
+                   	Balancing Security and Privacy: Implementing measures that prioritize security without compromising individual privacy rights
                     <br />
-                    ●	Compliance with Regulations: Adhering to legal requirements regarding the collection and handling of personal information
+                     	Compliance with Regulations: Adhering to legal requirements regarding the collection and handling of personal information
                     
                   </>
                 </span>
               </Text>
               
             </div>
-            <div className="   flex md:flex-1 flex-col items-center justify-start w-[30%] md:w-full">
+            {/* <div className="   flex md:flex-1 flex-col items-center justify-start w-[30%] md:w-full">
               <div className="bg-white-A700 flex flex-col  items-center justify-start p-[49px] md:px-10 sm:px-5 rounded w-full">
                 <form onSubmit={sendEmail} className=" flex  flex-col items-start justify-start mb-2 w-[89%] md:w-full">
                   <div className="flex flex-col items-start  justify-start w-full">
@@ -297,40 +297,33 @@ const Infra = () => {
                     <div className=" flex-col  font-lato items-center justify-start mt-7 w-full">
                     <input required onChange={e => handleChange(e.target.value, { name: "name" })} value={formData.name} name="name"
  
-  className="w-[70%] border-b border-gray-600 sm:ml-10  pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] placeholder-gray-600_a0"
+  className="w-[70%] border-b border-gray-600 sm:ml-10  pr-[35px] py-[13px] text-[18px] text-gray-600_a0 tracking-[1.20px] placeholder-gray-600_a0"
   placeholder="Full name *"
 />
 
-
-                        {/* <span className="text-gray-600_a0 font-lato text-left font-normal">
-                       
-                        </span>
-                        <span className="text-red-900_a0 font-lato text-left font-normal">
-                          
-                        </span> */}
                       
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
                     <input required onChange={e => handleChange(e.target.value, { name: "email" })} value={formData.email}
-                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
+                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[18px] text-gray-600_a0 tracking-[1.20px]"
                         placeholder="Email Id *"
                       />
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
                     <input required name="company" onChange={e => handleChange(e.target.value, { name: "company" })} value={formData.company}
-                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
+                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[18px] text-gray-600_a0 tracking-[1.20px]"
                         placeholder="Company Name *"
                       />
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
                     <input required name="phoneNumber" onChange={e => handleChange(e.target.value, { name: "phoneNumber" })} value={formData.phoneNumber}
-                        className="w-[70%] sm:ml-1 ml-[-65px] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
+                        className="w-[70%] sm:ml-1 ml-[-65px] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[18px] text-gray-600_a0 tracking-[1.20px]"
                         placeholder="Phone Number *"
                       />
                     </div>
                   </div>
                   <div className="flex flex-col items-center justify-start mt-[50px] w-[66%] md:w-full">
-                    <button type="submit" className="border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[155px] text-base text-center tracking-[0.16px]">
+                    <button type="submit" className="border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[155px] text-xl text-center tracking-[0.16px]">
                       get in touch
                     </button>
                   </div>
@@ -347,7 +340,7 @@ const Infra = () => {
                       alt="location"
                     />
                     <Text
-                      className="leading-[24.00px] text-base text-black-900_b2 tracking-[0.25px] w-4/5 sm:w-full"
+                      className="leading-[24.00px] text-xl text-black-900_b2 tracking-[0.25px] w-4/5 sm:w-full"
                       size="txtOpenSansRomanRegular16"
                     >
                       High-quality coal that comes from.
@@ -360,7 +353,7 @@ const Infra = () => {
                       alt="phone"
                     />
                     <Text
-                      className="text-base text-black-900_b2 tracking-[0.25px]"
+                      className="text-xl text-black-900_b2 tracking-[0.25px]"
                       size="txtOpenSansRomanRegular16"
                     >
                       +84445 67892
@@ -373,7 +366,7 @@ const Infra = () => {
                       alt="lock"
                     />
                     <Text
-                      className="text-base text-black-900_b2 tracking-[0.25px]"
+                      className="text-xl text-black-900_b2 tracking-[0.25px]"
                       size="txtOpenSansRomanRegular16"
                     >
                       @flankersecurity.com
@@ -381,9 +374,10 @@ const Infra = () => {
                   </div>
                 </form>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
+        <Banner/>
         <Footer className="flex items-center justify-center mt-[29px] md:px-5 w-full" />
       </div>
       {toast && <Toast message={toast.message} type={toast.type} onClose={handleCloseToast} />}

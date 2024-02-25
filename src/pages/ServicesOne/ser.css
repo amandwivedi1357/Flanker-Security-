@@ -10,13 +10,20 @@ padding:1rem 0;
     gap: 30px;
 }
 .Single_cont{
-    
+  opacity: 0; /* Initially hide the elements */
+  transform: translateY(50px); /* Move elements down by 50px */
+  transition: opacity 0.5s ease, transform 0.5s ease;
     margin: auto;
     width: 269px;
     margin-left: -0.01rem;
     height: 306px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-color: #fff;
 transition: background-color 0.3s ease-in-out;
+}
+.Single_cont.slide-up{
+  transform: translateY(0);
+  opacity: 1;
 }
 .vector {
     width: 53px;

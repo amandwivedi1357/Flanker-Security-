@@ -4,7 +4,42 @@ import { Img, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import "./gallery.css"
+import img from "../../assets/Event_Sec/Img.webp"
+import img1 from "../../assets/Event_Sec/IMG_3590.webp"
+import img2 from "../../assets/Event_Sec/IMG_3596.webp"
+import img3 from "../../assets/Event_Sec/IMG_3632.webp"
+import img4 from "../../assets/Event_Sec/IMG_3637.webp"
+import img5 from "../../assets/Event_Sec/IMG_3643.webp"
+import img6 from "../../assets/Event_Sec/IMG_3649.webp"
+
+
+const images = [
+  {
+    src:img
+  },
+  {
+    src:img1
+  },
+  {
+    src:img2
+  },
+  {
+    src:img3
+  },
+  {
+    src:img4
+  },
+  {
+    src:img5
+  },
+  {
+    src:img6
+  },
+]
+
 const GalleryPage = () => {
+ 
+
   return (
     <>
       <div className="bg-white-A700 flex flex-col mb-[-20px] font-poppins gap-[27px] items-center justify-start mx-auto w-full">
@@ -36,9 +71,14 @@ const GalleryPage = () => {
           <div className="head_cont">
               <p className="head_text">Security Guard</p>
           </div>
-          <div className="gal_cont">
-            
-          </div>
+          <div className="image-container">
+      {images.map((imageName, index) => (
+        <div key={index} className="image-wrapper">
+          <img src={imageName.src} alt={imageName} />
+          <div className="overlay"></div>
+        </div>
+      ))}
+    </div>
           <div className="head_cont">
               <p className="head_text">Event Security </p>
           </div>

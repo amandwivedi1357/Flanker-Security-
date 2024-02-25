@@ -48,7 +48,7 @@ const Footer = (props) => {
                   Email Id
                 </Text>
                 <Text
-                  className="capitalize text-base text-white-A700_bc tracking-[0.04px]"
+                  className=" text-base text-white-A700_bc tracking-[0.04px]"
                   size="txtPoppinsRegular16"
                 >
                   info@flankersecurity.com

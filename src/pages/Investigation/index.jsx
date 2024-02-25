@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
-import { Button, Img, Text, Toast } from "components";
+import { Banner, Button, Img, Text, Toast } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import { ToastContainer, toast } from "react-toastify";
@@ -89,8 +89,8 @@ const Investigation = () => {
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
         <div className="bg-gray-50 flex flex-col items-center justify-start p-[82px] md:px-10 sm:px-5 w-full">
-          <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[172px] mx-auto w-full">
-            <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-[67%] md:w-full">
+          <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
+            <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
                 className="h-[488px] sm:h-auto object-cover w-full"
                 src="images/img_rectangle22116.png"
@@ -103,56 +103,67 @@ const Investigation = () => {
                 Investigation{" "}
               </Text>
               <Text
-                className="leading-[29.00px] mt-4 text-[15px] text-black-900_cc tracking-[0.50px] w-full"
+                className="leading-[29.00px] mt-4 text-[18px] text-black-900_cc tracking-[0.50px] w-full"
                 size="txtLatoRegular15Black900cc"
               >
-                Drones, or Unmanned Aerial Vehicles (UAVs), have rapidly evolved
-                from recreational gadgets to transformative tools across various
-                industries. These unmanned aircraft are equipped with cameras,
-                sensors, and other technologies, offering unprecedented
-                capabilities in areas such as surveillance, mapping,
-                agriculture, and emergency response.
+                Investigations are systematic processes undertaken to uncover facts, gather evidence, and analyze information to resolve issues, make informed decisions, or address concerns. In the context of business and security, investigations play a crucial role in ensuring compliance, uncovering fraudulent activities, and maintaining a secure and ethical operational environment.
               </Text>
               <Text
-                className="mt-[30px] text-black-900_cc text-xl tracking-[0.50px]"
+                className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
                 size="txtOpenSansRomanBold20"
               >
-                Applications of Drones:
+                Types of Investigations:
               </Text>
               <Text
                 className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]"
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-base font-bold"> Surveillance and Security:</span>
+                 <span className="text-black-900_01 font-lato text-left text-[20px] font-bold">		Security Breach Investigations:</span>
                   <br />
-                  Drones provide a bird&#39;s-eye view, enhancing surveillance
-                  capabilities for law enforcement, border control, and private
-                  security firms.
-                  <br />
-                  
-                  Monitoring large events, critical infrastructure, and
-                  expansive areas becomes more efficient and cost-effective.
+                 <span className="text-[18px]"> 	Conducted in response to a security incident breach. Seeks to identify the cause, extent, and impact of the breach and implement measures to prevent future occurrences.
+              
+                  </span>
+                
                 </>
               </Text>
               <Text
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
-                    Mapping and Surveying:
+                  Compliance Investigations:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                    Drones equipped with advanced mapping technologies
-                    contribute to accurate and rapid surveying of terrains,
-                    construction sites, and geographical features.
+                  	Ensures that the organization adheres to industry regulations, legal requirements, and internal policies. Identifies areas of non-compliance and recommends corrective actions.
+                    
+                  </>
+                </span>
+              </Text>
+            
+              <Text
+                className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
+                size="txtOpenSansRomanBold20"
+              >
+                Key Steps in Investigations:
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Planning:
                     <br />
-                    This aids in disaster response, and infrastructure
-                    development.
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Define the scope, objectives, and potential risks associated with the investigation. Develop a comprehensive plan outlining the investigative process.
                   </>
                 </span>
               </Text>
@@ -160,120 +171,157 @@ const Investigation = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
-                  Challenges and Concerns:
+                  Evidence Gathering:                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Collect relevant information and evidence through interviews, document reviews, surveillance, or technological means. Ensure the admissibility and integrity of collected evidence.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Interviews:
+                                      <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Conduct interviews with involved parties, witnesses, or relevant personnel to gather firsthand information. Ensure professionalism, neutrality, and confidentiality during the process.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Analysis:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
+                   	Analyze collected data and evidence to identify patterns, trends, or anomalies. This step often involves collaboration with experts in various fields.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Reporting:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Compile a detailed and objective report outlining the findings, conclusions, and recommended actions. The report may be used for decision-making, legal proceedings, or corrective measures.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
+                size="txtOpenSansRomanBold20"
+              >
+              Best Practices in Investigations:
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Impartiality:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Conduct investigations in an unbiased and impartial manner, ensuring that personal opinions and biases do not influence the outcome.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Confidentiality:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Maintain strict confidentiality throughout the investigation process to protect the privacy of individuals involved and the integrity of the investigation.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Documentation:
+                                      <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Document all aspects of the investigation, including methodologies, findings, and actions taken. Well-maintained records contribute to transparency and accountability.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Legal Compliance:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Ensure that investigations adhere to applicable laws and regulations. This includes respecting the rights of individuals and handling evidence ethically.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Continuous Improvement:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	After completing an investigation, evaluate the process and outcomes to identify areas for improvement. Implement changes to enhance the effectiveness of future investigations
                   </>
                 </span>
               </Text>
               
             </div>
-            <div className="   flex md:flex-1 flex-col items-center justify-start w-[30%] md:w-full">
-              <div className="bg-white-A700 flex flex-col  items-center justify-start p-[49px] md:px-10 sm:px-5 rounded w-full">
-                <form onSubmit={sendEmail} className=" flex  flex-col items-start justify-start mb-2 w-[89%] md:w-full">
-                  <div className="flex flex-col items-start  justify-start w-full">
-                    <Text
-                      className="text-2xl sm:ml-16 md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
-                      size="txtPoppinsSemiBold24"
-                    >
-                      Get in Touch!
-                    </Text>
-                    <div className=" flex-col  font-lato items-center justify-start mt-7 w-full">
-                    <input required onChange={e => handleChange(e.target.value, { name: "name" })} value={formData.name} name="name"
- 
-  className="w-[70%] border-b border-gray-600 sm:ml-10  pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] placeholder-gray-600_a0"
-  placeholder="Full name *"
-/>
-
-
-                        {/* <span className="text-gray-600_a0 font-lato text-left font-normal">
-                       
-                        </span>
-                        <span className="text-red-900_a0 font-lato text-left font-normal">
-                          
-                        </span> */}
-                      
-                    </div>
-                    <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
-                    <input required onChange={e => handleChange(e.target.value, { name: "email" })} value={formData.email}
-                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
-                        placeholder="Email Id *"
-                      />
-                    </div>
-                    <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
-                    <input required name="company" onChange={e => handleChange(e.target.value, { name: "company" })} value={formData.company}
-                        className="ml-[-65px] sm:ml-1 w-[70%] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
-                        placeholder="Company Name *"
-                      />
-                    </div>
-                    <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
-                    <input required name="phoneNumber" onChange={e => handleChange(e.target.value, { name: "phoneNumber" })} value={formData.phoneNumber}
-                        className="w-[70%] sm:ml-1 ml-[-65px] border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px]"
-                        placeholder="Phone Number *"
-                      />
-                    </div>
-                  </div>
-                  <div className="flex flex-col items-center justify-start mt-[50px] w-[66%] md:w-full">
-                    <button type="submit" className="border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[155px] text-base text-center tracking-[0.16px]">
-                      get in touch
-                    </button>
-                  </div>
-                  <Text
-                    className="mt-[87px] sm:mx-auto text-2xl md:text-[22px] text-gray-900_e5 sm:text-xl tracking-[0.24px]"
-                    size="txtPoppinsSemiBold24"
-                  >
-                    Contact Info
-                  </Text>
-                  <div className="flex flex-row font-opensans gap-[13px] items-start justify-start mt-[38px] w-[91%] md:w-full">
-                    <Img
-                      className="h-[30px] mt-[3px] w-[30px]"
-                      src="images/img_location.svg"
-                      alt="location"
-                    />
-                    <Text
-                      className="leading-[24.00px] text-base text-black-900_b2 tracking-[0.25px] w-4/5 sm:w-full"
-                      size="txtOpenSansRomanRegular16"
-                    >
-                      High-quality coal that comes from.
-                    </Text>
-                  </div>
-                  <div className="flex flex-row font-opensans gap-3 items-center justify-start mt-[30px] w-[67%] md:w-full">
-                    <Img
-                      className="h-8 w-8"
-                      src="images/img_phone.svg"
-                      alt="phone"
-                    />
-                    <Text
-                      className="text-base text-black-900_b2 tracking-[0.25px]"
-                      size="txtOpenSansRomanRegular16"
-                    >
-                      +84445 67892
-                    </Text>
-                  </div>
-                  <div className="flex flex-row font-opensans gap-[17px] items-start justify-start ml-1.5 md:ml-[0] mt-[33px] w-[87%] md:w-full">
-                    <Img
-                      className="h-[17px]"
-                      src="images/img_lock.svg"
-                      alt="lock"
-                    />
-                    <Text
-                      className="text-base text-black-900_b2 tracking-[0.25px]"
-                      size="txtOpenSansRomanRegular16"
-                    >
-                      @flankersecurity.com
-                    </Text>
-                  </div>
-                </form>
-              </div>
-            </div>
+           
           </div>
         </div>
+        <Banner/>
         <Footer className="flex items-center justify-center mt-[29px] md:px-5 w-full" />
       </div>
       {toast && <Toast message={toast.message} type={toast.type} onClose={handleCloseToast} />}

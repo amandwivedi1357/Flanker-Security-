@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
-import { Button, Img, Text } from "components";
+import { Banner, Button, Img, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
@@ -59,7 +59,7 @@ const ServicesPage = () => {
         <div className="md:h-[848px] h-[875px] md:px-5 relative w-full sm:bg-[#1A1313]">
           <div className="absolute h-[848px] inset-[0] justify-center  w-full">
             <Img
-              className="h-[848px] m-auto object-cover w-full"
+              className="h-[848px] m-auto object-cover w-full "
               src="images/img_rectangle21985_1.png"
               alt="rectangle21985"
             />
@@ -80,22 +80,22 @@ const ServicesPage = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className="bg-gray-50 flex flex-col items-center justify-start p-[82px] md:px-10 sm:px-5 w-full">
+        <div className=" flex flex-col items-center justify-start p-[82px] md:px-10 sm:px-5 w-full">
           <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[172px] mx-auto w-full">
-            <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-[67%] md:w-full">
+            <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
-                className="h-[488px] sm:h-auto object-cover w-full"
+                className="h-[488px] sm:h-auto object-cover w-full rounded-xl"
                 src="images/img_rectangle22116.png"
                 alt="rectangle22116"
               />
               <Text
-                className="mt-[37px] md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
+                className="mt-[45px] md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
                 size="txtOpenSansRomanBold32"
               >
                 Drones{" "}
               </Text>
               <Text
-                className="leading-[29.00px] mt-4 text-[15px] text-black-900_cc tracking-[0.50px] w-full"
+                className="leading-[29.00px] mt-4 text-[18px] text-black-900_cc tracking-[0.50px] w-full"
                 size="txtLatoRegular15Black900cc"
               >
                 Drones, or Unmanned Aerial Vehicles (UAVs), have rapidly evolved
@@ -106,7 +106,7 @@ const ServicesPage = () => {
                 agriculture, and emergency response.
               </Text>
               <Text
-                className="mt-[30px] text-black-900_cc text-xl tracking-[0.50px]"
+                className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
                 size="txtOpenSansRomanBold20"
               >
                 Applications of Drones:
@@ -116,28 +116,28 @@ const ServicesPage = () => {
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-base font-bold"> Surveillance and Security:</span>
+                 <span className="text-black-900 font-lato text-left text-xl font-bold"> Surveillance and Security:</span>
                   <br />
-                  Drones provide a bird&#39;s-eye view, enhancing surveillance
+                 <span className="text-[18px]"> Drones provide a bird&#39;s-eye view, enhancing surveillance
                   capabilities for law enforcement, border control, and private
                   security firms.
-                  <br />
+                  <br /></span>
                   
-                  Monitoring large events, critical infrastructure, and
-                  expansive areas becomes more efficient and cost-effective.
+                <span className="text-[18px]">  Monitoring large events, critical infrastructure, and
+                  expansive areas becomes more efficient and cost-effective.</span>
                 </>
               </Text>
               <Text
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900 font-lato text-left text-xl font-bold">
                   <>
                     Mapping and Surveying:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                     Drones equipped with advanced mapping technologies
                     contribute to accurate and rapid surveying of terrains,
@@ -152,13 +152,13 @@ const ServicesPage = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-base font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
                   Challenges and Concerns:
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
                   </>
@@ -166,7 +166,9 @@ const ServicesPage = () => {
               </Text>
               
             </div>
-            <div className="   flex md:flex-1 flex-col items-center justify-start w-[30%] md:w-full">
+           
+          </div>
+          {/* <div className="flex md:flex-1 flex-col items-center justify-start w-[30%] md:w-full">
               <div className="bg-white-A700 flex flex-col  items-center justify-start p-[49px] md:px-10 sm:px-5 rounded w-full">
                 <form onSubmit={sendEmail} className=" flex  flex-col items-start justify-start mb-2 w-[89%] md:w-full">
                   <div className="flex flex-col items-start  justify-start w-full">
@@ -184,12 +186,7 @@ const ServicesPage = () => {
 />
 
 
-                        {/* <span className="text-gray-600_a0 font-lato text-left font-normal">
-                       
-                        </span>
-                        <span className="text-red-900_a0 font-lato text-left font-normal">
-                          
-                        </span> */}
+                    
                       
                     </div>
                     <div className="flex flex-col font-lato items-center justify-start mt-[23px] w-full">
@@ -263,9 +260,10 @@ const ServicesPage = () => {
                   </div>
                 </form>
               </div>
-            </div>
-          </div>
+             
+            </div> */}
         </div>
+        <Banner/>
         <Footer className="flex items-center justify-center mt-[29px] md:px-5 w-full" />
       </div>
     </>

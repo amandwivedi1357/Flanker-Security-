@@ -5,14 +5,16 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import { FaCheck } from "react-icons/fa6";
 import Slider from "./Slider";
+import sec_guard5 from "../../assets/Event_Sec/sec_6.png"
+import sec_6 from "../../assets/Event_Sec/sec_guard5.png"
 const SlidesData2 = [
   {
     id:1,
      content:(
       <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1163px] mt-[95px] mx-auto md:px-5 w-full">
             <Img
-              className="h-[640px] md:h-auto mb-3 object-cover"
-              src="images/img_rectangle22076.png"
+              className="h-[640px] md:h-auto mb-3 object-cover rounded-xl"
+              src={sec_guard5}
               alt="rectangle22076"
             />
             <div className="flex flex-col md:gap-10 gap-[166px] justify-start md:mt-0 mt-[125px]">
@@ -60,8 +62,8 @@ const SlidesData2 = [
     content:(
       <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px] mx-auto md:px-5 w-full">
             <Img
-              className="h-[640px] md:h-auto object-cover"
-              src="images/img_rectangle22076_1.png"
+              className="h-[640px] md:h-auto object-cover rounded-xl"
+              src={sec_6}
               alt="rectangle22076"
             />
             <div className="flex flex-col md:gap-10 gap-[166px] justify-start md:mt-0 mt-[125px]">
@@ -280,16 +282,16 @@ const AboutusPage = () => {
           </Text>
           <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] mt-[62px] mx-auto md:px-5 relative w-full">
             <Img
-              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full"
+              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full rounded-xl"
               src="images/img_rectangle22083.png"
               alt="rectangle22083"
             />
             <div
-              className="sm:hidden absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start p-[54px] md:px-10 sm:px-5 right-[0] w-[53%]"
+              className="sm:hidden rounded-xl absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start p-[54px] md:px-10 sm:px-5 right-[0] w-[53%]"
               style={{ backgroundImage: "url('images/img_group50520.svg')" }}
             >
-              <div className="flex flex-col gap-[34px] items-start justify-start w-[94%] md:w-full">
-                <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between w-full">
+              <div className="flex  flex-col gap-[34px] items-start justify-start w-[94%] md:w-full">
+                <div className=" flex sm:flex-col flex-row sm:gap-10 items-center justify-between w-full">
                   <span className="flex gap-3">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
                     <span className="font-semibold  text-base text-black-900 text-left tracking-[0.25px]">
@@ -353,3 +355,4 @@ const AboutusPage = () => {
 };
 
 export default AboutusPage;
+

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Img, Button, Text, Toast } from "components";
 import emailjs from '@emailjs/browser';
+import Banner1 from "../../assets/Event_Sec/drone.jpg"
 const Banner = () => {
   const [toast, setToast] = useState(null);
   const [formData, setFormData] = useState({
@@ -60,10 +61,11 @@ const Banner = () => {
     <div className="font-poppins h-[748px] md:h-[857px] mt-[109px] md:px-5 relative w-full">
       <Img
         className="h-[748px] m-auto object-cover w-full sm:h-[660px]"
-        src="images/img_rectangle22077.png"
+        // src="images/cctv.jpg"
+        src={Banner1}
         alt="rectangle22077"
       />
-      <form onSubmit={sendEmail} className="sm:ml-auto sm:mt-[5%] sm:w-[85%] absolute bg-white-A700 flex flex-col gap-[52px] h-max inset-y-[0] items-start justify-center my-auto p-[60px] md:px-10 sm:px-5 right-[7%] rounded w-[43%]">
+      <form onSubmit={sendEmail} className="sm:ml-auto rounded-xl sm:mt-[5%] sm:w-[85%] absolute bg-white-A700 flex flex-col gap-[52px] h-max inset-y-[0] items-start justify-center my-auto p-[60px] md:px-10 sm:px-5 right-[7%]  w-[43%]">
         <div className=" flex flex-col items-center justify-start mt-[3px] w-full">
           <div className="flex flex-col items-start justify-start w-full">
             <a

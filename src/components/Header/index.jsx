@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Img, Text } from "components";
+import { MdOutlineMenu } from "react-icons/md";
+import Sidebar from "./Sidebar";
 
 const Header = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
   return (
     <>
       <header className={props.className}>
@@ -16,23 +23,29 @@ const Header = (props) => {
           /> */}
         </NavLink>
         <div className="bg-white-A700_11 flex md:flex-col flex-row md:gap-5 items-center justify-start p-[30px] sm:px-5 shadow-bs1 w-full">
-          <div className="flex items-center">
+          <div className="flex items-center sm:w-full">
             <NavLink to="/" className="nav-link">
               <Img
                 onClick={() => navigate("/")}
-                className="cursor-pointer h-[65px] sm:h-[40px] w-[65px] sm:w-[40px] ml-5 md:ml-[0] object-cover sm:ml-[-155%]"
+                className="cursor-pointer h-[65px] sm:h-[40px] w-[65px] sm:w-[40px] ml-5 md:ml-[0] object-cover "
                 src="images/logo.svg"
                 alt="whatsappimageTwenty"
               />
             </NavLink>
             <Text onClick={()=>navigate('/')}
-              className={`sm:ml-[-25%] sm:mt-[-2.5%] cursor-pointer bg-clip-text bg-gradient capitalize ml-2 text-transparent text-xl tracking-[0.25px] ${
+              className={` sm:mt-[-0.5%] cursor-pointer bg-clip-text bg-gradient sm:text-base capitalize ml-2 text-transparent text-xl tracking-[0.25px] ${
                 location.pathname === "/" ? "active-link" : ""
               }`}
               size="txtPoppinsRegular20"
             >
               FLANKER SECURITY
             </Text>
+            
+    <MdOutlineMenu className="text-white-A700 cursor-pointer text-4xl sm:block hidden sm:ml-16" onClick={toggleSidebar}/>
+    <a href="tel:+919100792007">
+  <img src="images/small_phone.png" className="sm:block hidden ml-3" alt="" />
+</a>
+
           </div>
           <ul className="flex md:flex-1 sm:flex-col flex-row gap-8 sm:hidden items-start justify-center md:ml-[0] ml-[132px] w-[30%] md:w-full common-row-list">
             <NavLink
@@ -57,7 +70,7 @@ const Header = (props) => {
             <NavLink
               to="/services"
               className={`nav-link ${
-                location.pathname === "/services"
+                location.pathname === "/services" 
                   ? "border-b-2 border-yellow-500"
                   : ""
               }`}
@@ -65,7 +78,7 @@ const Header = (props) => {
               <li>
                 <Text
                   className={`capitalize mb-0.5 text-base text-white-A700 tracking-[0.16px] ${
-                    location.pathname === "/services" ? "active-link" : ""
+                    location.pathname === "/services"  ? "active-link" : ""
                   }`}
                   size="txtPoppinsMedium16"
                 >
@@ -129,8 +142,11 @@ const Header = (props) => {
               </Text>
             </div>
           </div>
+        
         </div>
+        
       </header>
+      {isSidebarOpen && <Sidebar toggleSidebar={toggleSidebar} isOpen={isSidebarOpen}/>}
     </>
   );
 };

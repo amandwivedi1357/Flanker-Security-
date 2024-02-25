@@ -11,11 +11,14 @@ import {
   Slider,
   Text,
 } from "components";
+
+import Slider1 from "./Slider"
 import guard from "../../assets/SVG/Guard.svg";
 import { FaCheck } from "react-icons/fa6";
 import Footer from "components/Footer";
 import { useNavigate } from "react-router-dom";
 import Header from "components/Header";
+import sec_6 from "../../assets/Event_Sec/sec_6.png"
 
 const HomepagePage = () => {
   const sliderRef = React.useRef(null);
@@ -42,7 +45,7 @@ const HomepagePage = () => {
               />
               <div className="absolute bottom-[22%] flex flex-col items-start justify-start left-[7%] ml-[-30px] w-[53%]">
                 <Text
-                  className="capitalize leading-[89.00px] sm:text-3xl sm:ml-[15%] sm:w-[334px] sm:-mt-[-20%] md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
+                  className="capitalize leading-[89.00px] sm:text-3xl sm:font-normal  sm:ml-[15%] sm:w-[334px]  md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
                   size="txtPoppinsBold60"
                 >
                   Your Comprehensive Security Provider
@@ -57,7 +60,7 @@ const HomepagePage = () => {
                 <div className="flex flex-row font-poppins gap-[21px] items-center justify-start mt-11 w-[41%] md:w-full">
                   <div className="flex flex-col items-center justify-start w-[47%]">
                     <button
-                      onClick={()=>navigate('/aboutus')}
+                      onClick={()=>navigate('/contactform')}
                       className="hover:bg-orange-400 sm:ml-[120%] hover:text-black-900 capitalize border border-orange-400 border-solid shadow-bs text-orange-400 cursor-pointer font-medium h-11 leading-[normal] min-w-[143px] text-base  text-center tracking-[0.16px]"
                       variant="outline"
                     >
@@ -149,21 +152,22 @@ const HomepagePage = () => {
             <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full"/>
             {/* <Line className="bg-green-400 h-[3px] mt-[3px] rounded-[1px] w-[19%]" /> */}
           </div>
-          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px] mx-auto md:px-5 w-full">
+          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px] mx-auto md:px-5 w-full sm:w-full">
             <Img
-              className="h-[640px] md:h-auto object-cover sm:h-auto sm:mt-[-28%] sm:w-[355px]"
-              src="images/img_rectangle22076_640x502.png"
+              className="h-[640px] md:h-auto object-cover sm:h-auto sm:mt-[-25%] sm:w-full rounded-xl"
+              // src="images/img_rectangle22076_640x502.png"
+              src={sec_6}
               alt="rectangle22076"
             />
             <div className="flex flex-col items-start justify-start md:ml-[0] ml-[125px] md:mt-0 mt-[130px]">
               <Text
-                className="text-gray-600 text-sm tracking-[2.00px] uppercase"
+                className="text-gray-600 text-sm tracking-[2.00px] uppercase sm:text-base"
                 size="txtRedHatDisplayRomanMedium14"
               >
                 About us
               </Text>
               <Text
-                className="capitalize leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
+                className="capitalize sm:text-xl sm:w-[95%] leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
                 size="txtHeeboRegular36"
               >
                 <span className="text-gray-900 font-redhatdisplay text-left font-normal">
@@ -177,13 +181,13 @@ const HomepagePage = () => {
                 </span>
               </Text>
               <Text
-                className="mt-[25px] text-[15px] text-black-900_cc tracking-[0.50px] sm:w-full sm:text-2xl"
+                className="mt-[25px] text-[18px] sm:text-base text-black-900_cc tracking-[0.50px] sm:w-full "
                 size="txtLatoRegular15Black900cc"
               >
                 Trust us with the security of what’s important to you
               </Text>
               <div className="flex flex-row font-poppins gap-[13px] items-center justify-start mt-[23px] w-[56%] md:w-full">
-                <div className="flex flex-col items-center justify-start w-[48%] mt-5 sm:ml-[-4%]">
+                <div className="flex flex-col items-center justify-start w-[48%] mt-5 ml-[-4%] sm:ml-[-4%]">
                   <Button
                     onClick={() => navigate("/aboutus")}
                     className="!text-black-900 hover:bg-transparent hover:outline-orange-400 border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[142px] text-base text-center tracking-[0.16px]"
@@ -199,7 +203,7 @@ const HomepagePage = () => {
               className="flex flex-col gap-[55px] items-center max-w-[1240px] mx-auto w-full"
               orientation="vertical"
             >
-              <div className="flex flex-1 md:flex-col flex-row md:gap-5 items-start justify-start my-0 w-full">
+              <div className="flex flex-1 md:flex-col flex-row md:gap-5 items-start justify-start my-0 w-full sm:mt-[-40%]">
                 <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[31px] w-[35%] md:w-full">
                   <div className="flex flex-row font-redhatdisplay gap-[18px] items-end justify-start w-[89%] md:w-full">
                     <Text
@@ -232,7 +236,10 @@ const HomepagePage = () => {
                     Trust us with the security of what’s important to you
                   </Text>
                 </div>
-                <div className={`bg-white-A700 mr-6   hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end md:ml-[0] ml-[200px] p-[27px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
+               
+                <Slider1/>
+                
+                <div className={`bg-white-A700 mr-6 shadow-xl rounded-md  sm:hidden hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end md:ml-[0] ml-[200px] p-[27px] sm:px-5 w-[22%] md:w-full transition-all duration-400 ${
                     isHovered7 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered7(true)}
@@ -249,7 +256,7 @@ const HomepagePage = () => {
                     alt="guard"
                   />
                   <Text
-                    className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="mt-12 text-xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     Security Guards
@@ -261,8 +268,9 @@ const HomepagePage = () => {
                     Guarding the Now, Securing the Future.
                   </Text>
                 </div>
+                
                 <div
-                  className={`bg-white-A700 cursor-pointer flex md:flex-1 ml-6 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 ml-6 sm:ml-[2%] flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
                     isHovered4 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered4(true)}
@@ -279,7 +287,7 @@ const HomepagePage = () => {
                     alt="guard_One"
                   />
                   <Text
-                    className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="mt-12 text-xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     Security Infra
@@ -298,7 +306,7 @@ const HomepagePage = () => {
                 
                 
                 <div 
-                  className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400  ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400  ${
                     isHovered1 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered1(true)}
@@ -315,7 +323,7 @@ const HomepagePage = () => {
                     alt="guard_One"
                   />
                   <Text
-                    className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="mt-12 text-xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     Security Audits
@@ -328,7 +336,7 @@ const HomepagePage = () => {
                   </Text>
                 </div>
                 <div
-                  className={`bg-white-A700 cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
                     isHovered5 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered5(true)}
@@ -346,7 +354,7 @@ const HomepagePage = () => {
                     alt="guard_One"
                   />
                   <Text
-                    className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="mt-12 text-xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     Risk Assessment
@@ -359,7 +367,7 @@ const HomepagePage = () => {
                   </Text>
                 </div>
                 <div
-                  className={`bg-white-A700 cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
                     isHovered2 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered2(true)}
@@ -370,13 +378,13 @@ const HomepagePage = () => {
                     className="h-[60px] mt-[35px] text-black-900"
                     src={
                       isHovered2
-                        ? "images/drone.svg"
-                        : "images/drones_yellow.svg"
+                        ? "images/drone_new.svg"
+                        : "images/drones_new_yellow.svg"
                     }
                     alt="guard_One"
                   />
                   <Text
-                    className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="mt-12 text-xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     Drones
@@ -389,7 +397,7 @@ const HomepagePage = () => {
                   </Text>
                 </div>
                 <div
-                  className={`bg-white-A700 cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
                     isHovered3 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered3(true)}
@@ -406,7 +414,7 @@ const HomepagePage = () => {
                     alt="guard_One"
                   />
                   <Text
-                    className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="mt-12 text-xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     Security Training
@@ -418,17 +426,18 @@ const HomepagePage = () => {
                     Training the first line of defense.
                   </Text>
                 </div>
+                
               </div>
             </List>
           </div>
           <Text
-            className="mt-[94px] text-gray-600 text-sm tracking-[2.00px] uppercase sm:ml-[-50%]"
+            className="mt-[94px] sm:-mt-[30%] sm:text-base  text-gray-600 text-sm tracking-[2.00px] uppercase sm:ml-[-48%]"
             size="txtRedHatDisplayRomanMedium14"
           >
             why choose us
           </Text>
           <Text
-            className="capitalize leading-[49.00px] mt-[19px] sm:text-3xl sm:ml-10 text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[57%] sm:w-full transition-all duration-400"
+            className="capitalize sm:text-xl leading-[49.00px] mt-[19px]  sm:ml-10 text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[57%] sm:w-full transition-all duration-400"
             size="txtHeeboRegular36"
           >
             
@@ -444,24 +453,24 @@ const HomepagePage = () => {
           </Text>
           <div className=" font-lato md:h-[auto] h-[553px] max-w-[1242px] mt-[62px] mx-auto md:px-5 relative w-full">
             <Img
-              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full"
+              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full rounded-xl"
               src="images/img_rectangle22083.png"
               alt="rectangle22083"
             />
             <Text
-              className="absolute sm:hidden leading-[29.00px] right-[3%] text-[15px] text-gray-700 top-[15%] tracking-[0.50px] w-[31%] sm:w-full"
+              className="absolute sm:hidden leading-[29.00px]  right-[3%] text-[18px] text-gray-700 top-[15%] tracking-[0.50px] w-[31%] sm:w-full"
               size="txtLatoRegular15Gray700"
             >
               The Property Management Vertical encompasses the full spectrum of
               House Keeping Services, Landscaping, Maintenance Support Team and
               Support Staff with highly professional teams led by Facility
-              Mangers.
+              Managers.
             </Text>
             <div
-              className="sm:hidden absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start p-[54px] md:px-10 sm:px-5 right-[0] w-[53%]"
+              className="sm:hidden   rounded-lg absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start p-[54px] md:px-10 sm:px-5 right-[0] w-[53%]"
               style={{ backgroundImage: "url('images/img_group50520.svg')" }}
             >
-              <div className="flex flex-col gap-[34px] items-start justify-start w-[94%] md:w-full">
+              <div className=" flex flex-col gap-[34px] items-start justify-start w-[94%] md:w-full">
                 <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between w-full">
                   <span className="flex gap-3">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
@@ -509,13 +518,13 @@ const HomepagePage = () => {
             </div>
           </div>
           <Text
-            className="mt-[150px] text-gray-600 text-sm tracking-[2.00px] uppercase"
+            className="mt-[150px] text-gray-600 text-sm tracking-[2.00px] uppercase sm:mt-[130%]"
             size="txtRedHatDisplayRomanMedium14"
           >
             TESTIMONIAL
           </Text>
           <Text
-            className="capitalize leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-center text-gray-900 tracking-[1.00px] w-[39%] sm:w-full"
+            className="capitalize sm:text-2xl sm:w-full leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-center text-gray-900 tracking-[1.00px] w-[39%]"
             size="txtHeeboRegular36"
           >
             <span className="text-gray-900 font-redhatdisplay font-normal">
@@ -543,7 +552,7 @@ const HomepagePage = () => {
             }}
             ref={sliderRef}
             className="flex gap-[74px] max-w-[1165px] mt-[111px] mx-auto md:px-5 w-full"
-            items={[...Array(18)].map(() => (
+            items={[...Array(12)].map(() => (
               <React.Fragment key={Math.random()}>
                 <div className="flex flex-col items-center justify-start mx-2.5">
                   <div className="bg-gray-100 border border-gray-600_23 border-solid flex flex-col items-center justify-end p-[50px] md:px-10 sm:px-5 rounded-sm w-full">
@@ -577,7 +586,7 @@ const HomepagePage = () => {
                         “
                       </Text>
                       <Text
-                        className="h-[228px] leading-[29.00px] text-[15px] text-gray-700 tracking-[0.50px] w-[228px]"
+                        className="h-[228px] leading-[29.00px] text-[15px] text-black-900 tracking-[0.50px] w-[228px]"
                         size="txtLatoRegular15Gray700"
                         style={{ lineHeight: "1.93" }}
                       >
@@ -621,7 +630,7 @@ const HomepagePage = () => {
           />
           <PagerIndicator
             className="flex h-2.5 justify-center mt-[71px] w-[105px]"
-            count={6}
+            count={3}
             activeCss="inline-block cursor-pointer rounded-[50%] h-2.5 bg-orange-400 w-2.5"
             activeIndex={sliderState}
             inactiveCss="inline-block cursor-pointer rounded-[50%] h-2.5 bg-blue_gray-100 w-2.5"

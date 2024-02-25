@@ -5,8 +5,13 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 
 const typeOfServiceOptionsList = [
-  { label: "Drones", value: "option1" },
-  { label: "Security Audits", value: "option2" },
+  { label: "Drones", value: "Drones" },
+
+  { label: "Security Audits", value: "Security Audits" },
+  { label: "Security Infrastructure", value: "Security Infrastructure" },
+  { label: "Risk Assessment", value: "Risk Assessment" },
+  { label: "Security Training", value: "Security Training" },
+  { label: "Security Guards", value: "Security Guards" },
   { label: "Security Infrastructure", value: "option3" },
 ];
 const countryOptionsList = [
@@ -15,9 +20,9 @@ const countryOptionsList = [
   { label: "Option3", value: "option3" },
 ];
 const cityOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
+  { label: "Hyderabad", value: "Hyderabad" },
+  { label: "Bangalore", value: "Bangalore" },
+  { label: "Mumbai", value: "Mumbai" },
 ];
 const postalCodeOptionsList = [
   { label: "Option1", value: "option1" },
@@ -26,6 +31,8 @@ const postalCodeOptionsList = [
 ];
 
 const ContactformPage = () => {
+  const [toast, setToast] = useState(null);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -66,6 +73,8 @@ const ContactformPage = () => {
       
     }, "PAMSeoabaa0l3PiqP")
       .then((result) => {
+        setToast({ message: 'Thank You for contacting us.', type: 'success' });
+
         console.log(result.text);
         // Clear form fields after successful submission
         setFormData({
@@ -79,10 +88,12 @@ const ContactformPage = () => {
           postalCode: "",
          
         });
-        alert("Email sent successfully!");
+        
       }, (error) => {
+        setToast({ message: 'Error sending email. Please try again.', type: 'error' });
+
         console.log(error.text);
-        alert("Error sending email. Please try again later.");
+        
       });
   };
   return (
@@ -113,7 +124,7 @@ const ContactformPage = () => {
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
         <div className="bg-gray-50 flex flex-col font-lato items-center justify-start p-[69px] md:px-10 sm:px-5 w-full ">
-          <div className="bg-white-A700 flex flex-col items-end justify-start max-w-[1240px] mb-9 mx-auto pl-[60px] md:px-5 rounded w-full">
+          <div className="bg-white-A700 flex flex-col  rounded-xl items-end justify-start max-w-[1240px] mb-9 mx-auto pl-[60px] md:px-5 w-full">
             <div className="flex md:flex-col flex-row md:gap-10 gap-[93px] items-center justify-end w-full">
               <form onSubmit={sendEmail} className=" flex md:flex-1 flex-col gap-[53px] items-start justify-start w-[44%] md:w-full">
                 <div className=" flex flex-col gap-[23px] items-center justify-start w-full">
@@ -123,7 +134,7 @@ const ContactformPage = () => {
                         href="javascript:"
                         className="text-gray-600 text-sm tracking-[2.00px] uppercase"
                       >
-                        <Text size="txtRedHatDisplayRomanMedium14">
+                        <Text className="pt-5" size="txtRedHatDisplayRomanMedium14">
                           contact us
                         </Text>
                       </a>
@@ -141,18 +152,18 @@ const ContactformPage = () => {
                       </Text>
                       <div className="font-lato sm:gap-5 gap-[39px] grid sm:grid-cols-1 grid-cols-2 justify-center min-h-[auto] mt-[37px] w-full">
                         <div className="flex flex-1 flex-col items-center justify-start w-full">
-                          <input required name="name" onChange={e => handleChange(e.target.value, { name: "name" })} value={formData.name} placeholder=" Full name" className="border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full"/>
+                          <input required name="name" onChange={e => handleChange(e.target.value, { name: "name" })} value={formData.name} placeholder=" Full name" className="border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full placeholder-gray-600_a0"/>
                            
                          
                         </div>
                         <div className=" flex flex-1 flex-col items-center justify-start w-full">
-                        <input  required name="company" onChange={e => handleChange(e.target.value, { name: "company" })} value={formData.company} placeholder=" Company name" className="border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full"/>
+                        <input  required name="company" onChange={e => handleChange(e.target.value, { name: "company" })} value={formData.company} placeholder=" Company name" className="border-b border-gray-600 border-solid sm:pr-5 pr-[35px] placeholder-gray-600_a0 py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full"/>
                         </div>
                         <div className="flex flex-1 flex-col items-center justify-start w-full">
-                        <input  required name="email" onChange={e => handleChange(e.target.value, { name: "email" })} value={formData.email} placeholder=" Email Id" className="border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full"/>
+                        <input  required name="email" onChange={e => handleChange(e.target.value, { name: "email" })} value={formData.email} placeholder=" Email Id" className="border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] placeholder-gray-600_a0 text-gray-600_a0 tracking-[1.20px] w-full"/>
                         </div>
                         <div className="flex flex-1 flex-col items-center justify-start w-full">
-                        <input  required name="phoneNumber"  onChange={e => handleChange(e.target.value, { name: "phoneNumber" })} value={formData.phoneNumber} placeholder=" Phone Number" className="border-b border-gray-600 border-solid sm:pr-5 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full"/>
+                        <input  required name="phoneNumber"  onChange={e => handleChange(e.target.value, { name: "phoneNumber" })} value={formData.phoneNumber} placeholder=" Phone Number" className="border-b border-gray-600 border-solid sm:pr-5 placeholder-gray-600_a0 pr-[35px] py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full"/>
                         </div>
                       </div>
                       <div className="flex sm:flex-col flex-row font-lato gap-[39px] items-center justify-between mt-[23px] w-full">
@@ -266,7 +277,7 @@ const ContactformPage = () => {
                   </Button>
                 </div>
               </form>
-              <div className="bg-orange-400 flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] items-center justify-center p-[54px] md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[410px]">
+              <div className="bg-orange-400 rounded-xl rounded-l-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] items-center justify-center p-[54px] md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[410px]">
                 <Text
                   className="mt-[58px] text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[0.36px]"
                   size="txtPoppinsSemiBold36Black900"
