@@ -267,16 +267,16 @@ const AboutusPage = () => {
             why choose us
           </Text>
           <Text
-            className="capitalize leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[57%] sm:w-full"
+            className="capitalize leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%] sm:w-full"
             size="txtPoppinsSemiBold36"
           >
-            <span className="text-gray-900 font-redhatdisplay text-left font-normal">
+            <span className="text-gray-900 font-poppins text-left font-normal">
               We Provide services for{" "}
             </span>
-            <span className="text-gray-900 font-redhatdisplay text-left font-bold">
+            <span className="text-gray-900 font-poppins text-left font-[600]">
               multiple{" "}
             </span>
-            <span className="text-gray-900 font-redhatdisplay text-left font-bold">
+            <span className="text-gray-900 font-poppins text-left font-[600]">
               customers in various industries worldwide
             </span>
           </Text>
