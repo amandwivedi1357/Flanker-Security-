@@ -168,15 +168,15 @@ const HomepagePage = () => {
               </Text>
               <Text
                 className="capitalize sm:text-xl sm:w-[95%] leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
-                size="txtPoppinsSemiBold36"
+                size="txtPoppinsMedium16"
               >
-                <span className="text-gray-900 font-redhatdisplay text-left font-normal">
+                <span className="text-gray-900 font-poppins text-left font-normal">
                   We Provide services for{" "}
                 </span>
-                <span className="text-gray-900 font-redhatdisplay text-left font-bold">
+                <span className="text-gray-900 font-poppins text-left font-[600]">
                   multiple{" "}
                 </span>
-                <span className="text-gray-900 font-redhatdisplay text-left font-bold">
+                <span className="text-gray-900 font-poppins text-left font-[600]">
                   customers in various industries worldwide
                 </span>
               </Text>
@@ -222,10 +222,10 @@ const HomepagePage = () => {
                     className="capitalize leading-[49.00px] mt-[15px] text-4xl sm:text-[20px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full sm:leading-8 sm:w-[80%]"
                     size="txtPoppinsSemiBold36"
                   >
-                    <span className="text-gray-900 font-redhatdisplay text-left font-normal" >
+                    <span className="text-gray-900 font-poppins text-left font-normal" >
                       Our Services{" "}
                     </span>
-                    <span className="text-gray-900 font-redhatdisplay text-left font-bold">
+                    <span className="text-gray-900 font-poppins text-left font-[600]">
                       Make your business secure
                     </span>
                   </Text>
