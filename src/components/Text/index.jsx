@@ -1,7 +1,7 @@
 import React from "react";
 
 const sizeClasses = {
-  txtHeeboRegular36: "font-poppins font-semibold",
+  txtHeeboRegular36: "font-heebo font-normal",
   txtLeckerliOneRegular36: "font-leckerlione font-normal",
   txtLatoRegular15Gray700: "font-lato font-normal",
   txtNunitoMedium18: "font-medium font-nunito",

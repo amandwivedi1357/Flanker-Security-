@@ -529,16 +529,16 @@ const HomepagePage = () => {
           </Text>
           <Text
             className="capitalize sm:text-2xl sm:w-full leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-center text-gray-900 tracking-[1.00px] w-[39%]"
-            size="txtPoppinsSemiBold36"
+            size=""
           >
-            <span className="text-gray-900 font-redhatdisplay font-normal">
+            <span className="text-gray-900 font-opensans font-normal">
               We Provide services for a huge
             </span>
-            <span className="text-gray-900 font-redhatdisplay font-bold">
+            <span className="text-gray-900 font-opensans font-bold">
               {" "}
               number of{" "}
             </span>
-            <span className="text-gray-900 font-redhatdisplay font-bold">
+            <span className="text-gray-900 font-opensans font-bold">
               customers{" "}
             </span>
           </Text>

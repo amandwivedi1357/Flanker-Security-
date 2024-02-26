@@ -136,7 +136,7 @@ const Header = (props) => {
               </div>
               <Text
                 className="mt-1.5 text-black-900 text-sm tracking-[0.25px]"
-                size="txtHeeboMedium14"
+                size="txtPoppinsMedium16"
               >
                 +91 91007 92007
               </Text>
