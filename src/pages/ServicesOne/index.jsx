@@ -182,8 +182,8 @@ const ServicesOnePage = () => {
                 ser_data.map((data,index)=>(
                   <div key={index} className="Single_cont" onClick={()=>navigate(data.path)} onMouseEnter={(e) => handleMouseEnter(e, index, data.hover)} onMouseLeave={(e) => handleMouseLeave(e, index, data.image)}>
                     <img className="vector" src={data.image} alt="guard" />
-                    <Text size="txtOpenSansRomanBold24" className="title leading-[24.00px] mb-[23px] mt-[3px] font-[600] text-black-900_b2 text-sm tracking-[0.25px] w-full" >{data.title}</Text>
-                    <p className="desc font-opensans">{data.desc}</p>
+                    <p  className="title font-opensans leading-[24.00px] mb-[23px] mt-[3px] font-[600] text-black-900_b2 text-sm tracking-[0.25px] w-full" >{data.title}</p>
+                    <Text size="txtLatoRegular15Gray700" className="desc">{data.desc}</Text>
                   </div>
                 ))
               }
