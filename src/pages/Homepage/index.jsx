@@ -263,7 +263,7 @@ const HomepagePage = () => {
                   </Text>
                   <Text
                     className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
-                    size="txtOpenSansRomanSemiBold14"
+                    size="txtLatoRegular15Gray700"
                   >
                     Guarding the Now, Securing the Future.
                   </Text>
@@ -294,7 +294,7 @@ const HomepagePage = () => {
                   </Text>
                   <Text
                     className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
-                    size="txtOpenSansRomanSemiBold14"
+                    size="txtLatoRegular15Gray700"
                   >
                     Guarding Tomorrow's Security Today.
                   </Text>
@@ -330,7 +330,7 @@ const HomepagePage = () => {
                   </Text>
                   <Text
                     className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
-                    size="txtOpenSansRomanSemiBold14"
+                    size="txtLatoRegular15Gray700"
                   >
                     Ensuring Safety with Strategic Audits.
                   </Text>
@@ -361,7 +361,7 @@ const HomepagePage = () => {
                   </Text>
                   <Text
                     className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
-                    size="txtOpenSansRomanSemiBold14"
+                    size="txtLatoRegular15Gray700"
                   >
                     Assessing Today, Securing Tomorrow.
                   </Text>
@@ -391,7 +391,7 @@ const HomepagePage = () => {
                   </Text>
                   <Text
                     className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
-                    size="txtOpenSansRomanSemiBold14"
+                    size="txtLatoRegular15Gray700"
                   >
                     Our counter-drone technology stands vigilant.
                   </Text>
@@ -421,7 +421,7 @@ const HomepagePage = () => {
                   </Text>
                   <Text
                     className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
-                    size="txtOpenSansRomanSemiBold14"
+                    size="txtLatoRegular15Gray700"
                   >
                     Training the first line of defense.
                   </Text>
