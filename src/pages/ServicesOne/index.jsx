@@ -182,7 +182,7 @@ const ServicesOnePage = () => {
                 ser_data.map((data,index)=>(
                   <div key={index} className="Single_cont" onClick={()=>navigate(data.path)} onMouseEnter={(e) => handleMouseEnter(e, index, data.hover)} onMouseLeave={(e) => handleMouseLeave(e, index, data.image)}>
                     <img className="vector" src={data.image} alt="guard" />
-                    <Text size="txtOpenSansRomanBold24" className=" mt-12 text-xl ml-6 md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]" >{data.title}</Text>
+                    <Text size="txtOpenSansRomanBold24" className=" mt-12 text-2xl ml-6 md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]" >{data.title}</Text>
                     <p className="desc">{data.desc}</p>
                   </div>
                 ))
@@ -223,8 +223,8 @@ const ServicesOnePage = () => {
                     Housekeeping
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[26px]  md:ml-[0] ml-[3px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-[98%] sm:w-full"
-                    size="txtOpenSansRomanRegular16"
+                    className="leading-[24.00px] mb-[26px]  md:ml-[0] ml-[3px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-[98%] sm:w-full font-bold"
+                    size="txtLatoRegular15Gray700"
                   >
                     <>Beyond Clean: It&#39;s Housekeeping Brilliance.</>
                   </Text>
@@ -236,14 +236,14 @@ const ServicesOnePage = () => {
                     alt="propertyagent"
                   />
                   <Text
-                    className="mt-[50px] text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="mt-[50px] text-2xl md:text-[22px]  text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     NRI Property
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
-                    size="txtOpenSansRomanRegular16"
+                    className="leading-[24.00px] mb-[23px] mt-[3px] font-bold text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                    size="txtLatoRegular15Gray700"
                   >
                     NRI Property Solutions at Your Service.
                   </Text>
