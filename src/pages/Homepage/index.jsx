@@ -262,7 +262,7 @@ const HomepagePage = () => {
                     Security Guards
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
                     size="txtLatoRegular15Gray700"
                   >
                     Guarding the Now, Securing the Future.
@@ -293,7 +293,7 @@ const HomepagePage = () => {
                     Security Infra
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
                     size="txtLatoRegular15Gray700"
                   >
                     Guarding Tomorrow's Security Today.
@@ -329,7 +329,7 @@ const HomepagePage = () => {
                     Security Audits
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
                     size="txtLatoRegular15Gray700"
                   >
                     Ensuring Safety with Strategic Audits.
@@ -360,7 +360,7 @@ const HomepagePage = () => {
                     Risk Assessment
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
                     size="txtLatoRegular15Gray700"
                   >
                     Assessing Today, Securing Tomorrow.
@@ -390,7 +390,7 @@ const HomepagePage = () => {
                     Drones
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
                     size="txtLatoRegular15Gray700"
                   >
                     Our counter-drone technology stands vigilant.
@@ -420,7 +420,7 @@ const HomepagePage = () => {
                     Security Training
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
                     size="txtLatoRegular15Gray700"
                   >
                     Training the first line of defense.
