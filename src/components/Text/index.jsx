@@ -34,7 +34,7 @@ const sizeClasses = {
   txtOpenSansRomanBold24: "font-bold font-opensans",
   txtRedHatDisplayRomanBold36: "font-bold font-redhatdisplay",
 };
-txtPoppinsSemiBold36
+
 const Text = ({ children, className = "", size, as, isActive, onClick, ...restProps }) => {
   const Component = as || "p";
 
