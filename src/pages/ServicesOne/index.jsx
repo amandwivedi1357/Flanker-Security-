@@ -210,7 +210,7 @@ const ServicesOnePage = () => {
                 </Text>
               </div>
               <div className="flex sm:flex-col flex-row font-opensans sm:gap-[55px] items-center justify-between w-full">
-                <div className="bg-white-A700 transition bg-white duration-300 ease-in-out shadow-2xl cursor-pointer hover:bg-orange-400 flex sm:flex-1 flex-col items-start justify-end p-6 sm:px-5 rounded-sm w-[46%] sm:w-[80%]" onClick={()=>navigate('/housekeeping')}>
+                <div className="bg-white-A700 transition bg-white duration-300 ease-in-out shadow-2xl cursor-pointer hover:bg-orange-400 flex sm:flex-1 flex-col items-start justify-end p-6 sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/housekeeping')}>
                   <Img
                     className="h-[60px] mt-[34px] w-[60px]"
                     src="images/img_cleaningcart.svg"
@@ -229,7 +229,7 @@ const ServicesOnePage = () => {
                     <>Beyond Clean: It&#39;s Housekeeping Brilliance.</>
                   </Text>
                 </div>
-                <div className="bg-white-A700 transition bg-white duration-300 ease-in-out cursor-pointer shadow-2xl hover:bg-orange-400 border border-gray-500_1e border-solid flex sm:flex-1 flex-col items-start justify-end p-[27px] sm:px-5 rounded-sm w-[46%] sm:w-[80%]" onClick={()=>navigate('/nri-properties')}>
+                <div className="bg-white-A700 transition bg-white duration-300 ease-in-out cursor-pointer   shadow-2xl hover:bg-orange-400 border border-gray-500_1e border-solid flex sm:flex-1 flex-col items-start justify-end p-[27px] sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/nri-properties')}>
                   <Img
                     className="h-[50px] mt-[43px] w-[50px]"
                     src="images/img_propertyagent.svg"
