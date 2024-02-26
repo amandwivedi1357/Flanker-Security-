@@ -239,7 +239,7 @@ const HomepagePage = () => {
                
                 <Slider1/>
                 
-                <div className={`bg-white-A700 mr-6 shadow-xl rounded-md  sm:hidden hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end md:ml-[0] ml-[200px] p-[27px] sm:px-5 w-[22%] md:w-full transition-all duration-400 ${
+                <div className={`bg-white-A700 mr-6 shadow-xl   sm:hidden hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end md:ml-[0] ml-[200px] p-[27px] sm:px-5 w-[22%] md:w-full transition-all duration-400 rounded-xl ${
                     isHovered7 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered7(true)}
@@ -270,7 +270,7 @@ const HomepagePage = () => {
                 </div>
                 
                 <div
-                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 ml-6 sm:ml-[2%] flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 ml-6 sm:ml-[2%] flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400 rounded-xl ${
                     isHovered4 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered4(true)}
@@ -306,7 +306,7 @@ const HomepagePage = () => {
                 
                 
                 <div 
-                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400  ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400 rounded-xl  ${
                     isHovered1 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered1(true)}
@@ -336,7 +336,7 @@ const HomepagePage = () => {
                   </Text>
                 </div>
                 <div
-                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400 rounded-xl ${
                     isHovered5 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered5(true)}
@@ -367,7 +367,7 @@ const HomepagePage = () => {
                   </Text>
                 </div>
                 <div
-                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400 rounded-xl ${
                     isHovered2 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered2(true)}
@@ -397,7 +397,7 @@ const HomepagePage = () => {
                   </Text>
                 </div>
                 <div
-                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 ${
+                  className={`bg-white-A700 shadow-xl sm:hidden cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 w-[22%] md:w-full transition-all duration-400 rounded-xl ${
                     isHovered3 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered3(true)}
