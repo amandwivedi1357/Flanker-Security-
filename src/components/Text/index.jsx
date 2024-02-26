@@ -20,7 +20,7 @@ const sizeClasses = {
   txtLatoRegular15: "font-lato font-normal",
   txtRedHatDisplayRomanMedium14: "font-medium font-redhatdisplay",
   txtPoppinsRegular36: "font-normal font-poppins",
-  txtOpenSansRomanRegular16: "font-normal font-opensans",
+  txtOpenSansRomanRegular16: "font-semibold font-opensans",
   txtOpenSansRomanSemiBold14: "font-opensans font-semibold",
   txtPoppinsRegular16: "font-normal font-poppins",
   txtPoppinsSemiBold24: "font-poppins font-semibold",

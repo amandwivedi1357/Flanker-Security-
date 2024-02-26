@@ -170,8 +170,8 @@ const ServicesOnePage = () => {
                 premium services
               </Text>
               <Text
-                className="capitalize text-4xl sm:mb-2 sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px]"
-                size="txtRedHatDisplayRomanBold36"
+                className="capitalize text-4xl sm:mb-2 font-[600] sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px]"
+                size="txtPoppinsRegular36"
               >
                 Security Services
               </Text>
@@ -182,8 +182,8 @@ const ServicesOnePage = () => {
                 ser_data.map((data,index)=>(
                   <div key={index} className="Single_cont" onClick={()=>navigate(data.path)} onMouseEnter={(e) => handleMouseEnter(e, index, data.hover)} onMouseLeave={(e) => handleMouseLeave(e, index, data.image)}>
                     <img className="vector" src={data.image} alt="guard" />
-                    <Text  className="title leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full" size="txtOpenSansRomanSemiBold14">{data.title}</Text>
-                    <p className="desc">{data.desc}</p>
+                    <Text  className="title leading-[24.00px] mb-[23px] mt-[3px] font-[600] text-black-900_b2 text-sm tracking-[0.25px] w-full" size="txtPoppinsBold60">{data.title}</Text>
+                    <p className="desc font-opensans">{data.desc}</p>
                   </div>
                 ))
               }
@@ -203,8 +203,8 @@ const ServicesOnePage = () => {
                   premium services
                 </Text>
                 <Text
-                  className="capitalize text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px]"
-                  size="txtRedHatDisplayRomanBold36"
+                  className="capitalize text-4xl font-[600] sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px]"
+                  size="txtPoppinsBold60"
                 >
                   Property management services
                 </Text>
@@ -223,8 +223,8 @@ const ServicesOnePage = () => {
                     Housekeeping
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[26px] md:ml-[0] ml-[3px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-[98%] sm:w-full"
-                    size="txtOpenSansRomanSemiBold14"
+                    className="leading-[24.00px] mb-[26px]  md:ml-[0] ml-[3px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-[98%] sm:w-full"
+                    size="txtOpenSansRomanRegular16"
                   >
                     <>Beyond Clean: It&#39;s Housekeeping Brilliance.</>
                   </Text>
@@ -243,7 +243,7 @@ const ServicesOnePage = () => {
                   </Text>
                   <Text
                     className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
-                    size="txtOpenSansRomanSemiBold14"
+                    size="txtOpenSansRomanRegular16"
                   >
                     NRI Property Solutions at Your Service.
                   </Text>

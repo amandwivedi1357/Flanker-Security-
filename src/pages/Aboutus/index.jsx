@@ -29,13 +29,13 @@ const SlidesData2 = [
                   className="capitalize leading-[49.00px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
                   size="txtPoppinsSemiBold36"
                 >
-                  <span className="text-gray-900 font-redhatdisplay text-left font-normal">
+                  <span className="text-gray-900 font-poppins text-left font-normal">
                     We Provide services for{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay text-left font-bold">
+                  <span className="text-gray-900 font-poppins text-left font-[600]">
                     multiple{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay text-left font-bold">
+                  <span className="text-gray-900 font-poppins text-left font-[600]">
                     customers in various industries worldwide
                   </span>
                 </Text>
@@ -78,13 +78,13 @@ const SlidesData2 = [
                   className="capitalize leading-[49.00px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
                   size="txtPoppinsSemiBold36"
                 >
-                  <span className="text-gray-900 font-redhatdisplay text-left font-normal">
+                  <span className="text-gray-900 font-poppins text-left font-normal">
                     We Provide services for{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay text-left font-bold">
+                  <span className="text-gray-900 font-poppins text-left font-[600]">
                     multiple{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay text-left font-bold">
+                  <span className="text-gray-900 font-poppins text-left font-[600]">
                     customers in various industries worldwide
                   </span>
                 </Text>
@@ -125,20 +125,20 @@ const slidesData = [
                   className="leading-[50.00px] md:text-3xl sm:text-[17px] sm:leading-[35.00px] text-[32px] text-center text-gray-900 tracking-[1.00px] w-full "
                   size="txtRedHatDisplayRomanRegular32"
                 >
-                  <span className="text-gray-900 font-redhatdisplay font-normal">
+                  <span className="text-gray-900 font-poppins font-normal">
                     To usher in a paradigm shift in{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay font-bold">
+                  <span className="text-gray-900 font-poppins font-[600]">
                     security services
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay font-normal">
+                  <span className="text-gray-900 font-poppins font-normal">
                     {" "}
                     &{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay font-bold">
+                  <span className="text-gray-900 font-poppins font-[600]">
                     Property Management{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay font-normal">
+                  <span className="text-gray-900 font-poppins font-normal">
                     through innovation & Automation
                   </span>
                 </Text>
@@ -185,20 +185,20 @@ const slidesData = [
                   className="leading-[50.00px] md:text-3xl sm:text-[17px] sm:leading-[35.00px] text-[32px] text-center text-gray-900 tracking-[1.00px] w-full "
                   size="txtRedHatDisplayRomanRegular32"
                 >
-                  <span className="text-gray-900 font-redhatdisplay font-normal">
+                  <span className="text-gray-900 font-poppins font-normal">
                     To usher in a paradigm shift in{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay font-bold">
+                  <span className="text-gray-900 font-poppins font-[600]">
                     security services
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay font-normal">
+                  <span className="text-gray-900 font-poppins font-normal">
                     {" "}
                     &{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay font-bold">
+                  <span className="text-gray-900 font-poppins font-[600]">
                     Property Management{" "}
                   </span>
-                  <span className="text-gray-900 font-redhatdisplay font-normal">
+                  <span className="text-gray-900 font-poppins font-normal">
                     through innovation & Automation
                   </span>
                 </Text>
