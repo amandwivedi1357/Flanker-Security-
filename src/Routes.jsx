@@ -15,6 +15,8 @@ const Investigation = React.lazy(() => import("./pages/Investigation/index"));
 const Audits = React.lazy(() => import("./pages/Audits/index"));
 const ServicesOne = React.lazy(() => import("pages/ServicesOne"));
 const Aboutus = React.lazy(() => import("./pages/Aboutus/index"));
+const House = React.lazy(()=>import("./pages/HouseKeepings/index"))
+const Nri = React.lazy(()=>import("./pages/Nri/index"))
 
 export const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -52,6 +54,8 @@ const ProjectRoutes = () => {
           <Route path="/services" element={<ServicesOne />} />
           <Route path="/contactform" element={<Contactform />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/housekeeping" element={<House />} />
+          <Route path="/nri-properties" element={<Nri />} />
           <Route path="/aboutusone" element={<AboutusOne />} />
         </Routes>
       </Router>

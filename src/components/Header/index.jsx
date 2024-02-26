@@ -3,7 +3,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Img, Text } from "components";
 import { MdOutlineMenu } from "react-icons/md";
 import Sidebar from "./Sidebar";
-
+// import "./header.css"
 const Header = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -22,18 +22,18 @@ const Header = (props) => {
             alt="rectangle21748"
           /> */}
         </NavLink>
-        <div className="bg-white-A700_11 flex md:flex-col flex-row md:gap-5 items-center justify-start p-[30px] sm:px-5 shadow-bs1 w-full">
-          <div className="flex items-center sm:w-full">
+        <div className="bg-white-A700_11 flex md:flex-col  flex-row md:gap-5 items-center justify-start p-[30px] sm:px-5 shadow-bs1 w-full">
+          <div className="flex items-center sm:w-full w-[30%] ">
             <NavLink to="/" className="nav-link">
               <Img
                 onClick={() => navigate("/")}
-                className="cursor-pointer h-[65px] sm:h-[40px] w-[65px] sm:w-[40px] ml-5 md:ml-[0] object-cover "
+                className="cursor-pointer h-[65px] sm:h-[40px] w-[65px] sm:w-[40px]  md:ml-[0] object-cover "
                 src="images/logo.svg"
                 alt="whatsappimageTwenty"
               />
             </NavLink>
             <Text onClick={()=>navigate('/')}
-              className={` sm:mt-[-0.5%] cursor-pointer bg-clip-text bg-gradient sm:text-base capitalize ml-2 text-transparent text-xl tracking-[0.25px] ${
+              className={` sm:mt-[-0.5%] cursor-pointer bg-clip-text bg-gradient sm:text-base capitalize ml-2 text-transparent text-xl tracking-[0.25px]  ${
                 location.pathname === "/" ? "active-link" : ""
               }`}
               size="txtPoppinsRegular20"
@@ -41,13 +41,13 @@ const Header = (props) => {
               FLANKER SECURITY
             </Text>
             
-    <MdOutlineMenu className="text-white-A700 cursor-pointer text-4xl sm:block hidden sm:ml-16" onClick={toggleSidebar}/>
+    <MdOutlineMenu className="text-white-A700 cursor-pointer text-4xl sm:block hidden float-right ml-10" onClick={toggleSidebar}/>
     <a href="tel:+919100792007">
-  <img src="images/small_phone.png" className="sm:block hidden ml-3" alt="" />
+  <img src="images/small_phone.png" className="sm:block hidden ml-3 w-7 rounded-full" alt="" />
 </a>
 
           </div>
-          <ul className="flex md:flex-1 sm:flex-col flex-row gap-8 sm:hidden items-start justify-center md:ml-[0] ml-[132px] w-[30%] md:w-full common-row-list">
+          <ul className=" flex md:flex-1    sm:flex-col flex-row gap-8 sm:hidden items-start justify-center md:ml-[0] ml-[132px] w-[40%] md:w-full common-row-list">
             <NavLink
               to="/aboutus"
               className={`nav-link ${
@@ -125,11 +125,11 @@ const Header = (props) => {
               </li>
             </NavLink>
           </ul>
-          <div className="bg-white-A700 flex md:flex-1 flex-col items-start justify-end md:ml-[0] ml-[247px] md:mt-0 my-[15px] p-[5px] pr-6 rounded-[21px]  md:w-full sm:hidden">
-            <div className="flex flex-row gap-3 items-start justify-start  md:w-full">
+          <div className="bg-white-A700 flex md:flex-1 flex-col items-start justify-end   md:ml-[0] ml-[207px] md:mt-0  p-[5px]  rounded-[21px] w-[18%]  md:w-full sm:hidden">
+            <div className="flex flex-row gap-3 items-start justify-start  md:w-full ">
               <div className="bg-gradient  flex flex-col h-[31px] items-center justify-start p-[9px] rounded-[15px]">
                 <Img
-                  className="h-[11px] w-[11px]"
+                  className="h-[11px] w-[11px] "
                   src="images/img_call.svg"
                   alt="call"
                 />

@@ -340,7 +340,7 @@ const Guard = () => {
           </div>
         </div>
         <Banner/>
-        <Footer className="flex items-center justify-center mt-[29px] md:px-5 w-full" />
+        <Footer className="flex items-center justify-center mt-[29px] md:px-5 w-full bg-gray-900_01" />
       </div>
       {toast && <Toast message={toast.message} type={toast.type} onClose={handleCloseToast} />}
     </>

@@ -347,7 +347,7 @@ const AboutusPage = () => {
             </Text>
           </div>
           <Banner />
-          <Footer className="flex items-center justify-center mt-10 md:px-5 w-full" />
+          <Footer className="flex items-center justify-center mt-10 md:px-5 w-full bg-gray-900_01" />
         </div>
       </div>
     </>

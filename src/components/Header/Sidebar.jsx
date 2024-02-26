@@ -13,19 +13,19 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
       </div>
       <ul className="py-4 mt-16">
         <li className="text-center p-4 flex items-center justify-between text-white-A700" onClick={() => navigate('/')}>
-          <span className="hover:text-orange-500">Home →</span>
+          <span className="hover:text-[#fcb131]">Home →</span>
         </li>
         <li className="p-4 flex items-center justify-between text-white-A700" onClick={() => navigate('/aboutus')}>
-          <span className="hover:text-orange-500">About Us →</span>
+          <span className="hover:text-[#fcb131]">About Us →</span>
         </li>
-        <li className="p-4 flex items-center hover:text-orange-500 justify-between text-white-A700" onClick={() => navigate('/services')}>
-          <span className="hover:text-orange-500">Services →</span>
+        <li className="p-4 flex items-center hover:text-[#fcb131] justify-between text-white-A700" onClick={() => navigate('/services')}>
+          <span className="hover:text-[#fcb131]">Services →</span>
         </li>
         <li className="p-4 flex items-center justify-between text-white-A700" onClick={() => navigate('/gallery')}>
-          <span className="hover:text-orange-500">Gallery →</span>
+          <span className="hover:text-[#fcb131]">Gallery →</span>
         </li>
         <li className="p-4 flex items-center justify-between text-white-A700" onClick={() => navigate('/contactform')}>
-          <span className="hover:text-orange-500">Contact Us →</span>
+          <span className="hover:text-[#fcb131]">Contact Us →</span>
         </li>
       </ul>
     </div>

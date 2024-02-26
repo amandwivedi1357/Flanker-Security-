@@ -42,17 +42,17 @@ const GalleryPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col mb-[-20px] font-poppins gap-[27px] items-center justify-start mx-auto w-full">
-        <div className="h-[848px] md:px-5 relative w-full ">
-          <div className="h-[848px] m-auto w-full">
+      <div className="bg-white-A700 flex flex-col mb-[-20px]   font-poppins gap-[27px] items-center justify-start mx-auto w-full">
+        <div className="h-[848px] md:px-5  w-full sm:bg-[#1A1313]">
+          <div className="h-[848px] m-auto w-full ">
             <Img
-              className="h-[848px] m-auto object-cover w-full"
+              className="h-[848px] m-auto object-cover w-full sm:hidden"
               src="images/img_rectangle21985_2.png"
               alt="rectangle21985"
             />
-            <div className="absolute flex flex-col gap-[15px] h-max inset-[0] items-center justify-center m-auto">
+            <div className="absolute flex flex-col gap-[15px] h-max inset-[0] items-center justify-center m-auto ">
               <Text
-                className="capitalize md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px]"
+                className="capitalize md:text-5xl text-6xl sm:font-normal sm:text-3xl text-center text-white-A700 tracking-[0.25px]"
                 size="txtPoppinsBold60"
               >
                 Gallery
@@ -87,7 +87,7 @@ const GalleryPage = () => {
           </div>
         </div>
        
-        <Footer className="flex items-center justify-center md:px-5 w-full" />
+        <Footer className="flex items-center justify-center md:px-5 w-full bg-gray-900_01" />
       </div>
     </>
   );

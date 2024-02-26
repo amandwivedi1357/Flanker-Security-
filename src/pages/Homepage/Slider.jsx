@@ -55,7 +55,7 @@ const Slider1 = () => {
                       className="h-[60px] mt-[35px] text-black-900"
                       src={
                         
-                           "images/infra_black.svg"
+                           "images/infra_yellow.svg"
                           
                       }
                       alt="guard_One"
@@ -90,7 +90,7 @@ const Slider1 = () => {
                       className="h-[60px] mt-[35px] text-black-900"
                       src={
                         
-                           "images/Audits_Black.svg"
+                           "images/Audits_yellow.svg"
                           
                       }
                       alt="guard_One"
@@ -203,6 +203,38 @@ const Slider1 = () => {
             size="txtOpenSansRomanSemiBold14"
           >
             Training the first line of defense.
+          </Text>
+        </div>
+      ),
+    },
+    {
+      id: 7,
+      content: (
+          <div
+          className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 `}
+          
+          onClick={()=>navigate('/investigation')}
+        >
+          <Img
+            className="h-[60px] mt-[35px] text-black-900"
+            src={
+              
+                
+                 "images/img_guard.svg"
+            }
+            alt="guard_One"
+          />
+          <Text
+            className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+            size="txtOpenSansRomanBold24"
+          >
+            Investigation
+          </Text>
+          <Text
+            className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+            size="txtOpenSansRomanSemiBold14"
+          >
+            Uncovering Truths, Ensuring Security.
           </Text>
         </div>
       ),

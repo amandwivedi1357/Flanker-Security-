@@ -73,7 +73,7 @@ const ContactformPage = () => {
       
     }, "PAMSeoabaa0l3PiqP")
       .then((result) => {
-        setToast({ message: 'Thank You for contacting us.', type: 'success' });
+        setToast({ message: 'Thank You for contacting us. We will Contact you soon.', type: 'success' });
 
         console.log(result.text);
         // Clear form fields after successful submission
@@ -335,7 +335,7 @@ const ContactformPage = () => {
             </div>
           </div>
         </div>
-        <Footer className="flex items-center justify-center md:px-5 w-full" />
+        <Footer className="flex items-center justify-center md:px-5 w-full bg-gray-900_01" />
       </div>
     </>
   );

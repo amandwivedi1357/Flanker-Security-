@@ -54,7 +54,7 @@ const Footer = (props) => {
                   info@flankersecurity.com
                 </Text>
               </div>
-              <div className="flex md:flex-1 flex-col gap-[13px] items-start justify-start w-[10%] md:w-full">
+              <div className="flex md:flex-1 flex-col gap-[13px] items-start justify-start w-[12%] md:w-full">
                 <Text
                   className="text-white-A700 text-xl tracking-[0.03px]"
                   size="txtPoppinsRegular20WhiteA700"

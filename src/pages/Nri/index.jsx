@@ -3,9 +3,10 @@ import emailjs from '@emailjs/browser';
 import { Banner, Button, Img, Text, Toast } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
+import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import sec_guard from "../../assets/Event_Sec/sec_guard2.jpg"
-const Training = () => {
+import riskM from "../../assets/Event_Sec/risk management.jpg"
+const Risk = () => {
   const [toast, setToast] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -88,43 +89,42 @@ const Training = () => {
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
         <div className="flex flex-col items-center justify-start p-[82px] md:px-10 sm:px-5 w-full">
-          <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
+          <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[172px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
                 className="h-[488px] sm:h-auto object-cover w-full rounded-xl"
-                // src="images/training.jpg"
-                src={sec_guard}
+                // src="images/risk.jpg"
+                src={riskM}
                 alt="rectangle22116"
               />
               <Text
                 className="mt-[37px] md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
                 size="txtOpenSansRomanBold32"
               >
-                Training{" "}
+                NRI Properties Support: Bridging the Gap for Non-Resident Property Owners{" "}
               </Text>
               <Text
                 className="leading-[29.00px] mt-4 text-[18px] text-black-900_cc tracking-[0.50px] w-full"
                 size="txtLatoRegular15Black900cc"
               >
-                Security training is a critical component of an organization's strategy to safeguard its assets, information, and personnel from potential threats. In an ever-evolving landscape of cyber threats, physical security risks, and compliance requirements, well-trained individuals are essential for maintaining a resilient and secure environment.
+               Support services for Non-Resident Indians (NRIs) managing properties from abroad are crucial in ensuring the effective maintenance and management of real estate assets. These services bridge the geographical gap, providing peace of mind to NRI property owners.
               </Text>
               <Text
                 className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
                 size="txtOpenSansRomanBold20"
               >
-                Key Aspects of Security Training:
+             Key Aspects of NRI Properties Support:
               </Text>
               <Text
-                className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]"
+                className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]"
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-[20px] font-bold">	Physical Security Training:</span>
+                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 			Property Maintenance:</span>
                   <br />
-                 <span className="text-[18px]"> 	Ensuring that personnel are aware of and adhere to physical security measures, including access controls, surveillance, and emergency response procedures.
-              
-                  </span>
-                
+                   	NRI property support services oversee routine maintenance, repairs, and landscaping to ensure the property is well-kept and retains its value.
+                  
+                  
                 </>
               </Text>
               <Text
@@ -133,14 +133,14 @@ const Training = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
-                  Incident Response Training:
+                  Tenant Management:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  	Preparing employees to respond effectively to security incidents, including reporting procedures, communication protocols, and collaboration with incident response teams.
-                    
+                   	For NRI property owners leasing their properties, support services handle tenant interactions, lease agreements, and address tenant concerns on behalf of the owner.
+                   
                   </>
                 </span>
               </Text>
@@ -148,15 +148,63 @@ const Training = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900 font-lato text-left text-[18px] font-bold">
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
-                  Compliance Education:
+                  Legal Compliance:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  	Providing training on industry-specific regulations, standards, and compliance requirements to ensure that employees understand and adhere to legal and regulatory frameworks.
+                   	NRI property support ensures compliance with local laws and regulations related to property ownership, leases, and taxes, minimizing legal risks and complications.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-  xl font-bold">
+                  <>
+                  Financial Management:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Services include rent collection, payment of property-related expenses, and providing financial reports to NRI property owners, ensuring transparent and efficient financial management.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-  xl font-bold">
+                  <>
+                  Communication Bridge:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Acting as a communication bridge between NRI property owners and local stakeholders, including tenants, maintenance staff, and regulatory authorities.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-  xl font-bold">
+                  <>
+                  Emergency Response:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Providing a quick and effective response to emergencies, such as property damage or urgent repairs, on behalf of NRI property owners who may not be physically present.
                   </>
                 </span>
               </Text>
@@ -164,7 +212,19 @@ const Training = () => {
                 className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
                 size="txtOpenSansRomanBold20"
               >
-                Key Components of Effective Security Training Programs:
+             Benefits of NRI Properties Support:
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]"
+                size="txtLatoRegular15Black900cc"
+              >
+                <>
+                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> Peace of Mind:</span>
+                  <br />
+                   	NRI property owners gain peace of mind knowing that their properties are being effectively managed and maintained in their absence.
+                  
+                  
+                </>
               </Text>
               <Text
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
@@ -172,13 +232,13 @@ const Training = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
-                  Customization:
+                  Legal Compliance:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  	Tailoring training programs to the specific needs and risks of the organization. Customization ensures that employees receive relevant and applicable information.
+                   	Ensures adherence to local laws, regulations, and tax requirements, preventing legal complications and safeguarding the owner's interests.
                   </>
                 </span>
               </Text>
@@ -188,13 +248,13 @@ const Training = () => {
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
                   <>
-                  Engagement:
+                  Financial Transparency:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  	Utilizing interactive and engaging training methods, such as simulations, workshops, or scenario-xld exercises, to enhance knowledge retention and application.
+                   	NRI property support services provide transparent financial reporting, ensuring that owners are aware of income, expenses, and overall financial health.
                   </>
                 </span>
               </Text>
@@ -202,120 +262,36 @@ const Training = () => {
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                <span className="text-black-900_01 font-lato text-left text-  xl font-bold">
                   <>
-                  Regular Updates:
-                                      <br />
-                  </>
-                </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
-                  <>
-                  	Keeping training materials up-to-date to address emerging threats, technology changes, and evolving compliance requirements.
-                  </>
-                </span>
-              </Text>
-              <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
-                size="txtLatoMedium20"
-              >
-                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
-                  <>
-                  Continuous Learning:
+                  Property Value Preservation:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  	Encouraging ongoing education and providing resources for employees to stay informed about the latest security trends, technologies, and best practices.
+                   	By ensuring proper maintenance and timely responses to issues, NRI property support services contribute to preserving and potentially enhancing the value of the property.
                   </>
                 </span>
-              </Text>
-              <Text
-                className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
-                size="txtOpenSansRomanBold20"
-              >
-               Benefits of Security Training:
               </Text>
               <Text
                 className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
-                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                <span className="text-black-900_01 font-lato text-left text-  xl font-bold">
                   <>
-                  Risk Mitigation:
+                  Time and Energy Savings:
                     <br />
                   </>
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  	Empowering employees with the knowledge and skills to identify and mitigate security risks, reducing the likelihood of security incidents.
+                   	NRI property owners save time and energy by delegating day-to-day property management tasks to professionals, allowing them to focus on other priorities.
                   </>
                 </span>
               </Text>
-              <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
-                size="txtLatoMedium20"
-              >
-                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
-                  <>
-                  Compliance Adherence:
-                    <br />
-                  </>
-                </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
-                  <>
-                  Ensuring that employees understand and follow compliance requirements, reducing the risk of legal consequences and financial penalties.
-                  </>
-                </span>
-              </Text>
-              <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
-                size="txtLatoMedium20"
-              >
-                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
-                  <>
-                  Improved Incident Response:
-                                      <br />
-                  </>
-                </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
-                  <>
-                  	Enhancing the organization's ability to respond effectively to security incidents, minimizing potential damage and downtime.
-                  </>
-                </span>
-              </Text>
-              <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
-                size="txtLatoMedium20"
-              >
-                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
-                  <>
-                  Cultural Shift:
-                    <br />
-                  </>
-                </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
-                  <>
-                  	Fostering a culture of security awareness and responsibility, where security becomes an integral part of day-to-day operations.
-                  </>
-                </span>
-              </Text>
-              <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
-                size="txtLatoMedium20"
-              >
-                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
-                  <>
-                  Resource Protection:
-                    <br />
-                  </>
-                </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
-                  <>
-                  	Safeguarding the organization's valuable assets, including intellectual property, customer data, and proprietary information.
-                  </>
-                </span>
-              </Text>
+              
+              
             </div>
             
           </div>
@@ -328,4 +304,4 @@ const Training = () => {
   );
 };
 
-export default Training;
+export default Risk;

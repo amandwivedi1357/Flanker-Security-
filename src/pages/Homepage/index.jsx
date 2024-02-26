@@ -34,24 +34,24 @@ const HomepagePage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col items-center mb-[-20px] justify-start mx-auto w-full ">
-        <div className="flex flex-col items-center justify-start w-full">
-          <div className="font-poppins h-[875px] md:px-5 relative w-full sm:bg-[#1A1313]">
+      <div className="bg-white-A700 flex flex-col sm:overflow-hidden items-center mb-[-20px] justify-start mx-auto w-full ">
+        <div className="flex flex-col items-center justify-start w-full ">
+          <div className="font-poppins h-[875px] md:px-5 relative w-full  sm:bg-[#1A1313]">
             <div className=" h-[875px] m-auto w-full">
               <Img
                 className="h-[875px] m-auto object-cover w-full sm:hidden"
                 src="images/img_rectangle21985_875x1440.png"
                 alt="rectangle21985"
               />
-              <div className="absolute bottom-[22%] flex flex-col items-start justify-start left-[7%] ml-[-30px] w-[53%]">
+              <div className="absolute bottom-[22%]  flex flex-col items-start justify-start left-[3%]   w-[53%] ">
                 <Text
-                  className="capitalize leading-[89.00px] sm:text-3xl sm:font-normal  sm:ml-[15%] sm:w-[334px]  md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
+                  className="capitalize leading-[89.00px] sm:text-3xl sm:font-normal  sm:ml-[5%] sm:w-[334px]  md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
                   size="txtPoppinsBold60"
                 >
                   Your Comprehensive Security Provider
                 </Text>
                 <Text
-                  className="leading-[29.00px] mt-4 text-[15px] text-white-A700 sm:ml-[16%] tracking-[0.50px] w-[71%] sm:w-[298px]"
+                  className="leading-[29.00px] mt-4 text-[15px] text-white-A700 sm:ml-[5%] tracking-[0.50px] w-[71%] sm:w-[298px]"
                   size="txtLatoRegular15"
                 >
                   We’re not just a security company, we’re the solution to all
@@ -61,7 +61,7 @@ const HomepagePage = () => {
                   <div className="flex flex-col items-center justify-start w-[47%]">
                     <button
                       onClick={()=>navigate('/contactform')}
-                      className="hover:bg-orange-400 sm:ml-[120%] hover:text-black-900 capitalize border border-orange-400 border-solid shadow-bs text-orange-400 cursor-pointer font-medium h-11 leading-[normal] min-w-[143px] text-base  text-center tracking-[0.16px]"
+                      className="hover:bg-orange-400 sm:ml-[85%] hover:text-black-900 capitalize border border-orange-400 border-solid shadow-bs text-orange-400 cursor-pointer font-medium h-11 leading-[normal] min-w-[143px] text-base  text-center tracking-[0.16px]"
                       variant="outline"
                     >
                       contact us
@@ -149,10 +149,10 @@ const HomepagePage = () => {
                 </div>
               </div>
             </header> */}
-            <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full"/>
+            <Header className=" absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full"/>
             {/* <Line className="bg-green-400 h-[3px] mt-[3px] rounded-[1px] w-[19%]" /> */}
           </div>
-          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px] mx-auto md:px-5 w-full sm:w-full">
+          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px]  mx-auto md:px-5 w-full sm:w-full">
             <Img
               className="h-[640px] md:h-auto object-cover sm:h-auto sm:mt-[-25%] sm:w-full rounded-xl"
               // src="images/img_rectangle22076_640x502.png"
@@ -161,7 +161,7 @@ const HomepagePage = () => {
             />
             <div className="flex flex-col items-start justify-start md:ml-[0] ml-[125px] md:mt-0 mt-[130px]">
               <Text
-                className="text-gray-600 text-sm tracking-[2.00px] uppercase sm:text-base"
+                className="text-gray-600 text-sm sm:ml-1 tracking-[2.00px] uppercase sm:text-base"
                 size="txtRedHatDisplayRomanMedium14"
               >
                 About us
@@ -187,10 +187,10 @@ const HomepagePage = () => {
                 Trust us with the security of what’s important to you
               </Text>
               <div className="flex flex-row font-poppins gap-[13px] items-center justify-start mt-[23px] w-[56%] md:w-full">
-                <div className="flex flex-col items-center justify-start w-[48%] mt-5 ml-[-4%] sm:ml-[-4%]">
+                <div className="flex flex-col items-center justify-start w-[48%] mt-5 ml-[-4%] sm:ml-[-2%]">
                   <Button
                     onClick={() => navigate("/aboutus")}
-                    className="!text-black-900 hover:bg-transparent hover:outline-orange-400 border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[142px] text-base text-center tracking-[0.16px]"
+                    className="!text-black-900  hover:bg-transparent hover:outline-orange-400 border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[142px] text-base text-center tracking-[0.16px]"
                   >
                     Know More
                   </Button>
@@ -219,10 +219,10 @@ const HomepagePage = () => {
                     />
                   </div>
                   <Text
-                    className="capitalize leading-[49.00px] mt-[15px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
+                    className="capitalize leading-[49.00px] mt-[15px] text-4xl sm:text-[20px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full sm:leading-8 sm:w-[80%]"
                     size="txtHeeboRegular36"
                   >
-                    <span className="text-gray-900 font-redhatdisplay text-left font-normal">
+                    <span className="text-gray-900 font-redhatdisplay text-left font-normal" >
                       Our Services{" "}
                     </span>
                     <span className="text-gray-900 font-redhatdisplay text-left font-bold">
@@ -431,7 +431,7 @@ const HomepagePage = () => {
             </List>
           </div>
           <Text
-            className="mt-[94px] sm:-mt-[30%] sm:text-base  text-gray-600 text-sm tracking-[2.00px] uppercase sm:ml-[-48%]"
+            className="mt-[94px] sm:-mt-[30%] sm:text-base  text-gray-600 text-sm tracking-[2.00px] uppercase sm:ml-[-44%]"
             size="txtRedHatDisplayRomanMedium14"
           >
             why choose us
@@ -500,6 +500,7 @@ const HomepagePage = () => {
                     </span>
                   </span>
                 </div>
+                
                 <div className="flex flex-row items-center justify-between w-[94%] md:w-full">
                   <span className="flex gap-3">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
@@ -515,8 +516,11 @@ const HomepagePage = () => {
                   </span>
                 </div>
               </div>
+             
             </div>
+            
           </div>
+          
           <Text
             className="mt-[150px] text-gray-600 text-sm tracking-[2.00px] uppercase sm:mt-[130%]"
             size="txtRedHatDisplayRomanMedium14"
@@ -709,7 +713,7 @@ const HomepagePage = () => {
             </div>
           </div> */}
           <Banner />
-          <Footer className="flex items-center justify-center mt-10 md:px-5 w-full" />
+          <Footer className="flex items-center justify-center mt-10 md:px-5 w-full bg-gray-900_01" />
         </div>
       </div>
     </>
