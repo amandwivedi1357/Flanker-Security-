@@ -49,7 +49,7 @@ const AboutusOnePage = () => {
               </Text>
               <Text
                 className="capitalize leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
-                size="txtHeeboRegular36"
+                size="txtPoppinsSemiBold36"
               >
                 <span className="text-gray-900 font-redhatdisplay text-left font-normal">
                   We Provide services for{" "}
@@ -168,7 +168,7 @@ const AboutusOnePage = () => {
           </Text>
           <Text
             className="capitalize leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[57%] sm:w-full"
-            size="txtHeeboRegular36"
+            size="txtPoppinsSemiBold36"
           >
             <span className="text-gray-900 font-redhatdisplay text-left font-normal">
               We Provide services for{" "}

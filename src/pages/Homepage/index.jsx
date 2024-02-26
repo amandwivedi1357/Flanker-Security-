@@ -168,7 +168,7 @@ const HomepagePage = () => {
               </Text>
               <Text
                 className="capitalize sm:text-xl sm:w-[95%] leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
-                size="txtHeeboRegular36"
+                size="txtPoppinsSemiBold36"
               >
                 <span className="text-gray-900 font-redhatdisplay text-left font-normal">
                   We Provide services for{" "}
@@ -220,7 +220,7 @@ const HomepagePage = () => {
                   </div>
                   <Text
                     className="capitalize leading-[49.00px] mt-[15px] text-4xl sm:text-[20px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full sm:leading-8 sm:w-[80%]"
-                    size="txtHeeboRegular36"
+                    size="txtPoppinsSemiBold36"
                   >
                     <span className="text-gray-900 font-redhatdisplay text-left font-normal" >
                       Our Services{" "}
@@ -438,7 +438,7 @@ const HomepagePage = () => {
           </Text>
           <Text
             className="capitalize sm:text-xl leading-[49.00px] mt-[19px]  sm:ml-10 text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[57%] sm:w-full transition-all duration-400"
-            size="txtHeeboRegular36"
+            size="txtPoppinsSemiBold36"
           >
             
             <span className="text-gray-900 font-redhatdisplay text-left font-normal">
@@ -529,7 +529,7 @@ const HomepagePage = () => {
           </Text>
           <Text
             className="capitalize sm:text-2xl sm:w-full leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-center text-gray-900 tracking-[1.00px] w-[39%]"
-            size="txtHeeboRegular36"
+            size="txtPoppinsSemiBold36"
           >
             <span className="text-gray-900 font-redhatdisplay font-normal">
               We Provide services for a huge

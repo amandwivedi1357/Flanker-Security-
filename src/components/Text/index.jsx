@@ -1,7 +1,7 @@
 import React from "react";
 
 const sizeClasses = {
-  txtHeeboRegular36: "font-heebo font-normal",
+  txtHeeboRegular36: "font-poppins font-semibold",
   txtLeckerliOneRegular36: "font-leckerlione font-normal",
   txtLatoRegular15Gray700: "font-lato font-normal",
   txtNunitoMedium18: "font-medium font-nunito",
@@ -34,7 +34,7 @@ const sizeClasses = {
   txtOpenSansRomanBold24: "font-bold font-opensans",
   txtRedHatDisplayRomanBold36: "font-bold font-redhatdisplay",
 };
-
+txtPoppinsSemiBold36
 const Text = ({ children, className = "", size, as, isActive, onClick, ...restProps }) => {
   const Component = as || "p";
 
