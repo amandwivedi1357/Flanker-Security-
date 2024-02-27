@@ -43,10 +43,10 @@ const GalleryPage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col mb-[-20px]   font-poppins gap-[27px] items-center justify-start mx-auto w-full">
-        <div className="h-[848px] md:px-5  w-full sm:bg-[#1A1313]">
-          <div className="h-[848px] m-auto w-full ">
+        <div className="h-[648px] md:px-5  w-full sm:bg-[#1A1313]">
+          <div className="h-[648px] m-auto w-full ">
             <Img
-              className="h-[848px] m-auto object-cover w-full sm:hidden"
+              className="h-[648px] m-auto object-cover w-full sm:hidden"
               src="images/img_rectangle21985_2.png"
               alt="rectangle21985"
             />

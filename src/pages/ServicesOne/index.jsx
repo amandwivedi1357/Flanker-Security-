@@ -50,7 +50,7 @@ const ServicesOnePage = () => {
     },
     {
       path:'/training',
-      image:'images/sec_training_yellow.svg',
+      image:'images/training_yel.svg',
       hover:'images/sec_training.svg',
       title:'Security Training',
       desc:'Our counter-drone technology stands vigilant.'
@@ -182,7 +182,7 @@ const ServicesOnePage = () => {
                 ser_data.map((data,index)=>(
                   <div key={index} className="Single_cont" onClick={()=>navigate(data.path)} onMouseEnter={(e) => handleMouseEnter(e, index, data.hover)} onMouseLeave={(e) => handleMouseLeave(e, index, data.image)}>
                     <img className="vector" src={data.image} alt="guard" />
-                    <Text size="txtOpenSansRomanBold24" className=" mt-12 text-2xl ml-6 md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]" >{data.title}</Text>
+                    <Text size="txtOpenSansRomanBold24" className=" mt-12 text-xl ml-6 md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]" >{data.title}</Text>
                     <p className="desc">{data.desc}</p>
                   </div>
                 ))
