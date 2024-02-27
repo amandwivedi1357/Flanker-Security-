@@ -51,7 +51,7 @@ const ServicesOnePage = () => {
     {
       path:'/training',
       image:'images/training_yel.svg',
-      hover:'images/sec_training.svg',
+      hover:'images/training_blackk.svg',
       title:'Security Training',
       desc:'Our counter-drone technology stands vigilant.'
     },
