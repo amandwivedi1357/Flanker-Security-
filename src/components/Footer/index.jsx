@@ -64,7 +64,7 @@ const Footer = (props) => {
                 <ul className="flex flex-col items-start justify-start md:w-full common-column-list">
                   <li>
                     <Text onClick={()=>navigate('/')}
-                      className="capitalize text-base text-white-A700_bc tracking-[0.16px]"
+                      className="hover:text-[#fcb131] capitalize text-base text-white-A700_bc tracking-[0.16px]"
                       size="txtPoppinsRegular16"
                     >
                       Home
@@ -72,7 +72,7 @@ const Footer = (props) => {
                   </li>
                   <li>
                     <Text onClick={()=>navigate('/aboutus')}
-                      className="capitalize mt-[7px] text-base text-white-A700_bc tracking-[0.16px]"
+                      className="hover:text-[#fcb131] capitalize mt-[7px] text-base text-white-A700_bc tracking-[0.16px]"
                       size="txtPoppinsRegular16"
                     >
                       About Us
@@ -80,7 +80,7 @@ const Footer = (props) => {
                   </li>
                   <li>
                     <Text onClick={()=>navigate('/services')}
-                      className="capitalize mt-[7px] text-base text-white-A700_bc tracking-[0.16px]"
+                      className="hover:text-[#fcb131] capitalize mt-[7px] text-base text-white-A700_bc tracking-[0.16px]"
                       size="txtPoppinsRegular16"
                     >
                       Services
@@ -88,7 +88,7 @@ const Footer = (props) => {
                   </li>
                   <li>
                     <Text onClick={()=>navigate('/gallery')}
-                      className="capitalize mt-2.5 text-base text-white-A700_bc tracking-[0.16px]"
+                      className="hover:text-[#fcb131] capitalize mt-2.5 text-base text-white-A700_bc tracking-[0.16px]"
                       size="txtPoppinsRegular16"
                     >
                       Gallery
@@ -96,7 +96,7 @@ const Footer = (props) => {
                   </li>
                   <li>
                     <Text onClick={()=>navigate('/contactform')}
-                      className="capitalize mt-1.5 text-base text-white-A700_bc tracking-[0.16px]"
+                      className="hover:text-[#fcb131] capitalize mt-1.5 text-base text-white-A700_bc tracking-[0.16px]"
                       size="txtPoppinsRegular16"
                     >
                       contact us

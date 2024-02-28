@@ -24,7 +24,7 @@ const GalleryPage = () => {
             />
             <div className="absolute flex flex-col gap-[15px] h-max inset-[0] items-center justify-center m-auto ">
               <Text
-                className="capitalize leading-[72.00px] md:text-5xl text-6xl sm:font-normal sm:text-3xl text-center text-white-A700 tracking-[0.25px] w-[90%] sm:w-[90%]"
+                className="capitalize leading-[102.00px] md:text-5xl text-6xl sm:font-normal sm:text-3xl text-center text-white-A700 tracking-[0.25px] w-[90%] sm:w-[90%]"
                 size="txtPoppinsBold60"
               >
 "Explore Our Security Gallery: Every Image Tells a Story!            </Text>

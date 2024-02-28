@@ -1,0 +1,1 @@
+.slider-container{position:relative;overflow:hidden}.slider-wrapper{display:flex;transition:transform .5s ease}.slide{flex:0 0 100%}.prev-btn,.next-btn{position:absolute;top:50%;transform:translateY(-50%);padding:10px;background-color:#00000080;color:#fff;border:none;cursor:pointer}.prev-btn{left:0}.next-btn{right:0}

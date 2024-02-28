@@ -267,7 +267,7 @@ const AboutusPage = () => {
             why choose us
           </Text>
           <Text
-            className="capitalize leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%] sm:w-full"
+            className="capitalize leading-[49.00px]  mt-[19px] text-4xl sm:text-[25px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%] sm:w-full"
             size="txtPoppinsSemiBold36"
           >
             <span className="text-gray-900 font-poppins text-left font-normal">
@@ -287,11 +287,11 @@ const AboutusPage = () => {
               alt="rectangle22083"
             />
             <div
-              className="sm:hidden rounded-xl absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start p-[54px] md:px-10 sm:px-5 right-[0] w-[53%]"
-              style={{ backgroundImage: "url('images/img_group50520.svg')" }}
+              className="sm:hidden   rounded-lg absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start  p-[54px] md:px-10 sm:px-5 right-[0] w-[53%] bg-[#fcbe54]"
+             
             >
-              <div className="flex  flex-col gap-[34px] items-start justify-start w-[94%] md:w-full">
-                <div className=" flex sm:flex-col flex-row sm:gap-10 items-center justify-between w-full">
+              <div className=" flex flex-col gap-[34px] items-start justify-start w-[94%] md:w-full">
+                <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between w-full">
                   <span className="flex gap-3">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
                     <span className="font-semibold  text-base text-black-900 text-left tracking-[0.25px]">
@@ -310,31 +310,33 @@ const AboutusPage = () => {
                   <span className="flex gap-3">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
                     <span className="font-semibold  text-base text-black-900 text-left tracking-[0.25px]">
-                      Perfection Anytime
+                    Advance Technology
                     </span>
                   </span>
-                  <span className="flex gap-3 ml-6">
+                  <span className="flex gap-3 ml-2">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
                     <span className="font-semibold  text-base text-black-900 text-left tracking-[0.25px]">
-                      Perfection Anytime
+                    Emergency help
                     </span>
                   </span>
                 </div>
+                
                 <div className="flex flex-row items-center justify-between w-[94%] md:w-full">
                   <span className="flex gap-3">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
                     <span className="font-semibold  text-base text-black-900 text-left tracking-[0.25px]">
-                      Perfection Anytime
+                      24/7 Monitoring
                     </span>
                   </span>
-                  <span className="flex gap-3">
+                  <span className="flex gap-3 mr-5">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
                     <span className="font-semibold  text-base text-black-900 text-left tracking-[0.25px]">
-                      Perfection Anytime
+                    Remote Guarding
                     </span>
                   </span>
                 </div>
               </div>
+             
             </div>
             <Text
               className="absolute leading-[29.00px] right-[4%] text-[15px] text-gray-700 top-[16%] tracking-[0.50px] w-[31%] sm:w-full sm:hidden"

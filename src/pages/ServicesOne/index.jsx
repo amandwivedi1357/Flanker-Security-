@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import './ser.css'
 import { Banner, Button, Img, List, Text } from "components";
 import Footer from "components/Footer";
@@ -14,6 +14,9 @@ import CardSlider from "./CardSlider";
 import Slider1 from "pages/Homepage/Slider";
 
 const ServicesOnePage = () => {
+  const [isHovered1, setIsHovered1] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+
   const serviceCardsRef = useRef(null);
   const settings = {
     dots: false, // Hide navigation dots
@@ -209,11 +212,19 @@ const ServicesOnePage = () => {
                   Property management services
                 </Text>
               </div>
-              <div className="flex sm:flex-col flex-row font-opensans sm:gap-[55px] items-center justify-between w-full">
-                <div className="bg-white-A700 transition bg-white duration-300 ease-in-out shadow-2xl cursor-pointer hover:bg-orange-400 flex sm:flex-1 flex-col items-start justify-end p-6 sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/housekeeping')}>
+              <div
+             
+              className="flex sm:flex-col flex-row font-opensans sm:gap-[55px] items-center justify-between w-full">
+                <div  onMouseEnter={() => setIsHovered1(true)}
+              onMouseLeave={() => setIsHovered1(false)}
+               className="bg-white-A700 transition bg-white duration-300 ease-in-out shadow-2xl cursor-pointer hover:bg-orange-400 flex sm:flex-1 flex-col items-start justify-end p-6 sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/housekeeping')}>
                   <Img
                     className="h-[60px] mt-[34px] w-[60px]"
-                    src="images/img_cleaningcart.svg"
+                    src={
+                      isHovered1
+                        ? "images/img_cleaningcart.svg"
+                        : "images/HouseKeep.svg"
+                    }
                     alt="cleaningcart"
                   />
                   <Text
@@ -229,11 +240,18 @@ const ServicesOnePage = () => {
                     <>Beyond Clean: It&#39;s Housekeeping Brilliance.</>
                   </Text>
                 </div>
-                <div className="bg-white-A700 transition bg-white duration-300 ease-in-out cursor-pointer   shadow-2xl hover:bg-orange-400 border border-gray-500_1e border-solid flex sm:flex-1 flex-col items-start justify-end p-[27px] sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/nri-properties')}>
+                <div
+                onMouseEnter={() => setIsHovered2(true)}
+                onMouseLeave={() => setIsHovered2(false)}
+                
+                className="bg-white-A700 transition bg-white duration-300 ease-in-out cursor-pointer   shadow-2xl hover:bg-orange-400 border border-gray-500_1e border-solid flex sm:flex-1 flex-col items-start justify-end p-[27px] sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/nri-properties')}>
                   <Img
                     className="h-[50px] mt-[43px] w-[50px]"
-                    src="images/img_propertyagent.svg"
-                    alt="propertyagent"
+                    src={
+                      isHovered2
+                        ? "images/img_propertyagent.svg"
+                        : "images/propertyAgent.svg"
+                    }alt="propertyagent"
                   />
                   <Text
                     className="mt-[50px] text-xl md:text-[22px]  text-black-900 sm:text-xl tracking-[0.25px]"

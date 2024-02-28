@@ -39,7 +39,7 @@ const Banner = () => {
     }, "PAMSeoabaa0l3PiqP")
       .then((result) => {
       
-        setToast({ message: 'Thank You for contacting us.', type: 'success' });
+        setToast({ message: 'Thank You for contacting us.We will contact you soon!', type: 'success' });
         // Clear form fields after successful submission
         setFormData({
           name: "",

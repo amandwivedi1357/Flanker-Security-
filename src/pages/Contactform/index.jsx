@@ -5,7 +5,7 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 
 const typeOfServiceOptionsList = [
-  { label: "Drones", value: "Drones" },
+  { label: "Drones and Counter Drones", value: "Drones and Counter Drones" },
 
   { label: "Security Audits", value: "Security Audits" },
   { label: "Security Infrastructure", value: "Security Infrastructure" },
@@ -16,19 +16,27 @@ const typeOfServiceOptionsList = [
 ];
 const countryOptionsList = [
   { label: "India", value: "india" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
+  
 ];
 const cityOptionsList = [
-  { label: "Hyderabad", value: "Hyderabad" },
-  { label: "Bangalore", value: "Bangalore" },
   { label: "Mumbai", value: "Mumbai" },
+  { label: "Delhi", value: "Delhi" },
+  { label: "Bangalore", value: "Bangalore" },
+  { label: "Hyderabad", value: "Hyderabad" },
+  { label: "Chennai", value: "Chennai" },
+  { label: "Kolkata", value: "Kolkata" },
+  { label: "Ahmedabad", value: "Ahmedabad" },
+  { label: "Pune", value: "Pune" },
+  { label: "Surat", value: "Surat" },
+  { label: "Jaipur", value: "Jaipur" },
+  { label: "Lucknow", value: "Lucknow" },
+  { label: "Kanpur", value: "Kanpur" },
+  { label: "Nagpur", value: "Nagpur" },
+  { label: "Visakhapatnam", value: "Visakhapatnam" },
+  { label: "Indore", value: "Indore" }
 ];
-const postalCodeOptionsList = [
-  { label: "Option1", value: "option1" },
-  { label: "Option2", value: "option2" },
-  { label: "Option3", value: "option3" },
-];
+
+
 
 const ContactformPage = () => {
   const [toast, setToast] = useState(null);
@@ -246,27 +254,7 @@ const ContactformPage = () => {
                     </div>
                     <div className="flex sm:flex-1 flex-col items-center justify-start w-[47%] sm:w-full">
                       <div className="flex flex-col items-center justify-start w-full">
-                        <SelectBox  required
-                          className="text-[15px] text-left tracking-[1.20px] w-full"
-                          placeholderClassName="text-gray-600_a0"
-                          indicator={
-                            <Img
-                              className="h-6 mr-[0] w-6"
-                              src="images/img_arrow_drop_down.svg"
-                              alt="Arrow Drop Down"
-                            />
-                          }
-                          isMulti={false}
-                          name="postalCode"
-                          options={postalCodeOptionsList}
-                          isSearchable={false}
-                          placeholder="Postal Code"
-                          shape="square"
-                          color="gray_600"
-                          variant="outline"
-                          onChange={selectedValue => handleChange(selectedValue, { name: "postalCode" })}
-                          value = {formData.postalCode}
-                        />
+                      <input  required name="postalCode" onChange={e => handleChange(e.target.value, { name: "postalCode" })} value={formData.postalCode} placeholder=" Postal Code" className="border-b border-gray-600 border-solid sm:pr-5 pr-[35px] placeholder-gray-600_a0 py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full"/>
                       </div>
                     </div>
                   </div>
