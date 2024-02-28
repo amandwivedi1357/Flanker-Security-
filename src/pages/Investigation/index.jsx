@@ -64,10 +64,10 @@ const Investigation = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col mb-[-20px] font-poppins items-center justify-start mx-auto w-full">
-        <div className="md:h-[848px] h-[875px] md:px-5 relative w-full ">
-          <div className="absolute h-[848px] inset-[0] justify-center  w-full">
+        <div className="md:h-[848px] h-[675px] md:px-5 relative w-full ">
+          <div className="absolute h-[648px] inset-[0] justify-center  w-full">
             <Img
-              className="h-[848px] m-auto object-cover w-full"
+              className="h-[648px] m-auto object-cover w-full"
               src="images/img_rectangle21985_1.png"
               alt="rectangle21985"
             />
