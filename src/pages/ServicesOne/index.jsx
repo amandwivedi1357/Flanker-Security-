@@ -46,49 +46,49 @@ const ServicesOnePage = () => {
       image:'images/drones_new_yellow.svg',
       hover:'images/drone_new.svg',
       title:'Drones',
-      desc:'Our counter-drone  technology stands vigilant.'
+      desc:'Our counter-drone technology stands vigilant.'
     },
     {
       path:'/training',
       image:'images/training_yel.svg',
       hover:'images/training_blackk.svg',
       title:'Security Training',
-      desc:'Our counter-drone technology stands vigilant.'
+      desc:'Training the first line of defense.'
     },
     {
       path:'/guards',
       hover:'images/img_guard_black_900.svg',
       image:"images/img_guard.svg",
       title:'Security Guards',
-      desc:'Our counter-drone technology stands vigilant.'
+      desc:'Guarding the Now, Securing the Future.'
     },
     {
       path:'/infrastructure',
       hover:'images/infra_black.svg',
       image:'images/infra_yellow.svg',
       title:'Security Infra',
-      desc:'Our counter-drone technology stands vigilant.'
+      desc:`Guarding Tomorrow's Security Today.`
     },
     {
       path:'/risk-assessment',
       hover:'images/Risk_black.svg',
       image:'images/Risk_yellow.svg',
       title:'Risk Assessment',
-      desc:'Our counter-drone technology stands vigilant.'
+      desc:'Assessing Today, Securing Tomorrow.'
     },
     {
       path:'/investigation',
       hover:'images/img_guard_black_900.svg',
       image:'images/img_guard.svg',
       title:'Investigation',
-      desc:'Our counter-drone technology stands vigilant.'
+      desc:'Expert security investigations uncover threats accurately.'
     },
     {
       path:'/security-audits',
       image:'images/Audits_yellow.svg',
       hover:'images/Audits_Black.svg',
       title:'Security Audits',
-      desc:'Our counter-drone technology stands vigilant.'
+      desc:'Ensuring Safety with Strategic Audits.'
     },
   ]
   function handleMouseEnter(event, index, hoverImage) {
@@ -134,10 +134,10 @@ const ServicesOnePage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center mb-[-20px] justify-start mx-auto w-full">
-        <div className="md:h-[848px] h-[875px] md:px-5 relative w-full ">
-          <div className="absolute h-[848px] inset-[0] justify-center  w-full">
+        <div className="md:h-[755px] h-[655px] md:px-5 relative w-full ">
+          <div className="absolute h-[655px] inset-[0] justify-center  w-full">
             <Img
-              className="h-[848px] m-auto object-cover w-full"
+              className="h-[655px] m-auto object-cover w-full"
               src="images/img_rectangle21985_848x1440.png"
               alt="rectangle21985"
             />
@@ -180,9 +180,9 @@ const ServicesOnePage = () => {
             <div className="ser_cont">
               {
                 ser_data.map((data,index)=>(
-                  <div key={index} className="Single_cont" onClick={()=>navigate(data.path)} onMouseEnter={(e) => handleMouseEnter(e, index, data.hover)} onMouseLeave={(e) => handleMouseLeave(e, index, data.image)}>
+                  <div key={index} className="Single_cont shadow-xl" onClick={()=>navigate(data.path)} onMouseEnter={(e) => handleMouseEnter(e, index, data.hover)} onMouseLeave={(e) => handleMouseLeave(e, index, data.image)}>
                     <img className="vector" src={data.image} alt="guard" />
-                    <Text size="txtOpenSansRomanBold24" className=" mt-12 text-xl ml-6 md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]" >{data.title}</Text>
+                    <Text size="txtOpenSansRomanBold24" className=" mt-12 text-xl mb-2 ml-6 md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]" >{data.title}</Text>
                     <p className="desc">{data.desc}</p>
                   </div>
                 ))
@@ -217,13 +217,13 @@ const ServicesOnePage = () => {
                     alt="cleaningcart"
                   />
                   <Text
-                    className="md:ml-[0] ml-[3px] mt-[52px] text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="md:ml-[0] ml-[3px] mt-[52px] text-xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     Housekeeping
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[26px]  md:ml-[0] ml-[3px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-[98%] sm:w-full font-bold"
+                    className="leading-[24.00px] mb-[26px]  md:ml-[0] ml-[3px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-[98%] sm:w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
                     <>Beyond Clean: It&#39;s Housekeeping Brilliance.</>
@@ -236,13 +236,13 @@ const ServicesOnePage = () => {
                     alt="propertyagent"
                   />
                   <Text
-                    className="mt-[50px] text-2xl md:text-[22px]  text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="mt-[50px] text-xl md:text-[22px]  text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     NRI Property
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] font-bold text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                    className="leading-[24.00px] mb-[23px] mt-[3px] font-normal text-black-900_b2 text-sm tracking-[0.25px] w-full"
                     size="txtLatoRegular15Gray700"
                   >
                     NRI Property Solutions at Your Service.

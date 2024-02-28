@@ -21,13 +21,17 @@
 .gal_cont{
     margin: auto;
     width: 90%;
-    height: 30rem;
-    border: 1px solid red;
+    
+    margin-top: 2rem;
+    
 }
 .image-container {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
+    
+    width: 90%;
+    
     margin: auto;
+    margin-top: 2rem;
+    
   }
   
   .image-wrapper {

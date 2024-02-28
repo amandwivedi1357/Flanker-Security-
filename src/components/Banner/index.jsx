@@ -65,7 +65,7 @@ const Banner = () => {
         src={Banner1}
         alt="rectangle22077"
       />
-      <form onSubmit={sendEmail} className="sm:ml-auto rounded-xl sm:mt-[5%] sm:w-[85%] absolute bg-white-A700 flex flex-col gap-[52px] h-max inset-y-[0] items-start justify-center my-auto p-[60px] md:px-10 sm:px-5 right-[7%]  w-[43%]">
+      <form onSubmit={sendEmail} className="sm:ml-auto rounded-lg sm:mt-[5%] sm:w-[85%] absolute bg-white-A700 flex flex-col gap-[52px] h-max inset-y-[0] items-start justify-center my-auto p-[60px] md:px-10 sm:px-5 right-[7%]  w-[43%]">
         <div className=" flex flex-col items-center justify-start mt-[3px] w-full">
           <div className="flex flex-col items-start justify-start w-full">
             <a
@@ -81,7 +81,7 @@ const Banner = () => {
               Have Questions?
             </Text>
             <Text
-              className="text-4xl sm:text-[32px] sm:mx-auto mt-3 md:text-[34px] text-gray-900_e5 tracking-[0.36px]"
+              className="text-4xl  sm:text-[32px] sm:mx-auto mt-4 md:text-[34px] text-gray-900_e5 tracking-[0.36px]"
               size="txtPoppinsSemiBold36"
             >
               Get in Touch!
@@ -93,7 +93,7 @@ const Banner = () => {
                   name="name"
                   value={formData.name}
                   onChange={e => handleChange(e.target.value, { name: "name" })}
-                  className="border-b  border-gray-600 border-solid py-2 text-base ml-[-40px] tracking-[1.20px] outline-none "
+                  className="border-b placeholder:text-gray-300  border-gray-600_a0 border-solid py-2 text-base ml-[-55px] tracking-[1.20px] outline-none "
                   placeholder="Full name"
                 />
               </div>
@@ -103,7 +103,7 @@ const Banner = () => {
                   name="company"
                   value={formData.company}
                   onChange={e => handleChange(e.target.value, { name: "company" })}
-                  className="border-b border-gray-600 border-solid ml-[-40px]  py-2 text-base  tracking-[1.20px] outline-none "
+                  className="border-b placeholder:text-gray-300 border-gray-600_a0 border-solid ml-[-55px]  py-2 text-base  tracking-[1.20px] outline-none "
                   placeholder="Company name"
                 />
               </div>
@@ -113,7 +113,7 @@ const Banner = () => {
                   name="email"
                   value={formData.email}
                   onChange={e => handleChange(e.target.value, { name: "email" })}
-                  className="border-b ml-[-40px]  border-gray-600 border-solid py-2 text-base  tracking-[1.20px] outline-none "
+                  className="border-b ml-[-55px] placeholder:text-gray-300 border-gray-600_a0 border-solid py-2 text-base  tracking-[1.20px] outline-none "
                   placeholder="Email Id"
                 />
               </div>
@@ -123,7 +123,7 @@ const Banner = () => {
                   name="phoneNumber"
                   value={formData.phoneNumber}
                   onChange={e => handleChange(e.target.value, { name: "phoneNumber" })}
-                  className="border-b ml-[-40px]  border-gray-600 border-solid py-2 text-base  tracking-[1.20px] outline-none "
+                  className="border-b ml-[-55px] placeholder:text-gray-300  border-gray-600_a0 border-solid py-2 text-base  tracking-[1.20px] outline-none "
                   placeholder="Phone Number"
                 />
               </div>

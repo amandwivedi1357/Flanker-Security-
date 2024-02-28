@@ -47,7 +47,7 @@ const Header = (props) => {
 </a>
 
           </div>
-          <ul className=" flex md:flex-1    sm:flex-col flex-row gap-8 sm:hidden items-start justify-center md:ml-[0] ml-[132px] w-[40%] md:w-full common-row-list">
+          <ul className=" flex md:flex-1    sm:flex-col flex-row gap-8 sm:hidden items-start justify-center md:ml-[0] ml-[-32px] w-[40%] md:w-full common-row-list">
             <NavLink
               to="/aboutus"
               className={`nav-link ${
@@ -58,7 +58,7 @@ const Header = (props) => {
             >
               <li>
                 <Text
-                  className={`capitalize mb-0.5 text-base text-white-A700 tracking-[0.16px] ${
+                  className={`capitalize mb-0.5 text-base text-white-A700 tracking-[0.16px] hover:text-orange-400 ${
                     location.pathname === "/aboutus" ? "active-link" : ""
                   }`}
                   size="txtPoppinsMedium16"
@@ -125,7 +125,7 @@ const Header = (props) => {
               </li>
             </NavLink>
           </ul>
-          <div className="bg-white-A700 flex md:flex-1 flex-col items-start justify-end   md:ml-[0] ml-[207px] md:mt-0  p-[5px]  rounded-[21px] w-[18%]  md:w-full sm:hidden">
+          <div className="bg-white-A700 flex md:flex-1 flex-col items-start justify-end   md:ml-[0] ml-[207px] md:mt-0  p-[5px]  rounded-[21px] w-[15%]  md:w-full sm:hidden">
             <div className="flex flex-row gap-3 items-start justify-start  md:w-full ">
               <div className="bg-gradient  flex flex-col h-[31px] items-center justify-start p-[9px] rounded-[15px]">
                 <Img

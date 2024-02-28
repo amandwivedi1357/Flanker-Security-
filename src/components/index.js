@@ -8,5 +8,6 @@ export { SelectBox } from "./SelectBox";
 export { Slider } from "./Slider";
 export { Text } from "./Text";
 export {Banner} from "./Banner"
+export {QuickLinks} from "./quick"
 export {Toast} from "./Toast"
 

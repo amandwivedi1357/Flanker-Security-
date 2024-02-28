@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
-import { Banner, Button, Img, Text, Toast } from "components";
+import { Banner, Button, Img, QuickLinks, Text, Toast } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import "react-toastify/dist/ReactToastify.css";
@@ -87,7 +87,7 @@ const Training = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className="flex flex-col items-center justify-start p-[82px] md:px-10 sm:px-5 w-full">
+        <div className="flex flex-col items-center justify-start p-[82px] pb-0 md:px-10 sm:px-5 w-full">
           <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
@@ -319,6 +319,7 @@ const Training = () => {
             </div>
             
           </div>
+          <QuickLinks/>
         </div>
         <Banner/>
         <Footer className="flex items-center justify-center mt-[29px] md:px-5 w-full bg-gray-900_01" />

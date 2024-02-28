@@ -36,14 +36,14 @@ const HomepagePage = () => {
     <>
       <div className="bg-white-A700 flex flex-col sm:overflow-hidden items-center mb-[-20px] justify-start mx-auto w-full ">
         <div className="flex flex-col items-center justify-start w-full ">
-          <div className="font-poppins h-[875px] md:px-5 relative w-full  sm:bg-[#1A1313]">
-            <div className=" h-[875px] m-auto w-full">
+          <div className="font-poppins h-[775px] md:px-5 relative w-full  sm:bg-[#1A1313]">
+            <div className=" h-[775px] m-auto w-full">
               <Img
-                className="h-[875px] m-auto object-cover w-full sm:hidden"
+                className="h-[775px] m-auto object-cover w-full sm:hidden"
                 src="images/img_rectangle21985_875x1440.png"
                 alt="rectangle21985"
               />
-              <div className="absolute bottom-[22%]  flex flex-col items-start justify-start left-[3%]   w-[53%] ">
+              <div className="absolute bottom-[20%]  flex flex-col items-start justify-start left-[3%]   w-[53%] ">
                 <Text
                   className="capitalize leading-[89.00px] sm:text-3xl sm:font-normal  sm:ml-[5%] sm:w-[334px]  md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
                   size="txtPoppinsBold60"
@@ -51,7 +51,7 @@ const HomepagePage = () => {
                   Your Comprehensive Security Provider
                 </Text>
                 <Text
-                  className="leading-[29.00px] mt-4 text-[15px] text-white-A700 sm:ml-[5%] tracking-[0.50px] w-[71%] sm:w-[298px]"
+                  className="leading-[29.00px] mt-6 text-[18px] font-[200] text-white-A700 sm:ml-[5%] tracking-[0.50px] w-[71%] sm:w-[298px]"
                   size="txtLatoRegular15"
                 >
                   We’re not just a security company, we’re the solution to all
@@ -181,16 +181,15 @@ const HomepagePage = () => {
                 </span>
               </Text>
               <Text
-                className="mt-[25px] text-[18px] sm:text-base text-black-900_cc tracking-[0.50px] sm:w-full "
-                size="txtLatoRegular15Black900cc"
+                className="mt-[25px] text-[17px] leading-[32.00px] sm:text-base text-gray-700  tracking-[0.50px] sm:w-full "
+                size="txtLatoRegular15Gray700"
               >
-                Trust us with the security of what’s important to you
-              </Text>
+Welcome to Flanker Security Services, your premier security partner. With unwavering dedication, we pride ourselves on being a top provider of comprehensive security services. Our seasoned professionals ensure the highest standards in safeguarding assets, people, and information.              </Text>
               <div className="flex flex-row font-poppins gap-[13px] items-center justify-start mt-[23px] w-[56%] md:w-full">
                 <div className="flex flex-col items-center justify-start w-[48%] mt-5 ml-[-4%] sm:ml-[-2%]">
                   <Button
                     onClick={() => navigate("/aboutus")}
-                    className="!text-black-900  hover:bg-transparent hover:outline-orange-400 border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[142px] text-base text-center tracking-[0.16px]"
+                    className="  bg-transparent hover:bg-orange-400 hover:outline-orange-400 !text-orange-400 hover:!text-black-900 border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[142px] text-base text-center tracking-[0.16px]"
                   >
                     Know More
                   </Button>
@@ -229,17 +228,17 @@ const HomepagePage = () => {
                       Make your business secure
                     </span>
                   </Text>
-                  <Text
+                  {/* <Text
                     className="mt-[25px] text-[15px] text-black-900_cc tracking-[0.50px]"
                     size="txtLatoRegular15Black900cc"
                   >
                     Trust us with the security of what’s important to you
-                  </Text>
+                  </Text> */}
                 </div>
                
                 <Slider1/>
                 
-                <div className={`bg-white-A700 mr-6 shadow-xl   sm:hidden hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end md:ml-[0] ml-[200px] p-[27px] sm:px-5 w-[22%] md:w-full transition-all duration-400 rounded-xl ${
+                <div className={`bg-white-A700 mr-6 shadow-xl   sm:hidden hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end md:ml-[0] ml-[220px] p-[27px] sm:px-5 w-[22%] md:w-full transition-all duration-400 rounded-xl ${
                     isHovered7 ? "hover:bg-orange-400" : ""
                   }`}
                   onMouseEnter={() => setIsHovered7(true)}
@@ -262,7 +261,7 @@ const HomepagePage = () => {
                     Security Guards
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
+                    className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
                     Guarding the Now, Securing the Future.
@@ -293,7 +292,7 @@ const HomepagePage = () => {
                     Security Infra
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
+                    className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
                     Guarding Tomorrow's Security Today.
@@ -329,7 +328,7 @@ const HomepagePage = () => {
                     Security Audits
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
+                    className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
                     Ensuring Safety with Strategic Audits.
@@ -360,7 +359,7 @@ const HomepagePage = () => {
                     Risk Assessment
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
+                    className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
                     Assessing Today, Securing Tomorrow.
@@ -390,7 +389,7 @@ const HomepagePage = () => {
                     Drones
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
+                    className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
                     Our counter-drone technology stands vigilant.
@@ -420,10 +419,10 @@ const HomepagePage = () => {
                     Security Training
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full font-bold"
+                    className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
-                    Training the first line of defense.
+                    Strengthening the first line of defense through training.
                   </Text>
                 </div>
                 
@@ -458,7 +457,7 @@ const HomepagePage = () => {
               alt="rectangle22083"
             />
             <Text
-              className="absolute sm:hidden leading-[29.00px]  right-[3%] text-[18px] text-gray-700 top-[15%] tracking-[0.50px] w-[31%] sm:w-full"
+              className="absolute sm:hidden leading-[32.00px]  right-[3%] text-[17px] text-gray-700 top-[15%] tracking-[0.50px] w-[31%] sm:w-full"
               size="txtLatoRegular15Gray700"
             >
               The Property Management Vertical encompasses the full spectrum of
@@ -467,8 +466,8 @@ const HomepagePage = () => {
               Managers.
             </Text>
             <div
-              className="sm:hidden   rounded-lg absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start p-[54px] md:px-10 sm:px-5 right-[0] w-[53%]"
-              style={{ backgroundImage: "url('images/img_group50520.svg')" }}
+              className="sm:hidden   rounded-lg absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start  p-[54px] md:px-10 sm:px-5 right-[0] w-[53%] bg-[#fcbe54]"
+             
             >
               <div className=" flex flex-col gap-[34px] items-start justify-start w-[94%] md:w-full">
                 <div className="flex sm:flex-col flex-row sm:gap-10 items-center justify-between w-full">
@@ -559,7 +558,7 @@ const HomepagePage = () => {
             items={[...Array(12)].map(() => (
               <React.Fragment key={Math.random()}>
                 <div className="flex flex-col items-center justify-start mx-2.5">
-                  <div className="bg-gray-100 border border-gray-600_23 border-solid flex flex-col items-center justify-end p-[50px] md:px-10 sm:px-5 rounded-sm w-full">
+                  <div className="bg-gray-100   border-solid flex flex-col items-center justify-end p-[50px] md:px-10 sm:px-5 rounded-xl w-full">
                     <div className="flex flex-col items-start justify-start mt-1 w-[96%] md:w-full">
                       <div className="flex flex-row items-center justify-start ml-1 md:ml-[0] w-[46%] md:w-full">
                         <Img
