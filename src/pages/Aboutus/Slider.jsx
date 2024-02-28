@@ -4,7 +4,7 @@ import './Slider.css'; // You can define your styles in this CSS file
 
 
 
-const Slider = ({slidesData}) => {
+const Slider = ({slidesData,time}) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = useRef(null);
 
@@ -15,7 +15,7 @@ const Slider = ({slidesData}) => {
           prevSlide === slidesData.length - 1 ? 0 : prevSlide + 1
         );
       }
-    }, 5000); // Change slide every 5 seconds
+    }, time); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
   }, []);

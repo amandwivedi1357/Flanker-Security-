@@ -82,5 +82,8 @@ transition: background-color 0.3s ease-in-out;
       scroll-snap-align: start;
       flex: 0 0 auto;
     }
+    .vector{
+      width: 40px;
+    }
   }
   

@@ -3,7 +3,7 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Img, Text } from "components";
 import { MdOutlineMenu } from "react-icons/md";
 import Sidebar from "./Sidebar";
-// import "./header.css"
+ import "./header.css"
 const Header = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -58,8 +58,8 @@ const Header = (props) => {
             >
               <li>
                 <Text
-                  className={`capitalize mb-0.5 text-base text-white-A700 tracking-[0.16px] hover:text-orange-400 ${
-                    location.pathname === "/aboutus" ? "active-link" : ""
+                  className={`capitalize  mb-0.5 text-base text-white-A700 tracking-[0.16px] hover:text-orange-400 ${
+                    location.pathname === "/aboutus" ? "active-link" : "breadcrumb-link"
                   }`}
                   size="txtPoppinsMedium16"
                 >
@@ -77,8 +77,8 @@ const Header = (props) => {
             >
               <li>
                 <Text
-                  className={`capitalize mb-0.5 text-base text-white-A700 tracking-[0.16px] ${
-                    location.pathname === "/services"  ? "active-link" : ""
+                  className={`capitalize  mb-0.5 hover:text-orange-400 text-base text-white-A700 tracking-[0.16px] ${
+                    location.pathname === "/services"  ? "active-link" : "breadcrumb-link"
                   }`}
                   size="txtPoppinsMedium16"
                 >
@@ -96,8 +96,8 @@ const Header = (props) => {
             >
               <li>
                 <Text
-                  className={`capitalize mb-0.5 text-base text-white-A700 tracking-[0.16px] ${
-                    location.pathname === "/gallery" ? "active-link" : ""
+                  className={`capitalize mb-0.5 hover:text-orange-400 text-base text-white-A700 tracking-[0.16px] ${
+                    location.pathname === "/gallery" ? "active-link" : " breadcrumb-link"
                   }`}
                   size="txtPoppinsMedium16"
                 >
@@ -115,8 +115,8 @@ const Header = (props) => {
             >
               <li>
                 <Text
-                  className={`capitalize mb-0.5 text-base text-white-A700 tracking-[0.16px] ${
-                    location.pathname === "/contactform" ? "active-link" : ""
+                  className={`capitalize  hover:text-orange-400 mb-0.5 text-base text-white-A700 tracking-[0.16px] ${
+                    location.pathname === "/contactform" ? "active-link" : "breadcrumb-link"
                   }`}
                   size="txtPoppinsMedium16"
                 >

@@ -51,7 +51,7 @@ const HomepagePage = () => {
                   Your Comprehensive Security Provider
                 </Text>
                 <Text
-                  className="leading-[29.00px] mt-6 text-[18px] font-[200] text-white-A700 sm:ml-[5%] tracking-[0.50px] w-[71%] sm:w-[298px]"
+                  className="leading-[29.00px] mt-6 text-[18px] font-[300] text-white-A700 sm:ml-[5%] tracking-[0.50px] w-[71%] sm:w-[298px]"
                   size="txtLatoRegular15"
                 >
                   We’re not just a security company, we’re the solution to all
@@ -452,7 +452,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
           </Text>
           <div className=" font-lato md:h-[auto] h-[553px] max-w-[1242px] mt-[62px] mx-auto md:px-5 relative w-full">
             <Img
-              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full rounded-xl"
+              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-[90%] sm:mx-5 rounded-xl"
               src="images/img_rectangle22083.png"
               alt="rectangle22083"
             />
@@ -527,10 +527,10 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
             TESTIMONIAL
           </Text>
           <Text
-            className="capitalize sm:text-2xl sm:w-full leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-center text-gray-900 tracking-[1.00px] w-[39%]"
+            className="capitalize sm:text-2xl sm:w-[95%] leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-center text-gray-900 tracking-[1.00px] w-[39%]"
             size=""
           >
-            <span className="text-gray-900 font-opensans font-normal">
+            <span className="text-gray-900 font-opensans font-normal ">
               We Provide services for a huge
             </span>
             <span className="text-gray-900 font-opensans font-bold">

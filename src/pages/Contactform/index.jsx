@@ -99,10 +99,10 @@ const ContactformPage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center mb-[-20px] justify-start mx-auto w-full">
-        <div className="md:h-[848px] h-[875px] md:px-5 relative w-full ">
-          <div className="absolute h-[848px] inset-[0] justify-center sm:bg-[#1F1A13]  w-full">
+        <div className="md:h-[848px] h-[648px] md:px-5 relative w-full ">
+          <div className="absolute h-[648px] inset-[0] justify-center sm:bg-[#1F1A13]  w-full">
             <Img
-              className="h-[848px] m-auto object-cover w-full sm:hidden"
+              className="h-[648px] m-auto object-cover w-full sm:hidden"
               src="images/img_rectangle21985_2.png"
               alt="rectangle21985"
             />

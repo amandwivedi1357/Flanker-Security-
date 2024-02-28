@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import emailjs from '@emailjs/browser';
-import { Banner, Button, Img, Text } from "components";
+import { Banner, Button, Img, QuickLinks, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 
@@ -80,7 +80,7 @@ const ServicesPage = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className=" flex flex-col items-center justify-start p-[82px] md:px-10 sm:px-5 w-full">
+        <div className=" flex flex-col items-center justify-start p-[82px] pb-0 md:px-10 sm:px-5 w-full">
           <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
@@ -161,6 +161,102 @@ const ServicesPage = () => {
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
+                  </>
+                </span>
+              </Text>
+              {/* Counter Drones */}
+              <Text
+                className="mt-[45px] md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
+                size="txtOpenSansRomanBold32"
+              >
+               Counter Drones: Safeguarding Against Emerging Threats
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-4 text-[18px] text-black-900_cc tracking-[0.50px] w-full"
+                size="txtLatoRegular15Black900cc"
+              >
+               As drone technology advances, so does the need for effective counter-drone measures to mitigate potential risks. Counter-drone solutions are designed to detect, identify, and neutralize unauthorized or malicious drone activities. These technologies play a crucial role in protecting critical infrastructure, public events, and sensitive locations.
+              </Text>
+              <Text
+                className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
+                size="txtOpenSansRomanBold20"
+              >
+               Counter-Drone Technologies:
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[18px] text-[15px] text-black-900_cc tracking-[0.50px]"
+                size="txtLatoRegular15Black900cc"
+              >
+                <>
+                 <span className="text-black-900 font-lato text-left text-xl font-bold"> 	Radio-Frequency Jammers:</span>
+                  <br />
+                 <span className="text-[18px]">  	Disrupt communication between the drone and its operator by jamming radio frequencies.
+                  <br /></span>
+                  
+               
+                </>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900 font-lato text-left text-xl font-bold">
+                  <>
+                  Drone Detection Systems:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Employ radar, acoustic sensors, and optical technologies to detect and track drones in the vicinity.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  GPS Spoofing and Jamming:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Interfere with the drone's GPS signals, causing it to lose its way or return to its point of origin.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Directed Energy Weapons:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	High-powered lasers or microwave systems designed to disable drones by damaging their electronic components.
+                  </>
+                </span>
+              </Text>
+              <Text
+                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                size="txtLatoMedium20"
+              >
+                <span className="text-black-900_01 font-lato text-left text-xl font-bold">
+                  <>
+                  Drone-capture Nets:
+                    <br />
+                  </>
+                </span>
+                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                  <>
+                   	Physically capture rogue drones using nets launched from the ground or other drones.
                   </>
                 </span>
               </Text>
@@ -262,6 +358,7 @@ const ServicesPage = () => {
               </div>
              
             </div> */}
+            <QuickLinks/>
         </div>
         <Banner/>
         <Footer className="flex items-center justify-center mt-[29px] md:px-5 w-full bg-gray-900_01" />

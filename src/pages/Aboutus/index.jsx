@@ -232,10 +232,10 @@ const AboutusPage = () => {
     <>
       <div className="bg-white-A700 flex flex-col items-center justify-start mx-auto w-full">
         <div className="flex flex-col items-center justify-start w-full mb-[-20px]">
-          <div className="font-poppins md:h-[848px] h-[875px] md:px-5 relative w-full">
-            <div className="absolute h-[848px] inset-[0] justify-center  w-full">
+          <div className="font-poppins md:h-[848px] h-[675px] md:px-5 relative w-full">
+            <div className="absolute h-[648px] inset-[0] justify-center  w-full">
               <Img
-                className="h-[848px] m-auto object-cover w-full"
+                className="h-[648px] m-auto object-cover w-full"
                 src="images/img_rectangle21985.png"
                 alt="rectangle21985"
               />
@@ -256,9 +256,9 @@ const AboutusPage = () => {
             </div>
             <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
           </div>
-          <Slider slidesData={SlidesData2}/>
+          <Slider slidesData={SlidesData2} time={3000}/>
           
-          <Slider slidesData={slidesData}/>
+          <Slider slidesData={slidesData} time={5000}/>
           
           <Text
             className="mt-[151px] text-gray-600 text-sm tracking-[2.00px] uppercase"
