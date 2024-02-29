@@ -267,7 +267,7 @@ const AboutusPage = () => {
             why choose us
           </Text>
           <Text
-            className="capitalize leading-[49.00px]  mt-[19px] text-4xl sm:text-[25px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%] sm:w-full"
+            className="capitalize leading-[49.00px]  mt-[19px] text-4xl sm:text-[25px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%]  sm:w-[90%]"
             size="txtPoppinsSemiBold36"
           >
             <span className="text-gray-900 font-poppins text-left font-normal">
@@ -282,7 +282,7 @@ const AboutusPage = () => {
           </Text>
           <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] mt-[62px] mx-auto md:px-5 relative w-full">
             <Img
-              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full rounded-xl"
+              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-[90%] mx-5 rounded-xl"
               src="images/img_rectangle22083.png"
               alt="rectangle22083"
             />

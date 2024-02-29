@@ -265,7 +265,7 @@ const ContactformPage = () => {
                   </Button>
                 </div>
               </form>
-              <div className="bg-orange-400 rounded-xl rounded-l-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] items-center justify-center p-[54px] md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[410px]">
+              <div className="bg-orange-400 rounded-xl rounded-l-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] items-center justify-center p-[54px] md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[340px] sm:rounded-none">
                 <Text
                   className="mt-[58px] text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[0.36px]"
                   size="txtPoppinsSemiBold36Black900"
@@ -280,7 +280,7 @@ const ContactformPage = () => {
                       alt="location"
                     />
                     <Text
-                      className="sm:flex-1 sm:ml-[15%]  sm:mt-[-15%] leading-[33.00px] sm:text-base  text-black-900_e5_01 text-lg tracking-[0.25px] w-[88%] sm:w-[80%]"
+                      className="sm:flex-1 sm:ml-[15%]  sm:mt-[-16%] leading-[33.00px] sm:text-base  text-black-900_e5_01 text-lg tracking-[0.25px] w-[88%] sm:w-[80%]"
                       size="txtLatoRegular18"
                     >
                       P 1, Karthik Enclave, Road No 1, KPHB Colony, Kukatpally,
@@ -312,7 +312,7 @@ const ContactformPage = () => {
                       alt="lock"
                     />
                     <Text
-                      className="text-black-900_e5_01 text-lg tracking-[0.25px]"
+                      className="text-black-900_e5_01 text-lg tracking-[0.25px] sm:mt-1"
                       size="txtLatoRegular18"
                     >
                       info@flankersecurity.com

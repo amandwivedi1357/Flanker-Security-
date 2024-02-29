@@ -41,7 +41,7 @@ const Header = (props) => {
               FLANKER SECURITY
             </Text>
             
-    <MdOutlineMenu className="text-white-A700 cursor-pointer text-4xl sm:block hidden float-right ml-16" onClick={toggleSidebar}/>
+    <MdOutlineMenu className="text-white-A700 cursor-pointer text-4xl sm:block hidden float-right ml-[4.6rem]" onClick={toggleSidebar}/>
     <a href="tel:+919100792007">
   <img src="images/small_phone.png" className="sm:block hidden ml-3 w-7 rounded-full" alt="" />
 </a>
