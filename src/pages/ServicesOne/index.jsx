@@ -141,7 +141,7 @@ const ServicesOnePage = () => {
           <div className="absolute h-[655px] inset-[0] justify-center  w-full">
             <Img
               className="h-[655px] m-auto object-cover w-full"
-              src="images/img_rectangle21985_848x1440.png"
+              src="images/img_rectangle21985_848x1440.webp"
               alt="rectangle21985"
             />
             <div className="absolute bottom-[30%] flex flex-col items-center justify-center w-full">
@@ -270,7 +270,7 @@ const ServicesOnePage = () => {
             </div>
             <Img
               className="h-[676px] md:h-auto object-cover sm:hidden sm:-ml-2"
-              src="images/img_rectangle22115.png"
+              src="images/img_rectangle22115.webp"
               alt="rectangle22115"
             />
           </div>

@@ -4,8 +4,8 @@ import { Img, Text } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import "./gallery.css"
-import collage from '../../assets/Event_Sec/collage.png'
-import collage2 from "../../assets/Event_Sec/collage2.png"
+import collage from '../../assets/Event_Sec/collage.webp'
+import collage2 from "../../assets/Event_Sec/collage2.webp"
 
 
 
@@ -19,7 +19,7 @@ const GalleryPage = () => {
           <div className="h-[648px] m-auto w-full ">
             <Img
               className="h-[648px] m-auto object-cover w-full sm:hidden"
-              src="images/img_rectangle21985_2.png"
+              src="images/img_rectangle21985_2.webp"
               alt="rectangle21985"
             />
             <div className="absolute flex flex-col gap-[15px] h-max inset-[0] items-center justify-center m-auto ">

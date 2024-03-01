@@ -111,7 +111,7 @@ const ContactformPage = () => {
           <div className="absolute h-[648px] inset-[0] justify-center sm:bg-[#1F1A13]  w-full">
             <Img
               className="h-[648px] m-auto object-cover w-full sm:hidden"
-              src="images/img_rectangle21985_2.png"
+              src="images/img_rectangle21985_2.webp"
               alt="rectangle21985"
             />
             <div className="absolute flex flex-col gap-[21px] h-max inset-[0] items-center justify-center m-auto">

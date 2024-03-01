@@ -19,7 +19,7 @@ import { FaCheck } from "react-icons/fa6";
 import Footer from "components/Footer";
 import { useNavigate } from "react-router-dom";
 import Header from "components/Header";
-import sec_6 from "../../assets/Event_Sec/sec_6.png"
+import sec_6 from "../../assets/Event_Sec/sec_6.webp"
 
 const HomepagePage = () => {
   const sliderRef = React.useRef(null);
@@ -41,7 +41,7 @@ const HomepagePage = () => {
             <div className=" h-[775px] m-auto w-full">
               <Img
                 className="h-[775px] m-auto object-cover w-full sm:hidden"
-                src="images/img_rectangle21985_875x1440.png"
+                src="images/img_rectangle21985_875x1440.webp"
                 alt="rectangle21985"
               />
               <div className="absolute bottom-[20%]  flex flex-col items-start justify-start left-[3%]   w-[53%] ">
@@ -468,7 +468,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
           <div className=" font-lato md:h-[auto] h-[553px] max-w-[1242px] mt-[62px] mx-auto md:px-5 relative w-full">
             <Img
               className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full  rounded-xl sm:rounded-none"
-              src="images/img_rectangle22083.png"
+              src="images/img_rectangle22083.webp"
               alt="rectangle22083"
             />
             

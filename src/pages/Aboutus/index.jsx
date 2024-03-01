@@ -5,8 +5,8 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 import { FaCheck } from "react-icons/fa6";
 import Slider from "./Slider";
-import sec_guard5 from "../../assets/Event_Sec/sec_6.png"
-import sec_6 from "../../assets/Event_Sec/sec_guard5.png"
+import sec_guard5 from "../../assets/Event_Sec/sec_6.webp"
+import sec_6 from "../../assets/Event_Sec/sec_guard5.webp"
 const SlidesData2 = [
   {
     id:1,
@@ -69,7 +69,7 @@ const slidesData = [
       <div className="slide-content">
         <div 
             className="bg-cover  bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
-            style={{ backgroundImage: "url('images/img_group50507.png')" }}
+            style={{ backgroundImage: "url('images/img_group50507.webp')" }}
           >
             <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
@@ -105,17 +105,17 @@ const slidesData = [
             <div className="flex sm:flex-col flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full">
               <Img
                 className="sm:flex-1 h-[233px] md:h-auto object-cover w-[34%] sm:w-full sm:mt-24"
-                src="images/img_pngwing1.png"
+                src="images/img_pngwing1.webp"
                 alt="pngwingOne"
               />
               <Img
                 className="sm:flex-1 h-[193px] md:h-auto sm:mt-0 mt-10 object-cover w-[34%] sm:w-full"
-                src="images/img_pngwing2.png"
+                src="images/img_pngwing2.webp"
                 alt="pngwingTwo"
               />
               <Img
                 className="sm:flex-1 h-[193px] md:h-auto sm:mt-0 mt-10 object-cover w-[33%] sm:w-full"
-                src="images/img_pngwing3.png"
+                src="images/img_pngwing3.webp"
                 alt="pngwingThree"
               />
             </div>
@@ -129,7 +129,7 @@ const slidesData = [
       <div className="slide-content">
         <div 
             className="bg-cover  bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
-            style={{ backgroundImage: "url('images/img_group50507.png')" }}
+            style={{ backgroundImage: "url('images/img_group50507.webp')" }}
           >
             <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
@@ -165,17 +165,17 @@ const slidesData = [
             <div className="flex sm:flex-col flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full">
               <Img
                 className="sm:flex-1 h-[233px] md:h-auto object-cover w-[34%] sm:w-full sm:mt-24"
-                src="images/img_pngwing1.png"
+                src="images/img_pngwing1.webp"
                 alt="pngwingOne"
               />
               <Img
                 className="sm:flex-1 h-[193px] md:h-auto sm:mt-0 mt-10 object-cover w-[34%] sm:w-full"
-                src="images/img_pngwing2.png"
+                src="images/img_pngwing2.webp"
                 alt="pngwingTwo"
               />
               <Img
                 className="sm:flex-1 h-[193px] md:h-auto sm:mt-0 mt-10 object-cover w-[33%] sm:w-full"
-                src="images/img_pngwing3.png"
+                src="images/img_pngwing3.webp"
                 alt="pngwingThree"
               />
             </div>
@@ -194,7 +194,7 @@ const AboutusPage = () => {
             <div className="absolute h-[648px] inset-[0] justify-center  w-full">
               <Img
                 className="h-[648px] m-auto object-cover w-full"
-                src="images/img_rectangle21985.png"
+                src="images/img_rectangle21985.webp"
                 alt="rectangle21985"
               />
               <div className="absolute bottom-[31%] flex flex-col gap-[22px] inset-x-[0] items-center justify-start mx-auto">

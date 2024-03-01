@@ -69,7 +69,7 @@ const Audits = () => {
           <div className="absolute h-[648px] inset-[0] justify-center  w-full">
             <Img
               className="h-[648px] m-auto object-cover w-full"
-              src="images/img_rectangle21985_1.png"
+              src="images/img_rectangle21985_1.webp"
               alt="rectangle21985"
             />
             <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Img, Button, Text, Toast } from "components";
 import emailjs from '@emailjs/browser';
-import Banner1 from "../../assets/Event_Sec/drone.jpg"
+import Banner1 from "../../assets/Event_Sec/drone.webp"
 const Banner = ({className}) => {
   const [toast, setToast] = useState(null);
   const [formData, setFormData] = useState({

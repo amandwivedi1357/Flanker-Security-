@@ -60,7 +60,7 @@ const ServicesPage = () => {
           <div className="absolute h-[848px] inset-[0] justify-center  w-full">
             <Img
               className="h-[848px] m-auto object-cover w-full "
-              src="images/img_rectangle21985_1.png"
+              src="images/img_rectangle21985_1.webp"
               alt="rectangle21985"
             />
             <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto">
@@ -82,7 +82,7 @@ const ServicesPage = () => {
         </div>
         <Img
                 className="h-[488px] sm:h-[488px]   w-full  hidden sm:block"
-                src="images/img_rectangle22116.png"
+                src="images/img_rectangle22116.webp"
                 alt="rectangle22116"
               />
         <div className=" flex flex-col items-center justify-start p-[82px] pt-0 pb-0 md:px-10 sm:px-5 w-full">
@@ -90,7 +90,7 @@ const ServicesPage = () => {
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
             <Img
                 className="h-[488px] sm:h-auto object-cover w-full rounded-xl sm:hidden"
-                src="images/img_rectangle22116.png"
+                src="images/img_rectangle22116.webp"
                 alt="rectangle22116"
               />
               <Text
