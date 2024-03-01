@@ -277,7 +277,7 @@ const ServicesOnePage = () => {
         </div>
         
         <Banner/>
-        <Footer className="flex items-center justify-center -mt-36 md:px-5 w-full  bg-gray-900_01" />
+        <Footer className="flex items-center justify-center mt-[29px] sm:-mt-36 md:px-5 w-full  bg-gray-900_01" />
       </div>
     </>
   );

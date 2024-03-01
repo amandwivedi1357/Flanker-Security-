@@ -88,11 +88,17 @@ const Risk = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className="flex flex-col items-center justify-start p-[82px] pb-0 md:px-10 sm:px-5 w-full">
+        <Img
+                className="sm:block -mt-[12rem] hidden h-[488px] sm:h-auto object-cover w-full"
+                // src="images/risk.jpg"
+                src={riskM}
+                alt="rectangle22116"
+              />
+        <div className="flex flex-col sm:pt-0 items-center justify-start p-[82px] pb-0 md:px-10 sm:px-5 w-full">
           <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[172px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
-                className="h-[488px] sm:h-auto object-cover w-full"
+                className="sm:hidden h-[488px] sm:h-auto object-cover w-full"
                 // src="images/risk.jpg"
                 src={riskM}
                 alt="rectangle22116"

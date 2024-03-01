@@ -89,11 +89,16 @@ const Audits = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className=" flex flex-col items-center justify-start p-[82px] pb-0 md:px-10 sm:px-5 w-full">
+        <Img
+                className="h-[488px] sm:h-auto object-cover w-full sm:block sm:-mt-[12rem] hidden"
+                src={comp}
+                alt="rectangle22116"
+              />
+        <div className=" flex flex-col items-center justify-start p-[82px] sm:pt-0 pb-0 md:px-10 sm:px-5 w-full">
           <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
-                className="h-[488px] sm:h-auto object-cover w-full"
+                className="sm:hidden h-[488px] sm:h-auto object-cover w-full"
                 src={comp}
                 alt="rectangle22116"
               />
@@ -361,7 +366,7 @@ const Audits = () => {
           <QuickLinks/>
         </div>
         <Banner/>
-        <Footer className="flex items-center justify-center mt-[29px] md:px-5 w-full bg-gray-900_01" />
+        <Footer className="flex items-center justify-center sm:-mt-[9rem] mt-[29px] md:px-5 w-full bg-gray-900_01" />
       </div>
       {toast && <Toast message={toast.message} type={toast.type} onClose={handleCloseToast} />}
     </>
