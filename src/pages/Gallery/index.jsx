@@ -27,7 +27,7 @@ const GalleryPage = () => {
                 className="capitalize leading-[102.00px] md:text-5xl text-6xl sm:font-normal sm:text-3xl text-center text-white-A700 tracking-[0.25px] w-[90%] sm:w-[90%]"
                 size="txtPoppinsBold60"
               >
-"Explore Our Security Gallery: Every Image Tells a Story!            </Text>
+Explore Our Security Gallery: Every Image Tells a Story!</Text>
               <Text
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"

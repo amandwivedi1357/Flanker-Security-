@@ -242,31 +242,33 @@ const Slider1 = () => {
   ];
   
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (sliderRef.current) {
-        setCurrentSlide((prevSlide) =>
-          prevSlide === slidesData.length - 1 ? 0 : prevSlide + 1
-        );
-      }
-    }, 5000); // Change slide every 5 seconds
+    const interval = setInterval(goToNextSlide, 5000); // Change slide every 5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  }, [currentSlide]);
 
   const goToSlide = (index) => {
     setCurrentSlide(index);
+    resetInterval();
   };
 
   const goToPrevSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? slidesData.length - 1 : prevSlide - 1
     );
+    resetInterval();
   };
 
   const goToNextSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === slidesData.length - 1 ? 0 : prevSlide + 1
     );
+    resetInterval();
+  };
+
+  const resetInterval = () => {
+    clearInterval(interval);
+    const interval = setInterval(goToNextSlide, 5000); // Reset interval
   };
 
   return (

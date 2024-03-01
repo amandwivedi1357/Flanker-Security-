@@ -14,7 +14,7 @@ const QuickLinks = () => {
         >
           <img src="images/drone_new.svg" alt="" className="w-8" />
 
-          <span className="-ml-[195px] "> Drones</span>
+          <span className="sm:-ml-[135px] -ml-[195px]"> Drones</span>
           <FaArrowRight className="w-4 h-4 ml-2" />
         </button>
         <button
@@ -76,7 +76,7 @@ const QuickLinks = () => {
         >
           <img src="images/Audits_Black.svg" alt="" className="w-8" />
 
-          <span className="-ml-[140px]"> Security Audits</span>
+          <span className="sm:-ml-[70px] -ml-[135px]"> Security Audits</span>
 
           <FaArrowRight className="w-4 h-4 ml-2" />
         </button>

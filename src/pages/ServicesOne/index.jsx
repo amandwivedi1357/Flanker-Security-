@@ -214,10 +214,10 @@ const ServicesOnePage = () => {
               </div>
               <div
              
-              className="flex sm:flex-col flex-row font-opensans sm:gap-[55px] items-center justify-between w-full">
+              className="flex sm:mx-auto sm:pb-6 sm:flex-col flex-row font-opensans sm:gap-[55px] items-center justify-between w-full">
                 <div  onMouseEnter={() => setIsHovered1(true)}
               onMouseLeave={() => setIsHovered1(false)}
-               className="bg-white-A700 transition bg-white duration-300 ease-in-out shadow-2xl cursor-pointer hover:bg-orange-400 flex sm:flex-1 flex-col items-start justify-end p-6 sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/housekeeping')}>
+               className="bg-white-A700 sm:-ml-4 transition bg-white duration-300 ease-in-out shadow-2xl cursor-pointer hover:bg-orange-400 flex sm:flex-1 flex-col items-start justify-end p-6 sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/housekeeping')}>
                   <Img
                     className="h-[60px] mt-[34px] w-[60px]"
                     src={
@@ -244,7 +244,7 @@ const ServicesOnePage = () => {
                 onMouseEnter={() => setIsHovered2(true)}
                 onMouseLeave={() => setIsHovered2(false)}
                 
-                className="bg-white-A700 transition bg-white duration-300 ease-in-out cursor-pointer   shadow-2xl hover:bg-orange-400 border border-gray-500_1e border-solid flex sm:flex-1 flex-col items-start justify-end p-[27px] sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/nri-properties')}>
+                className="bg-white-A700 sm:-ml-4 transition bg-white duration-300 ease-in-out cursor-pointer   shadow-2xl hover:bg-orange-400 border border-gray-500_1e border-solid flex sm:flex-1 flex-col items-start justify-end p-[27px] sm:px-5 rounded-xl w-[46%] sm:w-[80%]" onClick={()=>navigate('/nri-properties')}>
                   <Img
                     className="h-[50px] mt-[43px] w-[50px]"
                     src={
@@ -269,7 +269,7 @@ const ServicesOnePage = () => {
               </div>
             </div>
             <Img
-              className="h-[676px] md:h-auto object-cover sm:w-[90%] sm:-ml-2"
+              className="h-[676px] md:h-auto object-cover sm:hidden sm:-ml-2"
               src="images/img_rectangle22115.png"
               alt="rectangle22115"
             />
@@ -277,7 +277,7 @@ const ServicesOnePage = () => {
         </div>
         
         <Banner/>
-        <Footer className="flex items-center justify-center mt-10 md:px-5 w-full  bg-gray-900_01" />
+        <Footer className="flex items-center justify-center -mt-36 md:px-5 w-full  bg-gray-900_01" />
       </div>
     </>
   );

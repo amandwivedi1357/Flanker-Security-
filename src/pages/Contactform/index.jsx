@@ -139,7 +139,7 @@ const ContactformPage = () => {
                   <div className="flex flex-col items-center justify-start w-full">
                     <div className="flex flex-col items-start justify-start w-full">
                       <a
-                        href="javascript:"
+                        
                         className="text-gray-600 text-sm tracking-[2.00px] uppercase"
                       >
                         <Text className="pt-5" size="txtRedHatDisplayRomanMedium14">
@@ -265,9 +265,9 @@ const ContactformPage = () => {
                   </Button>
                 </div>
               </form>
-              <div className="bg-orange-400 rounded-xl rounded-l-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] items-center justify-center p-[54px] md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[340px] sm:rounded-none">
+              <div className="bg-orange-400 rounded-xl rounded-l-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] items-center justify-center p-[54px] sm:p-0 sm:pb-0  md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[340px] sm:rounded-none">
                 <Text
-                  className="mt-[58px] text-4xl sm:text-[32px] md:text-[34px] text-black-900 tracking-[0.36px]"
+                  className="mt-[58px] text-4xl sm:text-[26px] md:text-[34px] text-black-900 tracking-[0.36px]"
                   size="txtPoppinsSemiBold36Black900"
                 >
                   Contact Information

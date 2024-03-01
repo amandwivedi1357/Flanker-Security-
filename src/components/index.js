@@ -10,4 +10,5 @@ export { Text } from "./Text";
 export {Banner} from "./Banner"
 export {QuickLinks} from "./quick"
 export {Toast} from "./Toast"
+export { FeatureBox } from "./FeatureBox"
 

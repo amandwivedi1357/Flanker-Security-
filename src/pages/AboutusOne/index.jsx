@@ -250,7 +250,7 @@ const AboutusOnePage = () => {
               <div className="flex flex-col items-center justify-start mt-[3px] w-full">
                 <div className="flex flex-col items-start justify-start w-full">
                   <a
-                    href="javascript:"
+                 
                     className="text-gray-600 text-sm tracking-[2.00px] uppercase"
                   >
                     <Text size="txtRedHatDisplayRomanMedium14">contact us</Text>

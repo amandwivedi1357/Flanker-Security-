@@ -4,6 +4,7 @@ import {
   Banner,
   Button,
   CheckBox,
+  FeatureBox,
   Img,
   Line,
   List,
@@ -34,7 +35,7 @@ const HomepagePage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col sm:overflow-hidden items-center mb-[-20px] justify-start mx-auto w-full ">
+      <div className="bg-white-A700 flex flex-col sm:overflow-hidden items-center mb-[-20px] justify-start sm:mx-0 mx-auto w-full ">
         <div className="flex flex-col items-center justify-start w-full ">
           <div className="font-poppins h-[775px] md:px-5 relative w-full  sm:bg-[#1A1313]">
             <div className=" h-[775px] m-auto w-full">
@@ -152,14 +153,20 @@ const HomepagePage = () => {
             <Header className=" absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full"/>
             {/* <Line className="bg-green-400 h-[3px] mt-[3px] rounded-[1px] w-[19%]" /> */}
           </div>
-          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px]  mx-auto md:px-5 w-full sm:w-full">
-            <Img
-              className="h-[640px] md:h-auto object-cover sm:h-auto sm:mt-[-25%] sm:w-full rounded-xl"
+          <Img
+              className="h-[640px] md:h-auto object-cover sm:h-auto hidden sm:block sm:mt-[1%] sm:w-full"
               // src="images/img_rectangle22076_640x502.png"
               src={sec_6}
               alt="rectangle22076"
             />
-            <div className="flex flex-col items-start justify-start md:ml-[0] ml-[125px] md:mt-0 mt-[130px]">
+          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px]  mx-auto md:px-5 w-full sm:w-[100%] rounded-xl ">
+          <Img
+              className="h-[640px] md:h-auto object-cover sm:h-auto  sm:hidden sm:mt-[1%] sm:w-[380px]"
+              // src="images/img_rectangle22076_640x502.png"
+              src={sec_6}
+              alt="rectangle22076"
+            />
+            <div className="flex flex-col items-start justify-start md:ml-[0] ml-[125px] md:mt-0 mt-[130px] sm:-mt-6">
               <Text
                 className="text-gray-600 text-sm sm:ml-1 tracking-[2.00px] uppercase sm:text-base"
                 size="txtRedHatDisplayRomanMedium14"
@@ -185,8 +192,8 @@ const HomepagePage = () => {
                 size="txtLatoRegular15Gray700"
               >
 Welcome to Flanker Security Services, your premier security partner. With unwavering dedication, we pride ourselves on being a top provider of comprehensive security services. Our seasoned professionals ensure the highest standards in safeguarding assets, people, and information.              </Text>
-              <div className="flex flex-row font-poppins gap-[13px] items-center justify-start mt-[23px] w-[56%] md:w-full">
-                <div className="flex flex-col items-center justify-start w-[48%] mt-5 ml-[-4%] sm:ml-[-2%]">
+              <div className="flex flex-row font-poppins  gap-[13px] items-center justify-start mt-[23px] w-[56%] sm:w-[45%] sm:mx-2 md:w-full">
+                <div className="flex  flex-col items-center justify-start w-[48%] sm:w-[90%] mt-5 ml-[-4%] ">
                   <Button
                     onClick={() => navigate("/aboutus")}
                     className="  bg-transparent hover:bg-orange-400 hover:outline-orange-400 !text-orange-400 hover:!text-black-900 border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[142px] text-base text-center tracking-[0.16px]"
@@ -197,14 +204,14 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
               </div>
             </div>
           </div>
-          <div className="bg-gray-50 flex flex-col font-opensans items-center justify-start mt-[106px] p-[94px] md:px-10 sm:px-5 w-full">
+          <div className="bg-gray-50 flex flex-col font-opensans items-center justify-start mt-[106px] p-[94px] sm:pb-0 md:px-10 sm:px-5 w-full">
             <List
               className="flex flex-col gap-[55px] items-center max-w-[1240px] mx-auto w-full"
               orientation="vertical"
             >
-              <div className="flex flex-1 md:flex-col flex-row md:gap-5 items-start justify-start my-0 w-full sm:mt-[-40%]">
+              <div className="flex flex-1 md:flex-col flex-row md:gap-5 items-start justify-start my-0 w-full sm:mt-[-20%]">
                 <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[31px] w-[35%] md:w-full">
-                  <div className="flex flex-row font-redhatdisplay gap-[18px] items-end justify-start w-[89%] md:w-full">
+                  <div className="flex flex-row font-redhatdisplay gap-[18px] items-end justify-start w-[89%] md:w-full ">
                     <Text
                       className="my-1 text-gray-600 text-sm tracking-[2.00px] uppercase"
                       size="txtRedHatDisplayRomanMedium14"
@@ -429,8 +436,16 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
               </div>
             </List>
           </div>
+          <div className="w-[90%] sm:block hidden  h-auto">
           <Text
-            className="mt-[94px] mb-5 sm:-mt-[30%] sm:text-base  text-gray-600 text-sm tracking-[2.00px] uppercase sm:ml-[-44%]"
+            className="mt-[151px] sm:mt-12  text-gray-600 sm:text-left text-sm tracking-[2.00px] uppercase  sm:ml-0"
+            size="txtRedHatDisplayRomanMedium14"
+          >
+            why choose us
+          </Text>
+          </div>
+          <Text
+            className="mt-[94px] sm:hidden mb-5 sm:-mt-[30%] sm:text-base  text-gray-600 text-sm tracking-[2.00px] uppercase sm:ml-[-44%]"
             size="txtRedHatDisplayRomanMedium14"
           >
             why choose us
@@ -452,10 +467,11 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
           </Text>
           <div className=" font-lato md:h-[auto] h-[553px] max-w-[1242px] mt-[62px] mx-auto md:px-5 relative w-full">
             <Img
-              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-[90%] sm:mx-5 rounded-xl"
+              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full  rounded-xl sm:rounded-none"
               src="images/img_rectangle22083.png"
               alt="rectangle22083"
             />
+            
             <Text
               className="absolute sm:hidden leading-[32.00px]  right-[3%] text-[17px] text-gray-700 top-[15%] tracking-[0.50px] w-[31%] sm:w-full"
               size="txtLatoRegular15Gray700"
@@ -465,6 +481,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
               Support Staff with highly professional teams led by Facility
               Managers.
             </Text>
+           
             <div
               className="sm:hidden   rounded-lg absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start  p-[54px] md:px-10 sm:px-5 right-[0] w-[53%] bg-[#fcbe54]"
              
@@ -641,11 +658,65 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
             selectedWrapperCss="inline-block md:ml-[0] mx-[4.50px] sm:ml-[0]"
             unselectedWrapperCss="inline-block md:ml-[0] mx-[4.50px] sm:ml-[0]"
           />
-         
-          <Banner />
-          <Footer className="flex items-center justify-center -mt-10 md:px-5 w-full bg-gray-900_01" />
-        </div>
+          {/* mobile view box starts */}
+          <div className="w-full  bg-yellow-400 p-4 mt-6 sm:block hidden">
+     <ul>
+       <li className="mb-8 ml-8 mt-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+             Perfection Anytime
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Trained Professionals
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Advance Technology
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Emergency help
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           24/7 Monitoring
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Remote Guarding
+           </span>
+         </span>
+       </li>
+     </ul>
+   </div>
+   {/* mobile view box ends */}
+         </div>
       </div>
+      <Banner />
+          <Footer className="flex items-center justify-center mt-3 -mb-8 sm:-mt-44 sm:-mb-8 md:px-5 w-full bg-gray-900_01" />
+        
     </>
   );
 };

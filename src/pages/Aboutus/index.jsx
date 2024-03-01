@@ -59,49 +59,7 @@ const SlidesData2 = [
   },
   {
     id:2,
-    content:(
-      <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px] mx-auto md:px-5 w-full">
-            <Img
-              className="h-[640px] md:h-auto object-cover rounded-xl"
-              src={sec_6}
-              alt="rectangle22076"
-            />
-            <div className="flex flex-col md:gap-10 gap-[166px] justify-start md:mt-0 mt-[125px]">
-              <div className="flex flex-col gap-[19px] items-start justify-start md:ml-[0] ml-[125px]">
-                <Text
-                  className="text-gray-600 text-sm tracking-[2.00px] uppercase"
-                  size="txtRedHatDisplayRomanMedium14"
-                >
-                  About us
-                </Text>
-                <Text
-                  className="capitalize leading-[49.00px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
-                  size="txtPoppinsSemiBold36"
-                >
-                  <span className="text-gray-900 font-poppins text-left font-normal">
-                    We Provide services for{" "}
-                  </span>
-                  <span className="text-gray-900 font-poppins text-left font-[600]">
-                    multiple{" "}
-                  </span>
-                  <span className="text-gray-900 font-poppins text-left font-[600]">
-                    customers in various industries worldwide
-                  </span>
-                </Text>
-                <Text
-                  className="leading-[29.00px] text-[15px] text-black-900_cc tracking-[0.50px] w-full"
-                  size="txtLatoRegular15Black900cc"
-                >
-                  Flanker Security and Property Management Services is led by an Indian Air Force Veteran with a distinguished service of over 02 decades in the varied domains of Security, Vigilance, Provost, Ground Defence, Air Defence, Facilities Management and the fast-paced Air Operations.
-                  <br />
-                  <br />
-                  Flanker was established with a visionary approach of making Security Services Sector highly professional, tech oriented, and backed by Artificial Intelligence to provide unmatched security, safety and protection to individuals and enterprises.
-                </Text>
-              </div>
-              
-            </div>
-          </div>
-    )
+    
   }
 ]
 const slidesData = [
@@ -113,7 +71,7 @@ const slidesData = [
             className="bg-cover  bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
             style={{ backgroundImage: "url('images/img_group50507.png')" }}
           >
-            <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1]">
+            <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
                 <Text
                   className="text-black-900_e5 text-center text-sm tracking-[2.00px] uppercase"
@@ -122,7 +80,7 @@ const slidesData = [
                   vision
                 </Text>
                 <Text
-                  className="leading-[50.00px] md:text-3xl sm:text-[17px] sm:leading-[35.00px] text-[32px] text-center text-gray-900 tracking-[1.00px] w-full "
+                  className="leading-[50.00px] md:text-3xl sm:text-[17px] sm:leading-[35.00px] text-[32px] text-center text-gray-900 tracking-[1.00px] w-full"
                   size="txtRedHatDisplayRomanRegular32"
                 >
                   <span className="text-gray-900 font-poppins font-normal">
@@ -146,7 +104,7 @@ const slidesData = [
             </div>
             <div className="flex sm:flex-col flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full">
               <Img
-                className="sm:flex-1 h-[233px] md:h-auto object-cover w-[34%] sm:w-full"
+                className="sm:flex-1 h-[233px] md:h-auto object-cover w-[34%] sm:w-full sm:mt-24"
                 src="images/img_pngwing1.png"
                 alt="pngwingOne"
               />
@@ -173,7 +131,7 @@ const slidesData = [
             className="bg-cover  bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
             style={{ backgroundImage: "url('images/img_group50507.png')" }}
           >
-            <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1]">
+            <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
                 <Text
                   className="text-black-900_e5 text-center  text-sm tracking-[2.00px] uppercase"
@@ -206,7 +164,7 @@ const slidesData = [
             </div>
             <div className="flex sm:flex-col flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full">
               <Img
-                className="sm:flex-1 h-[233px] md:h-auto object-cover w-[34%] sm:w-full"
+                className="sm:flex-1 h-[233px] md:h-auto object-cover w-[34%] sm:w-full sm:mt-24"
                 src="images/img_pngwing1.png"
                 alt="pngwingOne"
               />
@@ -255,19 +213,71 @@ const AboutusPage = () => {
               </div>
             </div>
             <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
+            
           </div>
-          <Slider slidesData={SlidesData2} time={3000}/>
-          
+          <Img
+              className="h-[640px] md:h-auto object-cover sm:-mt-52  hidden sm:block"
+              src='images/about_drone.jpg'
+              alt="rectangle22076"
+            />
+          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[45px] mx-auto md:px-5 w-full">
+            <Img
+              className="h-[640px] sm:hidden md:h-auto object-cover rounded-xl"
+              src='images/about_drone.jpg'
+              alt="rectangle22076"
+            />
+            <div className="flex flex-col md:gap-10 gap-[166px] justify-start md:mt-0 mt-[125px]">
+              <div className="flex flex-col gap-[19px] items-start justify-start md:ml-[0] ml-[125px]">
+                <Text
+                  className="text-gray-600 text-sm tracking-[2.00px] uppercase"
+                  size="txtRedHatDisplayRomanMedium14"
+                >
+                  About us
+                </Text>
+                <Text
+                  className="capitalize leading-[49.00px] sm:leading-[29px] text-4xl sm:text-[18px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
+                  size="txtPoppinsSemiBold36"
+                >
+                  <span className="text-gray-900 font-poppins text-left font-normal">
+                    We Provide services for{" "}
+                  </span>
+                  <span className="text-gray-900 font-poppins text-left font-[600]">
+                    multiple{" "}
+                  </span>
+                  <span className="text-gray-900 font-poppins text-left font-[600]">
+                    customers in various industries worldwide
+                  </span>
+                </Text>
+                <Text
+                  className="leading-[29.00px] text-[15px] text-black-900_cc tracking-[0.50px] w-full"
+                  size="txtLatoRegular15Black900cc"
+                >
+                  Flanker Security and Property Management Services is led by an Indian Air Force Veteran with a distinguished service of over 02 decades in the varied domains of Security, Vigilance, Provost, Ground Defence, Air Defence, Facilities Management and the fast-paced Air Operations.
+                  <br />
+                  <br />
+                  Flanker was established with a visionary approach of making Security Services Sector highly professional, tech oriented, and backed by Artificial Intelligence to provide unmatched security, safety and protection to individuals and enterprises.
+                </Text>
+              </div>
+              
+            </div>
+          </div>
           <Slider slidesData={slidesData} time={5000}/>
-          
+          <div className="w-[90%] sm:block hidden  h-auto">
           <Text
-            className="mt-[151px] text-gray-600 text-sm tracking-[2.00px] uppercase"
+            className="mt-[151px] sm:mt-12  text-gray-600 sm:text-left text-sm tracking-[2.00px] uppercase  sm:ml-0"
+            size="txtRedHatDisplayRomanMedium14"
+          >
+            why choose us
+          </Text>
+          </div>
+          <Text
+            className="mt-[151px] sm:hidden  text-gray-600 sm:text-left text-sm tracking-[2.00px] uppercase  sm:ml-0"
             size="txtRedHatDisplayRomanMedium14"
           >
             why choose us
           </Text>
           <Text
-            className="capitalize leading-[49.00px]  mt-[19px] text-4xl sm:text-[25px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%]  sm:w-[90%]"
+            className="capitalize leading-[49.00px] sm:leading-[29px] sm:text-[18px]  mt-[19px] text-4xl  md:text-[34px] text-gray-900 tracking-[1.00px] w-[67%]  sm:w-[90%]"
             size="txtPoppinsSemiBold36"
           >
             <span className="text-gray-900 font-poppins text-left font-normal">
@@ -280,10 +290,73 @@ const AboutusPage = () => {
               customers in various industries worldwide
             </span>
           </Text>
-          <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] mt-[62px] mx-auto md:px-5 relative w-full">
+          <Text
+                  className="leading-[29.00px] sm:w-[90%] hidden sm:block text-[15px] text-black-900_cc tracking-[0.50px] w-full"
+                  size="txtLatoRegular15Black900cc"
+                >
+                  Flanker Security and Property Management Services is led by an Indian Air Force Veteran with a distinguished service of over 02 decades in the varied domains of Security, Vigilance, Provost, Ground Defence, Air Defence, Facilities Management and the fast-paced Air Operations.
+                  <br />
+                  <br />
+                  Flanker was established with a visionary approach of making Security Services Sector highly professional, tech oriented, and backed by Artificial Intelligence to provide unmatched security, safety and protection to individuals and enterprises.
+                </Text>
+                 {/* mobile view box starts */}
+          <div className="w-full  bg-yellow-400 p-4 mt-6 sm:block hidden">
+     <ul>
+       <li className="mb-8 ml-8 mt-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+             Perfection Anytime
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Trained Professionals
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Advance Technology
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Emergency help
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           24/7 Monitoring
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Remote Guarding
+           </span>
+         </span>
+       </li>
+     </ul>
+   </div>
+   {/* mobile view box ends */}
+          <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] -mb-12 mt-[62px] mx-auto md:px-5 relative w-full">
             <Img
-              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-[90%] mx-5 rounded-xl"
-              src="images/img_rectangle22083.png"
+              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-[100%]  rounded-xl sm:rounded-none"
+              src="images/cctv_about.jpg"
               alt="rectangle22083"
             />
             <div
@@ -349,7 +422,7 @@ const AboutusPage = () => {
             </Text>
           </div>
           <Banner />
-          <Footer className="flex items-center justify-center mt-10 md:px-5 w-full bg-gray-900_01" />
+          <Footer className="flex items-center justify-center mt-[29px] sm:-mt-36 md:px-5 w-full bg-gray-900_01" />
         </div>
       </div>
     </>
