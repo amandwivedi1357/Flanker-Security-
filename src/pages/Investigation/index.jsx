@@ -93,7 +93,7 @@ const Investigation = () => {
                 src="images/img_rectangle22116.webp"
                 alt="rectangle22116"
               />
-        <div className="bg-gray-50 flex flex-col items-center justify-start p-[82px] pb-0 md:px-10 sm:px-5 w-full">
+        <div className="pt-0 flex flex-col items-center justify-start p-[82px] pb-0 md:px-10 sm:px-5 w-full">
           <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img

@@ -105,11 +105,11 @@ const Footer = (props) => {
                 </ul>
               </div>
             </div>
-            <Text
-              className="text-lg text-white-A700 tracking-[0.03px]"
+            <Text onClick={()=>window.open('https://rayformula.com/','_blank')}
+              className="text-lg cursor-pointer text-white-A700 tracking-[0.03px]"
               size="txtNunitoMedium18"
             >
-              @2023Adya - Website by Rayformula
+               Website by Rayformula
             </Text>
           </div>
         </div>

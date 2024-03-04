@@ -7,7 +7,7 @@ const QuickLinks = () => {
   return (
     <div className="h-18 bg-gray-50 p-4 rounded-lg shadow-md flex flex-col justify-center w-full">
       <h2 className="text-lg font-semibold mb-2 text-center">Other Services</h2>
-      <div className="flex gap-4 mb-3 sm:block">
+      <div className="flex gap-4 mb-5 sm:block">
         <button
           onClick={() => navigate("/drones")}
           className="flex flex-1 sm:w-full bg-[#fff] sm:mb-3 items-center justify-between bg-transparent hover:text-black-900 hover:bg-[#fcb131] text-[#fcb131] border border-[#c4c2bf] hover:text-black hover:border-transparent py-2 px-4 rounded-lg transition duration-300 ease-in-out"
@@ -38,7 +38,7 @@ const QuickLinks = () => {
           <FaArrowRight className="w-4 h-4 ml-2" />
         </button>
       </div>
-      <div className="flex gap-4 mb-3 sm:block">
+      <div className="flex gap-4 mb-5 sm:block">
         <button
           onClick={() => navigate("/infrastructure")}
           className="flex sm:mb-3 bg-[#fff]  sm:w-full flex-1 items-center justify-between bg-transparent hover:text-black-900 hover:bg-[#fcb131] text-[#fcb131] border border-[#c4c2bf] hover:text-black hover:border-transparent py-2 px-4 rounded-lg transition duration-300 ease-in-out"

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Img, Text } from "components";
 import { MdOutlineMenu } from "react-icons/md";
@@ -12,6 +12,17 @@ const Header = (props) => {
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+  useEffect(() => {
+    const div = document.querySelector('.bouncingDiv');
+    if (div) {
+      div.classList.add('bounceAnimation');
+      // Remove the animation class after the animation completes to prevent repeating the animation
+      div.addEventListener('animationend', () => {
+        div.classList.remove('bounceAnimation');
+      });
+    }
+  }, []);
+
   return (
     <>
       <header className={props.className}>
@@ -33,7 +44,7 @@ const Header = (props) => {
               />
             </NavLink>
             <Text onClick={()=>navigate('/')}
-              className={` sm:mt-[-0.5%] cursor-pointer bg-clip-text bg-gradient sm:text-base capitalize ml-2 text-transparent text-xl tracking-[0.25px]  ${
+              className={` sm:mt-[-0.5%] cursor-pointer bg-clip-text bg-gradient sm:text-base capitalize ml-2 text-transparent text-xl tracking-[0.25px] sm:w-[80%] ${
                 location.pathname === "/" ? "active-link" : ""
               }`}
               size="txtPoppinsRegular20"
@@ -41,10 +52,8 @@ const Header = (props) => {
               FLANKER SECURITY
             </Text>
             
-    <MdOutlineMenu className="text-white-A700 cursor-pointer text-4xl sm:block hidden float-right ml-[4.6rem]" onClick={toggleSidebar}/>
-    <a href="tel:+919100792007">
-  <img src="images/small_phone.png" className="sm:block hidden ml-3 w-7 rounded-full" alt="" />
-</a>
+    <MdOutlineMenu className="text-white-A700 cursor-pointer text-5xl sm:block hidden float-right ml-[6.6rem]" onClick={toggleSidebar}/>
+    
 
           </div>
           <ul className=" flex md:flex-1    sm:flex-col flex-row gap-8 sm:hidden items-start justify-center md:ml-[0] ml-[-32px] w-[40%] md:w-full common-row-list">
@@ -125,7 +134,7 @@ const Header = (props) => {
               </li>
             </NavLink>
           </ul>
-          <div className="bg-white-A700 flex md:flex-1 flex-col items-start justify-end   md:ml-[0] ml-[207px] md:mt-0  p-[5px]  rounded-[21px] w-[15%]  md:w-full sm:hidden">
+          {/* <div className="bouncingDiv bg-white-A700 flex md:flex-1 flex-col items-start justify-end   md:ml-[0] ml-[207px] md:mt-0  p-[5px]  rounded-[21px] pr-4  md:w-full sm:hidden">
             <div className="flex flex-row gap-3 items-start justify-start  md:w-full ">
               <div className="bg-gradient  flex flex-col h-[31px] items-center justify-start p-[9px] rounded-[15px]">
                 <Img
@@ -141,7 +150,7 @@ const Header = (props) => {
                 +91 91007 92007
               </Text>
             </div>
-          </div>
+          </div> */}
         
         </div>
         

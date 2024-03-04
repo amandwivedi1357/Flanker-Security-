@@ -68,8 +68,8 @@ const slidesData = [
     content: (
       <div className="slide-content">
         <div 
-            className="bg-cover  bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
-            style={{ backgroundImage: "url('images/img_group50507.webp')" }}
+            className="bg-cover bg-orange-300 bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
+            
           >
             <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
@@ -80,29 +80,29 @@ const slidesData = [
                   vision
                 </Text>
                 <Text
-                  className="leading-[50.00px] md:text-3xl sm:text-[17px] sm:leading-[35.00px] text-[32px] text-center text-gray-900 tracking-[1.00px] w-full"
+                  className="leading-[50.00px] md:text-3xl sm:w-full sm:text-[16px] sm:leading-[35.00px] text-[32px] text-center text-gray-900 tracking-[1.00px] w-full"
                   size="txtRedHatDisplayRomanRegular32"
                 >
                   <span className="text-gray-900 font-poppins font-normal">
-                    To usher in a paradigm shift in{" "}
+                  To provide future ready {" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-[600]">
-                    security services
+                  AI Powered Security
                   </span>
                   <span className="text-gray-900 font-poppins font-normal">
-                    {" "}
+                    
                     &{" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-[600]">
                     Property Management{" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-normal">
-                    through innovation & Automation
+                  for Enterprise & Institutions 
                   </span>
                 </Text>
               </div>
             </div>
-            <div className="flex sm:flex-col flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full">
+            <div className="flex sm:mt-10 sm:flex-col flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full">
               <Img
                 className="sm:flex-1 h-[233px] md:h-auto object-cover w-[34%] sm:w-full sm:mt-24"
                 src="images/img_pngwing1.webp"
@@ -128,8 +128,8 @@ const slidesData = [
     content: (
       <div className="slide-content">
         <div 
-            className="bg-cover  bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
-            style={{ backgroundImage: "url('images/img_group50507.webp')" }}
+            className="bg-cover bg-orange-300 bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
+           
           >
             <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
@@ -235,7 +235,7 @@ const AboutusPage = () => {
                   About us
                 </Text>
                 <Text
-                  className="capitalize leading-[49.00px] sm:leading-[29px] text-4xl sm:text-[18px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
+                  className="capitalize leading-[49.00px] sm:leading-[29px] text-4xl sm:text-[17px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
                   size="txtPoppinsSemiBold36"
                 >
                   <span className="text-gray-900 font-poppins text-left font-normal">
@@ -249,7 +249,7 @@ const AboutusPage = () => {
                   </span>
                 </Text>
                 <Text
-                  className="leading-[29.00px] text-[15px] text-black-900_cc tracking-[0.50px] w-full"
+                  className="leading-[29.00px] text-[17px] text-black-900_cc tracking-[0.50px] w-full"
                   size="txtLatoRegular15Black900cc"
                 >
                   Flanker Security and Property Management Services is led by an Indian Air Force Veteran with a distinguished service of over 02 decades in the varied domains of Security, Vigilance, Provost, Ground Defence, Air Defence, Facilities Management and the fast-paced Air Operations.
@@ -287,11 +287,11 @@ const AboutusPage = () => {
               multiple{" "}
             </span>
             <span className="text-gray-900 font-poppins text-left font-[600]">
-              customers in various industries worldwide
+              customers in various <br /> industries worldwide
             </span>
           </Text>
           <Text
-                  className="leading-[29.00px] sm:w-[90%] hidden sm:block text-[15px] text-black-900_cc tracking-[0.50px] w-full"
+                  className="leading-[29.00px] sm:w-[90%] sm:mt-6 hidden sm:block text-[15px] text-black-900_cc tracking-[0.50px] w-full"
                   size="txtLatoRegular15Black900cc"
                 >
                   Flanker Security and Property Management Services is led by an Indian Air Force Veteran with a distinguished service of over 02 decades in the varied domains of Security, Vigilance, Provost, Ground Defence, Air Defence, Facilities Management and the fast-paced Air Operations.

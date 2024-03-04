@@ -163,8 +163,8 @@ const ServicesOnePage = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className=" bg-gray-50 flex flex-col font-redhatdisplay items-center justify-end p-[52px] md:px-10 sm:px-5 w-full" ref={serviceCardsRef}>
-          <div className="flex flex-col items-start justify-start max-w-[1239px] mt-[90px] mx-auto w-full"  >
+        <div className=" bg-gray-50 sm:-mt-16 flex flex-col font-redhatdisplay items-center justify-end p-[52px] md:px-10 sm:px-5 w-full" ref={serviceCardsRef}>
+          <div className="flex flex-col items-start justify-start max-w-[1239px] sm:mt-0 mt-[90px] mx-auto w-full"  >
             <div className="flex flex-col gap-[22px] items-start justify-start " >
               <Text
                 className="text-gray-600 text-sm tracking-[2.00px] uppercase "
@@ -195,7 +195,7 @@ const ServicesOnePage = () => {
            <Slider1/>
           </div>
         </div>
-        <div className="bg-gray-50 flex flex-col font-redhatdisplay items-end justify-start mt-[57px] md:pl-10 sm:pl-5 pl-[100px] w-full">
+        <div className="bg-gray-50  flex flex-col font-redhatdisplay items-end justify-start mt-[57px] md:pl-10 sm:pl-5 pl-[100px] w-full">
           <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1339px] mx-auto w-full">
             <div className="flex flex-col md:gap-10 gap-[76px] items-start justify-start ml-[-37px] md:ml-[0]">
               <div className="flex flex-col gap-[22px] items-start justify-start">
@@ -206,7 +206,7 @@ const ServicesOnePage = () => {
                   premium services
                 </Text>
                 <Text
-                  className="capitalize text-4xl font-[600] sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px]"
+                  className="capitalize text-4xl font-[600] sm:text-[18px] md:text-[34px] text-gray-900 tracking-[1.00px]"
                   size="txtPoppinsBold60"
                 >
                   Property management services

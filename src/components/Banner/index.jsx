@@ -58,7 +58,7 @@ const Banner = ({className}) => {
     setToast(null);
   };
   return (
-    <div className="font-poppins  md:h-[857px] mt-[109px] sm:mt-12 md:px-5 relative w-[100%] sm:w-[100%]">
+    <div className={` ${className} font-poppins  md:h-[857px] mt-[109px] sm:mt-12 md:px-5 relative w-[100%] sm:w-[100%]`}>
       <Img
         className="h-[748px] m-auto object-cover w-full sm:w-[100%] sm:h-[660px] sm:absolute sm:-ml-5"
         // src="images/cctv.jpg"

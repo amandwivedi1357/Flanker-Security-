@@ -44,7 +44,7 @@ const HomepagePage = () => {
                 src="images/img_rectangle21985_875x1440.webp"
                 alt="rectangle21985"
               />
-              <div className="absolute bottom-[20%]  flex flex-col items-start justify-start left-[3%]   w-[53%] ">
+              <div className="absolute bottom-[30%]  flex flex-col items-start justify-start left-[3%]   w-[53%] ">
                 <Text
                   className="capitalize leading-[89.00px] sm:text-3xl sm:font-normal  sm:ml-[5%] sm:w-[334px]  md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
                   size="txtPoppinsBold60"
@@ -71,85 +71,7 @@ const HomepagePage = () => {
                 </div>
               </div>
             </div>
-            {/* <header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full">
-              <Img
-                className="flex-1 h-[27px] sm:h-auto object-cover w-full"
-                src="images/img_rectangle21748_4.png"
-                alt="rectangle21748"
-              />
-              <div className="bg-white-A700_11 flex flex-1 flex-col items-center justify-start p-[30px] sm:px-5 shadow-bs1 w-full">
-                <div className="flex md:flex-col flex-row md:gap-5 items-center justify-start mb-2 w-[95%] md:w-full">
-                  <Img
-                    className="h-[65px] cursor-pointer sm:h-auto sm:m-[] sm:ml-[-75%] object-cover sm:w-[13%] w-[7%] md:w-full"
-                    src="images/img_whatsappimage20231213.png"
-                    alt="whatsappimageTwenty"
-                  />
-                  <span onClick={() => navigate("/")}>
-                    {" "}
-                    <Text
-                      className="bg-clip-text bg-gradient1 text-orange-400  capitalize sm:ml-[-30px] md:ml-[0] ml-5 sm:mt-[-13.5%]  text-xl tracking-[0.25px]"
-                      size="txtPoppinsRegular20"
-                    >
-                      FLANKER SECURITY
-                    </Text>
-                  </span>
-                  <div className="flex flex-col items-start justify-start md:ml-[0] ml-[132px] w-[32%] md:w-full">
-                    <ul className="flex flex-row gap-8 sm:hidden items-start justify-between w-full common-row-list">
-                      <li>
-                        <p
-                          onClick={() => navigate("/aboutus")}
-                          className="capitalize mb-0.5 text-base text-white-A700 tracking-[0.16px] "
-                        >
-                          <Text size="txtPoppinsMedium16">about us</Text>
-                        </p>
-                      </li>
-                      <li>
-                        <p
-                          onClick={() => navigate("/services")}
-                          className="capitalize mb-0.5 text-base text-white-A700 tracking-[0.16px]"
-                        >
-                          <Text size="txtPoppinsMedium16">Services</Text>
-                        </p>
-                      </li>
-                      <li>
-                        <p
-                          onClick={() => navigate("/gallery")}
-                          className="capitalize mt-0.5 text-base text-white-A700 tracking-[0.16px]"
-                        >
-                          <Text size="txtPoppinsMedium16">Gallery</Text>
-                        </p>
-                      </li>
-                      <li>
-                        <p
-                          onClick={() => navigate("/contactform")}
-                          className="capitalize text-base text-white-A700 tracking-[0.16px]"
-                        >
-                          <Text size="txtPoppinsMedium16">Contact Us</Text>
-                        </p>
-                      </li>
-                    </ul>
-                    
-                  </div>
-                  <div className="bg-white-A700 flex flex-col font-heebo items-start justify-end mb-2 md:ml-[0] ml-[247px] md:mt-0 mt-[15px] p-[5px] rounded-[21px] w-[14%] md:w-full">
-                    <div className="flex flex-row gap-3 items-start justify-start w-[90%] md:w-full">
-                      <div className="bg-gradient  flex flex-col h-[31px] items-center justify-start p-[9px] rounded-[15px] w-[31px]">
-                        <Img
-                          className="h-[11px] w-[11px]"
-                          src="images/img_call.svg"
-                          alt="call"
-                        />
-                      </div>
-                      <Text
-                        className="mt-1.5 text-black-900 text-sm tracking-[0.25px]"
-                        size="txtHeeboMedium14"
-                      >
-                        +9844235672
-                      </Text>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </header> */}
+            
             <Header className=" absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full"/>
             {/* <Line className="bg-green-400 h-[3px] mt-[3px] rounded-[1px] w-[19%]" /> */}
           </div>
@@ -166,7 +88,7 @@ const HomepagePage = () => {
               src={sec_6}
               alt="rectangle22076"
             />
-            <div className="flex flex-col items-start justify-start md:ml-[0] ml-[125px] md:mt-0 mt-[130px] sm:-mt-6">
+            <div className="flex flex-col items-start justify-start md:ml-[0] ml-[125px] md:mt-0 mt-[130px] sm:-mt-16">
               <Text
                 className="text-gray-600 text-sm sm:ml-1 tracking-[2.00px] uppercase sm:text-base"
                 size="txtRedHatDisplayRomanMedium14"
@@ -174,11 +96,11 @@ const HomepagePage = () => {
                 About us
               </Text>
               <Text
-                className="capitalize sm:text-xl sm:w-[95%] leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
+                className="capitalize sm:text-[17.5px] sm:w-full sm:leading-6 leading-[49.00px] mt-[19px] text-4xl md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
                 size="txtPoppinsMedium16"
               >
                 <span className="text-gray-900 font-poppins text-left font-normal">
-                  We Provide services for{" "}
+                  We Provide services for{" "} 
                 </span>
                 <span className="text-gray-900 font-poppins text-left font-[600]">
                   multiple{" "}
@@ -225,7 +147,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                     />
                   </div>
                   <Text
-                    className="capitalize leading-[49.00px] mt-[15px] text-4xl sm:text-[20px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full sm:leading-8 sm:w-[80%]"
+                    className="capitalize leading-[49.00px] mt-[15px] text-4xl sm:text-[18px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full sm:leading-8 sm:w-[80%]"
                     size="txtPoppinsSemiBold36"
                   >
                     <span className="text-gray-900 font-poppins text-left font-normal" >
@@ -451,7 +373,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
             why choose us
           </Text>
           <Text
-            className=" capitalize sm:text-xl leading-[49.00px] mt-[19px]  sm:ml-10 text-4xl sm:text-[32px] md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%] sm:w-full transition-all duration-400"
+            className=" capitalize sm:text-[18px] leading-[49.00px] sm:leading-6 mt-[19px]  sm:ml-10 text-4xl md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%] sm:w-full transition-all duration-400"
             size="txtPoppinsSemiBold36"
           >
             
@@ -462,9 +384,66 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
               multiple{" "}
             </span>
             <span className="text-gray-900 font-poppins text-left font-[600]">
-              customers in various industries worldwide
+              customers in various <br /> industries worldwide
             </span>
           </Text>
+          <Text
+                className="mt-[25px] text-[17px] leading-[32.00px] sm:text-base text-gray-700  tracking-[0.50px] sm:w-[88%] "
+                size="txtLatoRegular15Gray700"
+              >
+The Property Management Vertical encompasses the full spectrum of House Keeping Services, Landscaping, Maintenance Support Team and Support Staff with highly professional teams led by Facility Mangers.                </Text>
+<div className="w-full  bg-orange-300 p-4 mt-6 sm:block hidden">
+     <ul>
+       <li className="mb-8 ml-8 mt-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+             Perfection Anytime
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Trained Professionals
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Advance Technology
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Emergency help
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           24/7 Monitoring
+           </span>
+         </span>
+       </li>
+       <li className="mb-8 ml-8">
+         <span className="flex gap-3">
+           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
+           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           Remote Guarding
+           </span>
+         </span>
+       </li>
+     </ul>
+   </div>
           <div className=" font-lato md:h-[auto] h-[553px] max-w-[1242px] mt-[62px] mx-auto md:px-5 relative w-full">
             <Img
               className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full  rounded-xl sm:rounded-none"
@@ -483,7 +462,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
             </Text>
            
             <div
-              className="sm:hidden   rounded-lg absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start  p-[54px] md:px-10 sm:px-5 right-[0] w-[53%] bg-[#fcbe54]"
+              className="sm:hidden  rounded-lg absolute bg-cover bg-no-repeat bottom-[0] flex flex-col font-inter h-[248px] items-center justify-start  p-[54px] md:px-10 sm:px-5 right-[0] w-[53%] bg-[#fcbe54]"
              
             >
               <div className=" flex flex-col gap-[34px] items-start justify-start w-[94%] md:w-full">
@@ -544,7 +523,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
             TESTIMONIAL
           </Text>
           <Text
-            className="capitalize sm:text-2xl sm:w-[95%] leading-[49.00px] mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-center text-gray-900 tracking-[1.00px] w-[39%]"
+            className="capitalize sm:text-xl sm:w-[95%] leading-[49.00px] mt-[19px] text-4xl md:text-[34px] text-center text-gray-900 tracking-[1.00px] w-[39%] "
             size=""
           >
             <span className="text-gray-900 font-opensans font-normal ">
@@ -659,62 +638,11 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
             unselectedWrapperCss="inline-block md:ml-[0] mx-[4.50px] sm:ml-[0]"
           />
           {/* mobile view box starts */}
-          <div className="w-full  bg-yellow-400 p-4 mt-6 sm:block hidden">
-     <ul>
-       <li className="mb-8 ml-8 mt-8">
-         <span className="flex gap-3">
-           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
-             Perfection Anytime
-           </span>
-         </span>
-       </li>
-       <li className="mb-8 ml-8">
-         <span className="flex gap-3">
-           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
-           Trained Professionals
-           </span>
-         </span>
-       </li>
-       <li className="mb-8 ml-8">
-         <span className="flex gap-3">
-           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
-           Advance Technology
-           </span>
-         </span>
-       </li>
-       <li className="mb-8 ml-8">
-         <span className="flex gap-3">
-           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
-           Emergency help
-           </span>
-         </span>
-       </li>
-       <li className="mb-8 ml-8">
-         <span className="flex gap-3">
-           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
-           24/7 Monitoring
-           </span>
-         </span>
-       </li>
-       <li className="mb-8 ml-8">
-         <span className="flex gap-3">
-           <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
-           Remote Guarding
-           </span>
-         </span>
-       </li>
-     </ul>
-   </div>
+          
    {/* mobile view box ends */}
          </div>
       </div>
-      <Banner />
+      <Banner className='sm:mt-3'/>
           <Footer className="flex items-center justify-center mt-3 -mb-8 sm:-mt-44 sm:-mb-8 md:px-5 w-full bg-gray-900_01" />
         
     </>
