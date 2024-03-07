@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Loader from "./utils/loader"
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
@@ -36,10 +37,11 @@ export const ScrollToTop = () => {
 const ProjectRoutes = () => {
   return (
     <React.Suspense fallback={<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-    <p style={{ margin: 'auto' }}>Loading...</p>
+   <Loader/>
   </div>}>
       <Router>
           <ScrollToTop/>
+          
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="*" element={<NotFound />} />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Img, Text } from "components";
-import { MdOutlineMenu } from "react-icons/md";
+import { CiMenuFries } from "react-icons/ci";
 import Sidebar from "./Sidebar";
  import "./header.css"
 const Header = (props) => {
@@ -51,11 +51,14 @@ const Header = (props) => {
             >
               FLANKER SECURITY
             </Text>
-            
-    <MdOutlineMenu className="text-white-A700 cursor-pointer text-5xl sm:block hidden float-right ml-[6.6rem]" onClick={toggleSidebar}/>
+            <div className="p-0.5 bg-transparent static z-10 right-5 top-[29px]  rounded-md sm:block hidden">
+              
+    <CiMenuFries  className="text-white-A700 cursor-pointer text-4xl" onClick={toggleSidebar}/>
     
-
+            </div>
+           
           </div>
+          
           <ul className=" flex md:flex-1    sm:flex-col flex-row gap-8 sm:hidden items-start justify-center md:ml-[0] ml-[-32px] w-[40%] md:w-full common-row-list">
             <NavLink
               to="/aboutus"

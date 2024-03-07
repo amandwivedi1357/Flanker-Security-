@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import {
   Banner,
@@ -12,7 +12,7 @@ import {
   Slider,
   Text,
 } from "components";
-
+import "./Slider.css"
 import Slider1 from "./Slider"
 import guard from "../../assets/SVG/Guard.svg";
 import { FaCheck } from "react-icons/fa6";
@@ -22,6 +22,240 @@ import Header from "components/Header";
 import sec_6 from "../../assets/Event_Sec/sec_6.webp"
 
 const HomepagePage = () => {
+  const slidesData = [
+    {
+      id: 1,
+      content: (
+          <div className={`bg-white-A700  hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end rounded-xl md:ml-[0] py-16 sm:px-5   w-[30px] md:w-full transition-all duration-400 
+            `}
+            
+            onClick={()=>navigate('/guards')}
+            >
+            <Img
+              className="h-[60px] mt-[35px] hover:filter hover:brightness-110"
+              src={
+               
+                   "images/img_guard.svg"
+                  
+              }
+              alt="guard"
+            />
+            <Text
+              className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+              size="txtOpenSansRomanBold24"
+            >
+              Security Guards
+            </Text>
+            <Text
+              className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+              size="txtOpenSansRomanSemiBold14"
+            >
+              Guarding Now, Securing the Future.
+            </Text>
+          </div>
+      ),
+    },
+    {
+      id: 2,
+      content: (
+          <div
+                    className={`bg-white-A700  hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end rounded-xl md:ml-[0] py-16 sm:px-5  w-[30px] md:w-full transition-all duration-400
+                       
+                    `}
+                   
+                    onClick={()=>navigate('/infrastructure')}
+                  >
+                    <Img
+                      className="h-[60px] mt-[35px] text-black-900"
+                      src={
+                        
+                           "images/infra_yellow.svg"
+                          
+                      }
+                      alt="guard_One"
+                    />
+                    <Text
+                      className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                      size="txtOpenSansRomanBold24"
+                    >
+                      Security Infra
+                    </Text>
+                    <Text
+                      className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                      size="txtOpenSansRomanSemiBold14"
+                    >
+                      Guarding Tomorrow's Security Today.
+                    </Text>
+                  </div>
+      ),
+    },
+    {
+      id: 3,
+      content: (
+          <div 
+                    className={`bg-white-A700  hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end rounded-xl md:ml-[0] py-16 sm:px-5  w-[30px] md:w-full transition-all duration-400
+                      
+                    `}
+                    onMouseEnter={() => set(true)}
+                    onMouseLeave={() => set(false)}
+                    onClick={()=>navigate('/security-audits')}
+                  >
+                    <Img
+                      className="h-[60px] mt-[35px] text-black-900"
+                      src={
+                        
+                           "images/Audits_yellow.svg"
+                          
+                      }
+                      alt="guard_One"
+                    />
+                    <Text
+                      className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                      size="txtOpenSansRomanBold24"
+                    >
+                      Security Audits
+                    </Text>
+                    <Text
+                      className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                      size="txtOpenSansRomanSemiBold14"
+                    >
+                      Ensuring Safety with Strategic Audits.
+                    </Text>
+                  </div>
+      ),
+    },
+    {
+      id: 4,
+      content: (
+          <div
+                    className={`bg-white-A700  hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end rounded-xl md:ml-[0] py-16 sm:px-5  w-[30px] md:w-full transition-all duration-400`}
+                    
+                    onClick={()=>navigate('/risk-assessment')}
+  
+                  >
+                    <Img
+                      className="h-[60px] mt-[35px] text-black-900"
+                      src={
+                        
+                         
+                          "images/Risk_yellow.svg"
+                      }
+                      alt="guard_One"
+                    />
+                    <Text
+                      className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                      size="txtOpenSansRomanBold24"
+                    >
+                      Risk Assessment
+                    </Text>
+                    <Text
+                      className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+                      size="txtOpenSansRomanSemiBold14"
+                    >
+                      Assessing Today, Securing Tomorrow.
+                    </Text>
+                  </div>
+      ),
+    },
+    {
+      id: 5,
+      content: (
+          <div
+          className={`bg-white-A700  hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end rounded-xl md:ml-[0] py-16 sm:px-5  w-[30px] md:w-full transition-all duration-400`}
+          
+          onClick={()=>navigate('/drones')}
+        >
+          <Img
+            className="h-[60px] mt-[35px] text-black-900"
+            src={
+              
+                
+                 "images/drones_new_yellow.svg"
+            }
+            alt="guard_One"
+          />
+          <Text
+            className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+            size="txtOpenSansRomanBold24"
+          >
+            Drones
+          </Text>
+          <Text
+            className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+            size="txtOpenSansRomanSemiBold14"
+          >
+            Our drone technology stands vigilant.
+          </Text>
+        </div>
+      ),
+    },
+    {
+      id: 6,
+      content: (
+          <div
+          className={`bg-white-A700  hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end rounded-xl md:ml-[0] py-16 sm:px-5  w-[30px] md:w-full transition-all duration-400`}
+          
+          onClick={()=>navigate('/training')}
+        >
+          <Img
+            className="h-[60px] mt-[35px] text-black-900"
+            src={
+              
+                
+                 "images/img_guard.svg"
+            }
+            alt="guard_One"
+          />
+          <Text
+            className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+            size="txtOpenSansRomanBold24"
+          >
+            Security Training
+          </Text>
+          <Text
+            className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+            size="txtOpenSansRomanSemiBold14"
+          >
+            Training the first line of defense.
+          </Text>
+        </div>
+      ),
+    },
+    {
+      id: 7,
+      content: (
+          <div
+          className={`bg-white-A700  hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end rounded-xl md:ml-[0] py-16 sm:px-5  w-[30px] md:w-full transition-all duration-400`}
+          
+          onClick={()=>navigate('/investigation')}
+        >
+          <Img
+            className="h-[60px] mt-[35px] text-black-900"
+            src={
+              
+                
+                 "images/img_guard.svg"
+            }
+            alt="guard_One"
+          />
+          <Text
+            className="mt-12 text-2xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+            size="txtOpenSansRomanBold24"
+          >
+            Investigation
+          </Text>
+          <Text
+            className="leading-[24.00px] mb-[23px] mt-[3px] text-black-900_b2 text-sm tracking-[0.25px] w-full"
+            size="txtOpenSansRomanSemiBold14"
+          >
+            Uncovering Truths, Ensuring Security.
+          </Text>
+        </div>
+      ),
+    },
+  ];
+  const totalSlides = 7;
+  const [currentSlide, setCurrentSlide] = useState(0);
   const sliderRef = React.useRef(null);
   const [sliderState, setsliderState] = React.useState(0);
   const [isHovered1, setIsHovered1] = useState(false);
@@ -32,45 +266,75 @@ const HomepagePage = () => {
   const [isHovered6, setIsHovered6] = useState(false);
   const [isHovered7, setIsHovered7] = useState(false);
   const navigate = useNavigate();
+  
+
+
+  useEffect(() => {
+    const interval = setInterval(goToNextSlide, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [currentSlide]);
+
+  const goToSlide = (index) => {
+    resetInterval();
+    setCurrentSlide(index);
+  };
+
+  const goToPrevSlide = () => {
+    resetInterval();
+    setCurrentSlide((prevSlide) =>
+      prevSlide === 0 ? slidesData.length - 1 : prevSlide - 1
+    );
+  };
+
+  const goToNextSlide = () => {
+    setCurrentSlide((prevSlide) =>
+      prevSlide === slidesData.length - 1 ? 0 : prevSlide + 1
+    );
+    resetInterval();
+  };
+
+  const resetInterval = () => {
+    const interval = setInterval(goToNextSlide, 5000); // Reset interval
+    clearInterval(interval);
+  };
 
   return (
     <>
       <div className="bg-white-A700 flex flex-col sm:overflow-hidden items-center mb-[-20px] justify-start sm:mx-0 mx-auto w-full ">
         <div className="flex flex-col items-center justify-start w-full ">
-          <div className="font-poppins h-[775px] md:px-5 relative w-full  sm:bg-[#1A1313]">
-            <div className=" h-[775px] m-auto w-full">
-              <Img
-                className="h-[775px] m-auto object-cover w-full sm:hidden"
-                src="images/img_rectangle21985_875x1440.webp"
-                alt="rectangle21985"
-              />
-              <div className="absolute bottom-[30%]  flex flex-col items-start justify-start left-[3%]   w-[53%] ">
-                <Text
-                  className="capitalize leading-[89.00px] sm:text-3xl sm:font-normal  sm:ml-[5%] sm:w-[334px]  md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
-                  size="txtPoppinsBold60"
-                >
-                  Your Comprehensive Security Provider
-                </Text>
-                <Text
-                  className="leading-[29.00px] mt-6 text-[18px] font-[300] text-white-A700 sm:ml-[5%] tracking-[0.50px] w-[71%] sm:w-[298px]"
-                  size="txtLatoRegular15"
-                >
-                  We’re not just a security company, we’re the solution to all
-                  your safety needs
-                </Text>
-                <div className="flex flex-row font-poppins gap-[21px] items-center justify-start mt-11 w-[41%] md:w-full">
-                  <div className="flex flex-col items-center justify-start w-[47%]">
-                    <button
-                      onClick={()=>navigate('/contactform')}
-                      className="hover:bg-orange-400 sm:ml-[85%] hover:text-black-900 capitalize border border-orange-400 border-solid shadow-bs text-orange-400 cursor-pointer font-medium h-11 leading-[normal] min-w-[143px] text-base  text-center tracking-[0.16px]"
-                      variant="outline"
-                    >
-                      contact us
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="font-poppins h-[775px] md:px-5 relative w-full  sm:bg-[#070710]">
+          <div className="h-[775px] m-auto w-full relative">
+  <Img
+    className="h-[775px] m-auto object-cover w-full sm:hidden"
+    src="images/img_rectangle21985_875x1440.webp"
+    alt="rectangle21985"
+  />
+  <div className="absolute bottom-[30%] flex flex-col items-start justify-start sm:left-0 left-[3%] w-[53%] sm:w-full">
+    <Text
+      className="capitalize leading-[89.00px] sm:leading-[45.00px] sm:text-[31px] sm:font-normal sm:ml-[0%] sm:w-[334px] md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
+      size="txtPoppinsBold60"
+    >
+      Your Comprehensive Security Provider
+    </Text>
+    <Text
+      className="leading-[29.00px] mt-6 text-[18px] font-[300] text-white-A700_bc sm:ml-[0%] tracking-[0.50px] w-[71%] sm:w-[298px]"
+      size="txtLatoRegular15"
+    >
+      We’re not just a security company, we’re the solution to all your safety needs
+    </Text>
+    <div className="flex flex-col sm:flex-row font-poppins gap-[21px] items-start justify-start mt-11 w-[41%] md:w-full sm:ml-[0%]">
+      <button
+        onClick={()=>navigate('/contactform')}
+        className="hover:bg-orange-400 hover:text-black-900 capitalize border border-orange-400 border-solid shadow-bs text-orange-400 cursor-pointer font-medium h-11 leading-[normal] min-w-[143px] text-base text-center tracking-[0.16px]"
+        variant="outline"
+      >
+        contact us
+      </button>
+    </div>
+  </div>
+</div>
+
             
             <Header className=" absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full"/>
             {/* <Line className="bg-green-400 h-[3px] mt-[3px] rounded-[1px] w-[19%]" /> */}
@@ -78,25 +342,25 @@ const HomepagePage = () => {
           <Img
               className="h-[640px] md:h-auto object-cover sm:h-auto hidden sm:block sm:mt-[1%] sm:w-full"
               // src="images/img_rectangle22076_640x502.png"
-              src={sec_6}
+              src="images/original_sec.jpg"
               alt="rectangle22076"
             />
           <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px]  mx-auto md:px-5 w-full sm:w-[100%] rounded-xl ">
           <Img
-              className="h-[640px] md:h-auto object-cover sm:h-auto  sm:hidden sm:mt-[1%] sm:w-[380px]"
+              className="h-[640px] w-[50%] md:h-auto object-cover sm:h-auto  sm:hidden sm:mt-[1%] sm:w-[380px]"
               // src="images/img_rectangle22076_640x502.png"
-              src={sec_6}
+              src="images/original_sec.jpg"
               alt="rectangle22076"
             />
-            <div className="flex flex-col items-start justify-start md:ml-[0] ml-[125px] md:mt-0 mt-[130px] sm:-mt-16">
+            <div className="flex  flex-col items-start justify-start md:ml-[0] ml-[125px] md:mt-0 mt-[130px] sm:-mt-16">
               <Text
-                className="text-gray-600 text-sm sm:ml-1 tracking-[2.00px] uppercase sm:text-base"
+            className="text-gray-600 text-sm sm:ml-1 tracking-[2.00px] uppercase sm:text-[14px]"
                 size="txtRedHatDisplayRomanMedium14"
               >
-                About us
+                About us 
               </Text>
               <Text
-                className="capitalize sm:text-[17.5px] sm:w-full sm:leading-6 leading-[49.00px] mt-[19px] text-4xl md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
+                className="capitalize sm:text-[20px] sm:w-full sm:leading-6 leading-[49.00px] mt-[19px] text-4xl md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
                 size="txtPoppinsMedium16"
               >
                 <span className="text-gray-900 font-poppins text-left font-normal">
@@ -106,16 +370,16 @@ const HomepagePage = () => {
                   multiple{" "}
                 </span>
                 <span className="text-gray-900 font-poppins text-left font-[600]">
-                  customers in various industries worldwide
+                  customers in various  industries worldwide
                 </span>
               </Text>
               <Text
-                className="mt-[25px] text-[17px] leading-[32.00px] sm:text-base text-gray-700  tracking-[0.50px] sm:w-full "
+                className="mt-[25px] text-[17px] leading-[32.00px] sm:text-[18px] text-gray-700  tracking-[0.50px] sm:w-full "
                 size="txtLatoRegular15Gray700"
               >
 Welcome to Flanker Security Services, your premier security partner. With unwavering dedication, we pride ourselves on being a top provider of comprehensive security services. Our seasoned professionals ensure the highest standards in safeguarding assets, people, and information.              </Text>
-              <div className="flex flex-row font-poppins  gap-[13px] items-center justify-start mt-[23px] w-[56%] sm:w-[45%] sm:mx-2 md:w-full">
-                <div className="flex  flex-col items-center justify-start w-[48%] sm:w-[90%] mt-5 ml-[-4%] ">
+              <div className="flex flex-row font-poppins  gap-[13px] items-center justify-start mt-[3px] sm:-ml-0.2 w-[56%] sm:w-[45%]  md:w-full">
+                <div className="flex  flex-col items-start justify-start w-[48%] sm:w-[90%] mt-5  ">
                   <Button
                     onClick={() => navigate("/aboutus")}
                     className="  bg-transparent hover:bg-orange-400 hover:outline-orange-400 !text-orange-400 hover:!text-black-900 border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[142px] text-base text-center tracking-[0.16px]"
@@ -125,8 +389,9 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                 </div>
               </div>
             </div>
-          </div>
-          <div className="bg-gray-50 flex flex-col font-opensans items-center justify-start mt-[106px] p-[94px] sm:pb-0 md:px-10 sm:px-5 w-full">
+          </div> 
+          {/* bg-gray-50 */}
+          <div className="bg-gray-200 flex flex-col font-opensans items-center justify-start mt-[106px] sm:h-[611px] p-[94px] sm:pb-0 md:px-10 sm:px-5 w-full sm:mt-12">
             <List
               className="flex flex-col gap-[55px] items-center max-w-[1240px] mx-auto w-full"
               orientation="vertical"
@@ -135,7 +400,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                 <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[31px] w-[35%] md:w-full">
                   <div className="flex flex-row font-redhatdisplay gap-[18px] items-end justify-start w-[89%] md:w-full ">
                     <Text
-                      className="my-1 text-gray-600 text-sm tracking-[2.00px] uppercase"
+                      className="my-1 sm:mt-6 text-gray-600 text-sm sm:text-[14px] tracking-[2.00px] uppercase "
                       size="txtRedHatDisplayRomanMedium14"
                     >
                       premium security services
@@ -147,7 +412,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                     />
                   </div>
                   <Text
-                    className="capitalize leading-[49.00px] mt-[15px] text-4xl sm:text-[18px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full sm:leading-8 sm:w-[80%]"
+                    className="capitalize leading-[49.00px] mt-[15px] text-4xl sm:text-[20px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full sm:leading-8 sm:w-[80%]"
                     size="txtPoppinsSemiBold36"
                   >
                     <span className="text-gray-900 font-poppins text-left font-normal" >
@@ -165,7 +430,43 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                   </Text> */}
                 </div>
                
-                <Slider1/>
+                {/* <Slider1 /> */}
+
+                <div className="slider-container mt-6 sm:block hidden w-[90%] mx-auto">
+      <div
+        className="slider-wrapper"
+        style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        ref={sliderRef}
+      >
+        {slidesData.map((slide, index) => (
+          <div className="slide" key={slide.id}>
+            {slide.content}
+          </div>
+        ))}
+      </div>
+      
+      <button className="prev-btn" onClick={goToPrevSlide}>
+        {"<"}
+      </button>
+      <button className="next-btn" onClick={goToNextSlide}>
+        {">"}
+      </button>
+    </div>
+    <div className="hidden sm:block w-full ">
+    <div className="dots mb-1 hidden  sm:flex items-center justify-center">
+        {slidesData.map((slide, index) => (
+          <button
+            key={index}
+            className={`dot ${index === currentSlide ? 'active' : ''}`}
+            onClick={() => goToSlide(index)}
+          ></button>
+        ))}
+      </div>
+    </div>
+      
+               
+    
+                {/* Dots section ends */}
                 
                 <div className={`bg-white-A700 mr-6 shadow-xl   sm:hidden hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end md:ml-[0] ml-[220px] p-[27px] sm:px-5 w-[22%] md:w-full transition-all duration-400 rounded-xl ${
                     isHovered7 ? "hover:bg-orange-400" : ""
@@ -303,7 +604,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                   onClick={()=>navigate('/drones')}
                 >
                   <Img
-                    className="h-[60px] mt-[35px] text-black-900"
+                    className="h-[60px] mt-[35px]  text-black-900"
                     src={
                       isHovered2
                         ? "images/drone_new.svg"
@@ -367,13 +668,13 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
           </Text>
           </div>
           <Text
-            className="mt-[94px] sm:hidden mb-5 sm:-mt-[30%] sm:text-base  text-gray-600 text-sm tracking-[2.00px] uppercase sm:ml-[-44%]"
+            className="mt-[94px] sm:hidden mb-5 sm:-mt-[30%] sm:text-[14px]  text-gray-600 text-sm tracking-[2.00px] uppercase sm:ml-[-44%]"
             size="txtRedHatDisplayRomanMedium14"
           >
             why choose us
           </Text>
           <Text
-            className=" capitalize sm:text-[18px] leading-[49.00px] sm:leading-6 mt-[19px]  sm:ml-10 text-4xl md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%] sm:w-full transition-all duration-400"
+            className=" capitalize sm:text-[20px] leading-[49.00px] sm:leading-6 mt-[19px]  sm:ml-10 text-4xl md:text-[34px] text-gray-900 tracking-[1.00px] w-[63%] sm:w-full transition-all duration-400"
             size="txtPoppinsSemiBold36"
           >
             
@@ -384,75 +685,75 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
               multiple{" "}
             </span>
             <span className="text-gray-900 font-poppins text-left font-[600]">
-              customers in various <br /> industries worldwide
+              customers in various  industries worldwide
             </span>
           </Text>
           <Text
-                className="mt-[25px] text-[17px] leading-[32.00px] sm:text-base text-gray-700  tracking-[0.50px] sm:w-[88%] "
+                className="mt-[25px] hidden sm:block text-[17px] leading-[32.00px] sm:text-[18px] text-gray-700  tracking-[0.50px] sm:w-[88%] "
                 size="txtLatoRegular15Gray700"
               >
 The Property Management Vertical encompasses the full spectrum of House Keeping Services, Landscaping, Maintenance Support Team and Support Staff with highly professional teams led by Facility Mangers.                </Text>
-<div className="w-full  bg-orange-300 p-4 mt-6 sm:block hidden">
+<div className="w-full  bg-orange-300 p-4 mt-14 pb-8 sm:block hidden">
      <ul>
-       <li className="mb-8 ml-8 mt-8">
+       <li className="mb-5 ml-2 mt-8">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
              Perfection Anytime
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-5 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            Trained Professionals
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-5 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            Advance Technology
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-5 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            Emergency help
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-5 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            24/7 Monitoring
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-4 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            Remote Guarding
            </span>
          </span>
        </li>
      </ul>
    </div>
-          <div className=" font-lato md:h-[auto] h-[553px] max-w-[1242px] mt-[62px] mx-auto md:px-5 relative w-full">
-            <Img
-              className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full  rounded-xl sm:rounded-none"
+          <div className=" font-lato md:h-[auto] h-[553px] max-w-[1242px] mt-[62px] sm:mt-0 mx-auto md:px-5 relative w-full">
+          <Img
+              className="absolute sm:h-[301px]  h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-full  rounded-xl sm:rounded-none"
               src="images/img_rectangle22083.webp"
               alt="rectangle22083"
             />
             
             <Text
-              className="absolute sm:hidden leading-[32.00px]  right-[3%] text-[17px] text-gray-700 top-[15%] tracking-[0.50px] w-[31%] sm:w-full"
+              className="absolute sm:hidden leading-[32.00px] sm:leading-6 right-[3%] text-[17px] text-gray-700 top-[15%] tracking-[0.50px] w-[31%] sm:w-full"
               size="txtLatoRegular15Gray700"
             >
               The Property Management Vertical encompasses the full spectrum of
@@ -517,7 +818,7 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
           </div>
           
           <Text
-            className="mt-[150px] text-gray-600 text-sm tracking-[2.00px] uppercase sm:mt-[130%]"
+            className="mt-[150px] text-gray-600 text-sm tracking-[2.00px] uppercase sm:mt-[90%]"
             size="txtRedHatDisplayRomanMedium14"
           >
             TESTIMONIAL
@@ -550,12 +851,12 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
               setsliderState(e?.item);
             }}
             ref={sliderRef}
-            className="flex gap-[74px] max-w-[1165px] mt-[111px] mx-auto md:px-5 w-full"
+            className="flex gap-[74px] max-w-[1165px] mt-[111px]  sm:mt-12 mx-auto md:px-5 w-full"
             items={[...Array(12)].map(() => (
               <React.Fragment key={Math.random()}>
-                <div className="flex flex-col items-center justify-start mx-2.5">
-                  <div className="bg-gray-100   border-solid flex flex-col items-center justify-end p-[50px] md:px-10 sm:px-5 rounded-xl w-full">
-                    <div className="flex flex-col items-start justify-start mt-1 w-[96%] md:w-full">
+                <div className="flex flex-col items-center justify-start mx-2.5 sm:mx-0">
+                  <div className="bg-gray-100   border-solid flex flex-col  items-center justify-end p-[50px] md:px-10 sm:px-5 rounded-xl w-full ">
+                    <div className="flex flex-col  items-start justify-start mt-1 w-[96%]  md:w-full">
                       <div className="flex flex-row items-center justify-start ml-1 md:ml-[0] w-[46%] md:w-full">
                         <Img
                           className="h-[22px] w-[22px]"
@@ -579,30 +880,26 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
                         />
                       </div>
                       <Text
-                        className="mt-[21px] text-4xl sm:text-[32px] md:text-[34px] text-amber-400 tracking-[0.50px]"
+                        className="mt-[21px] text-4xl   sm:text-[32px] md:text-[34px] text-amber-400 tracking-[0.50px]"
                         size="txtLeckerliOneRegular36"
                       >
                         “
                       </Text>
                       <Text
-                        className="h-[228px] leading-[29.00px] text-[15px] text-black-900 tracking-[0.50px] w-[228px]"
+                        className="h-[228px] leading-[29.00px] text-[18px] text-black-900 tracking-[0.50px] w-[308px] "
                         size="txtLatoRegular15Gray700"
-                        style={{ lineHeight: "1.93" }}
+                        style={{ lineHeight: "1.53" }}
                       >
-                        Top-qTop-quality Products Sourced From The Most Ideal
-                        LocationsTop-quality Products Sourced From The Most
-                        ITop-quality Products Sourced From The Most Ideal
-                        Locationsdeal LocationsTop-quality Products Sourced From
-                        The Most I
+                        Choosing Flanker security was a game-changer for us. Their proactive security measures and highly trained personnel have created a safe environment that we can rely on.
                       </Text>
                       <Text
-                        className="mt-7 text-black-900 text-xl tracking-[0.50px]"
+                        className="mt-7 text-black-900 text-lg tracking-[0.50px]"
                         size="txtLatoMedium20Black900"
                       >
                         Abhishek Verma
                       </Text>
                       <Text
-                        className="mt-3 text-gray-600 text-lg tracking-[0.50px]"
+                        className="mt-3 text-gray-600 text-md tracking-[0.50px]"
                         size="txtLatoMedium18"
                       >
                         PR Manager
@@ -627,8 +924,9 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
               );
             }}
           />
+          {/* border border-red-500 fixed z-50 */}
           <PagerIndicator
-            className="flex h-2.5 justify-center mt-[71px] w-[105px]"
+            className="flex h-2.5 justify-center mt-[71px] w-[105px] "
             count={3}
             activeCss="inline-block cursor-pointer rounded-[50%] h-2.5 bg-orange-400 w-2.5"
             activeIndex={sliderState}
@@ -643,7 +941,7 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
          </div>
       </div>
       <Banner className='sm:mt-3'/>
-          <Footer className="flex items-center justify-center mt-3 -mb-8 sm:-mt-44 sm:-mb-8 md:px-5 w-full bg-gray-900_01" />
+          <Footer className="flex items-center justify-center mt-3 -mb-8 sm:-mt-56 sm:-mb-8 md:px-5 w-full bg-[#070710]" />
         
     </>
   );

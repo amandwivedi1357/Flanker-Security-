@@ -66,15 +66,15 @@ const slidesData = [
   {
     id: 1,
     content: (
-      <div className="slide-content">
+      <div className="slide-content sm:-mt-8">
         <div 
-            className="bg-cover bg-orange-300 bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
+            className="bg-cover bg-orange-300 bg-no-repeat font-redhatdisplay h-[514px]  mt-28 md:px-5 py-[5px] relative w-full"
             
           >
             <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
                 <Text
-                  className="text-black-900_e5 text-center text-sm tracking-[2.00px] uppercase"
+                  className="text-black-900_e5 text-center text-[15px] tracking-[2.00px] uppercase"
                   size="txtRedHatDisplayRomanMedium14Black900e5"
                 >
                   vision
@@ -87,7 +87,7 @@ const slidesData = [
                   To provide future ready {" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-[600]">
-                  AI Powered Security
+                  AI Powered Security{" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-normal">
                     
@@ -126,7 +126,7 @@ const slidesData = [
   {
     id: 2,
     content: (
-      <div className="slide-content">
+      <div className="slide-content sm:-mt-8">
         <div 
             className="bg-cover bg-orange-300 bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
            
@@ -134,7 +134,7 @@ const slidesData = [
             <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
                 <Text
-                  className="text-black-900_e5 text-center  text-sm tracking-[2.00px] uppercase"
+                  className="text-black-900_e5 text-center  text-[15px] tracking-[2.00px] uppercase"
                   size="txtRedHatDisplayRomanMedium14Black900e5"
                 >
                   Mission
@@ -193,23 +193,26 @@ const AboutusPage = () => {
           <div className="font-poppins md:h-[848px] h-[675px] md:px-5 relative w-full">
             <div className="absolute h-[648px] inset-[0] justify-center  w-full">
               <Img
-                className="h-[648px] m-auto object-cover w-full"
+                className="h-[648px] filter brightness-50 m-auto object-cover w-full"
                 src="images/img_rectangle21985.webp"
                 alt="rectangle21985"
               />
-              <div className="absolute bottom-[31%] flex flex-col gap-[22px] inset-x-[0] items-center justify-start mx-auto">
+              <div className="absolute bottom-[41%] flex flex-col gap-[22px] inset-x-[0] items-center justify-start mx-auto">
                 <Text
-                  className="capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%] sm:text-3xl sm:font-normal sm:w-4/5"
+                  className="capitalize leading-[89.00px] sm:leading-[44.00px] text-6xl sm:text-left text-center text-white-A700 tracking-[0.25px] w-[70%] sm:w-[90%] sm:text-[31px]  sm:font-normal "
                   size="txtPoppinsBold60"
                 >
-                  Your Partner in Uncompromised Security
+                  Your Partner in Firm Security
                 </Text>
+                <div className="sm:w-[90%] ">
+
                 <Text
-                  className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
+                  className="text-[18px] text-center sm:text-left text-white-A700_bc tracking-[0.50px] "
                   size="txtLatoRegular15"
-                >
+                  >
                   Trust the experts with your safety
                 </Text>
+                  </div>
               </div>
             </div>
             <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
@@ -229,13 +232,13 @@ const AboutusPage = () => {
             <div className="flex flex-col md:gap-10 gap-[166px] justify-start md:mt-0 mt-[125px]">
               <div className="flex flex-col gap-[19px] items-start justify-start md:ml-[0] ml-[125px]">
                 <Text
-                  className="text-gray-600 text-sm tracking-[2.00px] uppercase"
+                  className="text-gray-600 text-sm tracking-[2.00px] uppercase sm:text-[14px]"
                   size="txtRedHatDisplayRomanMedium14"
                 >
                   About us
                 </Text>
                 <Text
-                  className="capitalize leading-[49.00px] sm:leading-[29px] text-4xl sm:text-[17px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
+                  className="capitalize leading-[49.00px] sm:leading-6 text-4xl sm:text-[20px] md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
                   size="txtPoppinsSemiBold36"
                 >
                   <span className="text-gray-900 font-poppins text-left font-normal">
@@ -249,7 +252,7 @@ const AboutusPage = () => {
                   </span>
                 </Text>
                 <Text
-                  className="leading-[29.00px] text-[17px] text-black-900_cc tracking-[0.50px] w-full"
+                  className="leading-[32.00px] text-[18px] text-black-900_cc tracking-[0.50px] w-full"
                   size="txtLatoRegular15Black900cc"
                 >
                   Flanker Security and Property Management Services is led by an Indian Air Force Veteran with a distinguished service of over 02 decades in the varied domains of Security, Vigilance, Provost, Ground Defence, Air Defence, Facilities Management and the fast-paced Air Operations.
@@ -264,7 +267,7 @@ const AboutusPage = () => {
           <Slider slidesData={slidesData} time={5000}/>
           <div className="w-[90%] sm:block hidden  h-auto">
           <Text
-            className="mt-[151px] sm:mt-12  text-gray-600 sm:text-left text-sm tracking-[2.00px] uppercase  sm:ml-0"
+            className="mt-[151px] sm:mt-12 sm:text-[14px]  text-gray-600 sm:text-left text-sm tracking-[2.00px] uppercase  sm:ml-0"
             size="txtRedHatDisplayRomanMedium14"
           >
             why choose us
@@ -277,75 +280,72 @@ const AboutusPage = () => {
             why choose us
           </Text>
           <Text
-            className="capitalize leading-[49.00px] sm:leading-[29px] sm:text-[18px]  mt-[19px] text-4xl  md:text-[34px] text-gray-900 tracking-[1.00px] w-[67%]  sm:w-[90%]"
+            className="capitalize leading-[49.00px] sm:leading-[29px] sm:text-[20px]  mt-[19px] text-4xl  md:text-[34px] text-gray-900 tracking-[1.00px] w-[67%]  sm:w-[90%]"
             size="txtPoppinsSemiBold36"
           >
             <span className="text-gray-900 font-poppins text-left font-normal">
-              We Provide services for{" "}
+            Offering services globally{" "}
             </span>
             <span className="text-gray-900 font-poppins text-left font-[600]">
-              multiple{" "}
+            to diverse industries and{" "}
             </span>
             <span className="text-gray-900 font-poppins text-left font-[600]">
-              customers in various <br /> industries worldwide
+            multiple clients.
             </span>
           </Text>
           <Text
-                  className="leading-[29.00px] sm:w-[90%] sm:mt-6 hidden sm:block text-[15px] text-black-900_cc tracking-[0.50px] w-full"
+                  className="leading-[29.00px] sm:w-[90%] sm:mt-6 hidden sm:block text-[18px] text-black-900_cc tracking-[0.50px] w-full"
                   size="txtLatoRegular15Black900cc"
                 >
-                  Flanker Security and Property Management Services is led by an Indian Air Force Veteran with a distinguished service of over 02 decades in the varied domains of Security, Vigilance, Provost, Ground Defence, Air Defence, Facilities Management and the fast-paced Air Operations.
-                  <br />
-                  <br />
-                  Flanker was established with a visionary approach of making Security Services Sector highly professional, tech oriented, and backed by Artificial Intelligence to provide unmatched security, safety and protection to individuals and enterprises.
+                 The Property Management Vertical encompasses the full spectrum of House Keeping Services, Landscaping, Maintenance Support Team and Support Staff with highly professional teams led by Facility Managers.
                 </Text>
                  {/* mobile view box starts */}
-          <div className="w-full  bg-yellow-400 p-4 mt-6 sm:block hidden">
+                 <div className="w-full  bg-orange-300 p-4 mt-14 pb-8 sm:block hidden">
      <ul>
-       <li className="mb-8 ml-8 mt-8">
+       <li className="mb-5 ml-2 mt-8">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
              Perfection Anytime
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-5 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            Trained Professionals
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-5 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            Advance Technology
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-5 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            Emergency help
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-5 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            24/7 Monitoring
            </span>
          </span>
        </li>
-       <li className="mb-8 ml-8">
+       <li className="mb-4 ml-2">
          <span className="flex gap-3">
            <FaCheck className="mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />
-           <span className="font-semibold text-base text-black-900 text-left tracking-[0.25px]">
+           <span className="font-semibold text-[18px] text-black-900 text-left tracking-[0.25px]">
            Remote Guarding
            </span>
          </span>
@@ -353,7 +353,7 @@ const AboutusPage = () => {
      </ul>
    </div>
    {/* mobile view box ends */}
-          <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] -mb-12 mt-[62px] mx-auto md:px-5 relative w-full">
+          <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] -mb-12 sm:-mb-20 mt-[62px] sm:mt-0 mx-auto md:px-5 relative w-full">
             <Img
               className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-[100%]  rounded-xl sm:rounded-none"
               src="images/cctv_about.jpg"
@@ -412,7 +412,7 @@ const AboutusPage = () => {
              
             </div>
             <Text
-              className="absolute leading-[29.00px] right-[4%] text-[15px] text-gray-700 top-[16%] tracking-[0.50px] w-[31%] sm:w-full sm:hidden"
+              className="absolute leading-[29.00px] right-[4%] text-[17px] text-gray-700 top-[16%] tracking-[0.50px] w-[31%] sm:w-full sm:hidden"
               size="txtLatoRegular15Gray700"
             >
               The Property Management Vertical encompasses the full spectrum of
@@ -422,7 +422,7 @@ const AboutusPage = () => {
             </Text>
           </div>
           <Banner />
-          <Footer className="flex items-center justify-center mt-[29px] sm:-mt-36 md:px-5 w-full bg-gray-900_01" />
+          <Footer className="flex items-center justify-center mt-[29px] sm:-mt-56 md:px-5 w-full bg-[#070710]" />
         </div>
       </div>
     </>

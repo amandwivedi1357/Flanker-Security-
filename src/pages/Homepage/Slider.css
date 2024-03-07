@@ -4,11 +4,13 @@
   }
   
   .slider-wrapper {
+    
     display: flex;
     transition: transform 0.5s ease;
   }
   
   .slide {
+    
     flex: 0 0 100%;
   }
   
@@ -31,4 +33,28 @@
   .next-btn {
     right: 0;
   }
+  .dots {
+    /* border: 1px solid red; */
+    opacity: 0;
+    margin: auto;
+    display: flex;
+  }
   
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dot.active {
+    background-color: #ff9900; /* Orange color */
+  }
+  @media (max-width: 768px) {
+   .dots{
+    opacity: 1;
+   }
+  }

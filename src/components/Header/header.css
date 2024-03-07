@@ -1,89 +1,17 @@
-.call {
-    --c: #FCB131; /* the border color */
-    --b: 10px;    /* the border thickness */
-    --g: 5px;     /* the gap on hover */
-    
-    padding: calc(var(--g) + var(--b));
-    --_g: #0000 25%, var(--c) 0;
-    background: 
-      conic-gradient(from 180deg at top var(--b) right var(--b), var(--_g))
-      var(--_i, 200%) 0 / 200% var(--_i, var(--b)) no-repeat,
-      conic-gradient(at bottom var(--b) left var(--b), var(--_g))
-      0 var(--_i, 200%) / var(--_i, var(--b)) 200% no-repeat;
-    border-radius: 50%; /* Make it circular */
-    transition: .3s, background-position .3s .3s, border-radius 0.3s; /* Add transition for border radius */
-    cursor: pointer;
-  }
-  
-  .call:hover {
-    --_i: 100%;
-    transition: .3s, background-size .3s .3s, border-radius 0.3s; /* Add transition for border radius */
-  }
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  border-top-left-radius:30px ;
+  border-bottom-left-radius:30px ;
+  bottom: 0;
+  z-index: 50;
+  background-color: #dd8e05;
+  width: 75%;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+}
 
-  .breadcrumb-link {
-    position: relative;
-    color: #ffffff;
-    text-decoration: none;
-    overflow: hidden;
-  }
-  
-  .breadcrumb-link::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #fcb131;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  .breadcrumb-link:hover::before {
-    width: 100%;
-  }
-  @keyframes bounce {
-    0% {
-      transform: translateY(-20px);
-    }
-    50% {
-      transform: translateY(10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-  
-  
-  @keyframes openUp {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  .bounceAnimation {
-    animation: bounce 0.5s ease;
-  }
-  
-  @keyframes openUp {
-    0% {
-      transform: translateY(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  .bounceAnimation {
-    animation: bounce 1s ease;
-  }
-  
-  .openUpAnimation {
-    animation: openUp 1s ease;
-  }
+.sidebar.open {
+  transform: translateX(0);
+}

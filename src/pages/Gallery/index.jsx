@@ -14,25 +14,25 @@ const GalleryPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col mb-[-20px]   font-poppins gap-[27px] items-center justify-start mx-auto w-full">
-        <div className="h-[648px] md:px-5  w-full sm:bg-[#1A1313]">
-          <div className="h-[648px] m-auto w-full ">
+      <div className="bg-white-A700 flex flex-col mb-[-20px]   font-poppins gap-[27px] items-center justify-start mx-auto w-full ">
+        <div className="h-[648px] md:px-5 relative w-full ">
+          <div className="h-[648px] inset-[0] justify-center absolute m-auto w-full ">
             <Img
-              className="h-[648px] m-auto object-cover w-full sm:hidden"
+              className="h-[648px] filter brightness-50 m-auto object-cover w-full "
               src="images/img_rectangle21985_2.webp"
               alt="rectangle21985"
             />
             <div className="absolute flex flex-col gap-[15px] h-max inset-[0] items-center justify-center m-auto ">
               <Text
-                className="capitalize leading-[102.00px] md:text-5xl text-6xl sm:font-normal sm:text-3xl text-center text-white-A700 tracking-[0.25px] w-[90%] sm:w-[90%]"
+                className="capitalize sm:text-left leading-[102.00px] sm:leading-[45.00px] md:text-5xl text-6xl sm:font-normal sm:text-3xl text-center text-white-A700 tracking-[0.25px] w-[90%] sm:w-[90%]"
                 size="txtPoppinsBold60"
               >
  Every Image Tells a Story!</Text>
               <Text
-                className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
+                className="text-[18px] sm:w-[90%] sm:leading-7 sm:text-left text-center text-white-A700_bc tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-                Gallery
+               Safety framed in every image, security woven in every pixel.
               </Text>
             </div>
           </div>
@@ -47,14 +47,14 @@ const GalleryPage = () => {
 
     </div>
           <div className="head_cont">
-              <p className="head_text">Event Security </p>
+              <p className="head_text mt-12">Event Security </p>
           </div>
           <div className="gal_cont">
             <img src={collage2} className="w-full" alt="" />
           </div>
         </div>
        
-        <Footer className="flex items-center justify-center md:px-5 w-full bg-gray-900_01" />
+        <Footer className="flex items-center justify-center md:px-5 w-full bg-[#070710]" />
       </div>
     </>
   );

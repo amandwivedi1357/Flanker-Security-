@@ -366,7 +366,7 @@ const Audits = () => {
           <QuickLinks/>
         </div>
         <Banner/>
-        <Footer className="flex items-center justify-center sm:-mt-[9rem] mt-[29px] md:px-5 w-full bg-gray-900_01" />
+        <Footer className="flex items-center justify-center sm:-mt-[9rem] mt-[29px] md:px-5 w-full bg-[#070710]" />
       </div>
       {toast && <Toast message={toast.message} type={toast.type} onClose={handleCloseToast} />}
     </>

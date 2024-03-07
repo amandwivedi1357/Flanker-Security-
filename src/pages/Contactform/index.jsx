@@ -107,22 +107,22 @@ const ContactformPage = () => {
   return (
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center mb-[-20px] justify-start mx-auto w-full">
-        <div className="md:h-[848px] h-[648px] md:px-5 relative w-full ">
-          <div className="absolute h-[648px] inset-[0] justify-center sm:bg-[#1F1A13]  w-full">
+        <div className="md:h-[848px] h-[648px] md:px-5 relative w-full sm:-mb-44">
+          <div className="absolute h-[648px] inset-[0] justify-center   w-full">
             <Img
-              className="h-[648px] m-auto object-cover w-full sm:hidden"
+              className="h-[648px] m-auto filter brightness-50 object-cover w-full "
               src="images/img_rectangle21985_2.webp"
               alt="rectangle21985"
             />
             <div className="absolute flex flex-col gap-[21px] h-max inset-[0] items-center justify-center m-auto">
               <Text
-                className="capitalize sm:text-3xl sm:w-4/5 sm:font-normal md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px]"
+                className="capitalize sm:leading-[45.00px] sm:text-3xl sm:text-left sm:w-[90%] sm:font-normal md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px]"
                 size="txtPoppinsBold60"
               >
-                We are here for you
+                Contact for Total the Security Solutions
               </Text>
               <Text
-                className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
+                className="text-[18px] sm:text-left sm:w-[90%] text-center text-white-A700_bc tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
                 Trust the experts with your safety
@@ -131,29 +131,29 @@ const ContactformPage = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className="bg-gray-50 flex flex-col font-lato items-center justify-start p-[69px] md:px-10 sm:px-5 w-full ">
-          <div className="bg-white-A700 flex flex-col  rounded-xl items-end justify-start max-w-[1240px] mb-9 mx-auto pl-[60px] md:px-5 w-full">
-            <div className="flex md:flex-col flex-row md:gap-10 gap-[93px] items-center justify-end w-full">
+        <div className="bg-gray-50 sm:pt-3 sm:-mt-5 flex flex-col font-lato items-center justify-start p-[69px] sm:p-0 md:px-10 sm:px-5 w-full ">
+          <div className="bg-[#fff] sm:shadow-2xl flex flex-col  rounded-xl items-end justify-start max-w-[1240px] mb-9 mx-auto pl-[60px] md:px-5 w-full">
+            <div className="flex md:flex-col flex-row md:gap-10 sm:px-3 gap-[93px] items-center justify-end w-full">
               <form onSubmit={sendEmail} className=" flex md:flex-1 flex-col gap-[53px] items-start justify-start w-[44%] md:w-full">
                 <div className=" flex flex-col gap-[23px] items-center justify-start w-full">
                   <div className="flex flex-col items-center justify-start w-full">
-                    <div className="flex flex-col items-start justify-start w-full">
+                    <div className="flex flex-col items-start justify-start sm:mt-2 w-full">
                       <a
                         
-                        className="text-gray-600 text-sm tracking-[2.00px] uppercase"
+                        className="text-gray-600 text-sm tracking-[2.00px] uppercase sm:text-[15px]"
                       >
                         <Text className="pt-5" size="txtRedHatDisplayRomanMedium14">
                           contact us
                         </Text>
                       </a>
                       <Text
-                        className="mt-[19px] text-4xl sm:text-[32px] md:text-[34px] text-gray-900_e5 tracking-[0.36px]"
+                        className="mt-[19px] text-4xl sm:text-[20px] md:text-[34px] text-gray-900_e5 tracking-[0.36px]"
                         size="txtPoppinsRegular36"
                       >
                         Have Questions?
                       </Text>
                       <Text
-                        className="text-4xl sm:text-[32px] md:text-[34px] text-gray-900_e5 tracking-[0.36px]"
+                        className="text-4xl sm:-mt-3 sm:text-[20px] md:text-[34px] text-gray-900_e5 tracking-[0.36px]"
                         size="txtPoppinsSemiBold36"
                       >
                         Get in Touch!
@@ -202,7 +202,7 @@ const ContactformPage = () => {
                         </div>
                         <div className="flex sm:flex-1 flex-col items-center justify-start w-[47%] sm:w-full">
                           <SelectBox  required
-                            className="text-[15px] text-left tracking-[1.20px] w-full"
+                            className="text-[15px] text-left tracking-[1.20px] w-full sm:-mt-4"
                             placeholderClassName="text-gray-600_a0"
                             indicator={
                               <Img
@@ -254,25 +254,25 @@ const ContactformPage = () => {
                     </div>
                     <div className="flex sm:flex-1 flex-col items-center justify-start w-[47%] sm:w-full">
                       <div className="flex flex-col items-center justify-start w-full">
-                      <input  required name="postalCode" onChange={e => handleChange(e.target.value, { name: "postalCode" })} value={formData.postalCode} placeholder=" Postal Code" className="border-b border-gray-600 border-solid sm:pr-5 pr-[35px] placeholder-gray-600_a0 py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full"/>
+                      <input  required name="postalCode" onChange={e => handleChange(e.target.value, { name: "postalCode" })} value={formData.postalCode} placeholder=" Postal Code" className="border-b border-gray-600 border-solid sm:-mt-4 sm:pr-5 pr-[35px] placeholder-gray-600_a0 py-[13px] text-[15px] text-gray-600_a0 tracking-[1.20px] w-full"/>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col font-poppins items-center justify-start w-[31%] md:w-full">
+                <div className="flex flex-col font-poppins sm:items-start items-center justify-start w-[31%] md:w-full">
                   <Button type="submit" className="hover:bg-transparent border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[155px] text-base text-center tracking-[0.16px]">
                     get in touch
                   </Button>
                 </div>
               </form>
-              <div className="bg-orange-400 rounded-xl rounded-l-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] items-center justify-center p-[54px] sm:p-0 sm:pb-0  md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[340px] sm:rounded-none">
+              <div className="bg-orange-400 rounded-xl rounded-l-none sm:rounded-tr-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] sm:gap-5  items-center justify-center p-[54px] sm:p-0  md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[345px] sm:rounded-b-xl  ">
                 <Text
-                  className="mt-[58px] text-4xl sm:text-[26px] md:text-[34px] text-black-900 tracking-[0.36px]"
+                  className="mt-[58px] sm:mt-8 text-4xl sm:text-[20px] md:text-[34px] text-black-900 tracking-[0.36px]"
                   size="txtPoppinsSemiBold36Black900"
                 >
                   Contact Information
                 </Text>
-                <div className="flex flex-col font-lato items-start justify-start mb-[156px] w-[95%] md:w-full">
+                <div className="flex flex-col sm:mt-4 font-lato items-start justify-start mb-[156px] sm:mb-12 w-[95%] md:w-full">
                   <div className="flex sm:flex-col flex-row gap-[25px] items-start justify-start w-full">
                     <Img
                       className="h-[30px] sm:mt-0 mt-[3px] w-[30px]"
@@ -280,14 +280,14 @@ const ContactformPage = () => {
                       alt="location"
                     />
                     <Text
-                      className="sm:flex-1 sm:ml-[15%]  sm:mt-[-16%] leading-[33.00px] sm:text-base  text-black-900_e5_01 text-lg tracking-[0.25px] w-[88%] sm:w-[80%]"
+                      className="sm:flex-1 sm:ml-[15%]  sm:mt-[-19%] leading-[33.00px] sm:text-base  text-black-900_e5_01 text-lg tracking-[0.25px] w-[88%] sm:w-[80%]"
                       size="txtLatoRegular18"
                     >
                       P 1, Karthik Enclave, Road No 1, KPHB Colony, Kukatpally,
                       Hyderabad - 500085
                     </Text>
                   </div>
-                  <div className="flex flex-row gap-[23px] items-center justify-start mt-[45px] w-3/5 md:w-full">
+                  <div className="flex flex-row gap-[23px] items-center justify-start mt-[45px] sm:mt-4 w-3/5 md:w-full">
 
                     <Img
                       className="h-8 w-8"
@@ -295,7 +295,7 @@ const ContactformPage = () => {
                       alt="phone"
                     />
                     <Text
-                      className="text-black-900_e5_01 text-lg tracking-[0.25px] sm:text-base"
+                      className="text-black-900_e5_01 text-lg sm:-ml-2 tracking-[0.25px] sm:text-base"
                       size="txtLatoRegular18"
                     >
                       +91 91007 92007
@@ -305,14 +305,14 @@ const ContactformPage = () => {
                    
 
                   </div>
-                  <div className="flex flex-row gap-[29px] items-start justify-start md:ml-[0] ml-[5px] mt-12 w-[58%] md:w-full">
+                  <div className="flex sm:mt-4 flex-row gap-[29px] items-start justify-start md:ml-[0] ml-[5px] mt-12 w-[58%] md:w-full">
                     <Img
                       className="h-[17px] mt-2 sm:ml-2"
                       src="images/img_lock_black_900.svg"
                       alt="lock"
                     />
                     <Text
-                      className="text-black-900_e5_01 text-lg tracking-[0.25px] sm:mt-1"
+                      className="text-black-900_e5_01 sm:-ml-2 text-lg tracking-[0.25px] sm:mt-1 sm:pb-0"
                       size="txtLatoRegular18"
                     >
                       info@flankersecurity.com
@@ -323,7 +323,7 @@ const ContactformPage = () => {
             </div>
           </div>
         </div>
-        <Footer className="flex items-center justify-center md:px-5 w-full bg-gray-900_01" />
+        <Footer className="flex items-center  justify-center md:px-5 w-full bg-[#070710]" />
       </div>
     </>
   );

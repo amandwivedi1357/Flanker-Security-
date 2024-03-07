@@ -10,7 +10,7 @@
 }
 .head_cont .head_text{
     font-size: 32px;
-  font-weight: bold;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.25;
@@ -68,3 +68,18 @@
     opacity: 1;
   }
   
+  @media (max-width:768px) {
+    .head_cont{
+      margin-top: 0;
+    }
+    .head_cont .head_text{
+      font-size: 20px;
+      
+    }
+    .gal_cont{
+      margin-top: 20px;
+    }
+    .image-container{
+      margin-top: 20px;
+    }
+  }

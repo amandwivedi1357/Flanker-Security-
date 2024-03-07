@@ -1,5 +1,6 @@
 .slider-container {
     width: 100%;
+    
     overflow: hidden;
   }
   
@@ -11,4 +12,6 @@
   .slide {
     flex: 0 0 100%;
   }
-  
+   @media (max-width:768px){
+    
+   }

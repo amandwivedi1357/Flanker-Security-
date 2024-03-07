@@ -8,10 +8,10 @@ const Footer = (props) => {
   return (
     <>
       <footer className={props.className}>
-        <div className="bg-gray-900_01 flex flex-col items-center justify-center p-[105px] md:px-10 sm:px-5 w-full ">
-          <div className="flex flex-col gap-[7px] items-center justify-center mt-[13px] w-[97%] md:w-full ">
+        <div className="bg-[#070710] flex flex-col items-center justify-center sm:items-start sm:justify-start p-[105px] md:px-10  sm:px-5 w-full ">
+          <div className="flex flex-col gap-[7px] items-center justify-center mt-[13px]  w-[100%] md:w-full ">
             <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full ">
-              <div className="flex md:flex-1 flex-col gap-3.5 items-start justify-start w-1/4 md:w-full ">
+              <div className="flex md:flex-1 flex-col gap-3.5 items-start justify-start w-1/4 md:w-full  ">
                 <Text
                   className="text-white-A700 text-xl tracking-[0.03px]"
                   size="txtPoppinsMedium20"
@@ -105,11 +105,15 @@ const Footer = (props) => {
                 </ul>
               </div>
             </div>
+
             <Text onClick={()=>window.open('https://rayformula.com/','_blank')}
-              className="text-lg cursor-pointer text-white-A700 tracking-[0.03px]"
+              className="text-lg sm:mt-8 cursor-pointer text-white-A700 tracking-[0.03px]"
               size="txtNunitoMedium18"
             >
-               Website by Rayformula
+              <div className="flex">
+              <img className="w-5 mr-4" src="images/rayformula.svg" alt="" />  <span>Website by Rayformula </span>
+              </div>
+             
             </Text>
           </div>
         </div>

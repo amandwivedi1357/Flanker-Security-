@@ -12,7 +12,7 @@ const Slider1 = () => {
     {
       id: 1,
       content: (
-          <div className={`bg-white-A700 mr-6 hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end md:ml-[0] p-[27px] sm:px-5 rounded-sm w-[18%] md:w-full transition-all duration-400 
+          <div className={`bg-white-A700  hover:bg-orange-400 cursor-pointer flex md:flex-1 flex-col items-start justify-end rounded-xl md:ml-[0] py-16 sm:px-5  w-[30px] md:w-full transition-all duration-400 
             `}
             
             onClick={()=>navigate('/guards')}
@@ -45,7 +45,7 @@ const Slider1 = () => {
       id: 2,
       content: (
           <div
-                    className={`bg-white-A700  cursor-pointer flex md:flex-1 ml-6 sm:ml-[2%] flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 
+                    className={`bg-white-A700  cursor-pointer flex md:flex-1 ml-6 sm:ml-[2%] flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400  py-16 rounded-xl
                        
                     `}
                    
@@ -79,7 +79,7 @@ const Slider1 = () => {
       id: 3,
       content: (
           <div 
-                    className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400
+                    className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400 py-16 rounded-xl
                       
                     `}
                     onMouseEnter={() => set(true)}
@@ -114,7 +114,7 @@ const Slider1 = () => {
       id: 4,
       content: (
           <div
-                    className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400`}
+                    className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400 py-16 rounded-xl`}
                     
                     onClick={()=>navigate('/risk-assessment')}
   
@@ -147,7 +147,7 @@ const Slider1 = () => {
       id: 5,
       content: (
           <div
-          className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 `}
+          className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400  py-12 rounded-xl`}
           
           onClick={()=>navigate('/drones')}
         >
@@ -179,7 +179,7 @@ const Slider1 = () => {
       id: 6,
       content: (
           <div
-          className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 `}
+          className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400  py-16 rounded-xl`}
           
           onClick={()=>navigate('/training')}
         >
@@ -211,7 +211,7 @@ const Slider1 = () => {
       id: 7,
       content: (
           <div
-          className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5 rounded-sm w-[22%] md:w-full transition-all duration-400 `}
+          className={`bg-white-A700  cursor-pointer flex md:flex-1 flex-col items-start justify-end p-[25px] sm:px-5  w-[22%] md:w-full transition-all duration-400  py-16 rounded-xl`}
           
           onClick={()=>navigate('/investigation')}
         >
@@ -272,7 +272,7 @@ const Slider1 = () => {
   };
 
   return (
-    <div className="slider-container sm:block hidden w-[100%]">
+    <div className="slider-container mt-6 sm:block hidden w-[100%]">
       <div
         className="slider-wrapper"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
@@ -284,6 +284,15 @@ const Slider1 = () => {
           </div>
         ))}
       </div>
+      <div className="dots mb-1">
+        {slidesData.map((slide, index) => (
+          <button
+            key={index}
+            className={`dot ${index === currentSlide ? 'active' : ''}`}
+            onClick={() => goToSlide(index)}
+          ></button>
+        ))}
+      </div>
       <button className="prev-btn" onClick={goToPrevSlide}>
         {"<"}
       </button>
@@ -292,6 +301,7 @@ const Slider1 = () => {
       </button>
     </div>
   );
+  
 };
 
 export default Slider1;
