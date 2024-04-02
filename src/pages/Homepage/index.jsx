@@ -391,6 +391,54 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
               </div>
             </div>
           </div> 
+          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[95px]  mx-auto md:px-5 w-full sm:w-[100%] rounded-xl ">
+          
+            <div className="flex  flex-col items-start justify-start md:ml-[0] md:mt-0 mt-[130px] sm:-mt-16">
+              <Text
+            className="text-gray-600 text-sm sm:ml-1 tracking-[2.00px] uppercase sm:text-[14px]"
+                size="txtRedHatDisplayRomanMedium14"
+              >
+                Certification 
+              </Text>
+              <Text
+                className="capitalize sm:text-[20px] sm:w-full sm:leading-6 leading-[49.00px] mt-[19px] text-4xl md:text-[34px] text-gray-900 tracking-[1.00px] w-[85%] "
+                size="txtPoppinsMedium16"
+              >
+                {/* We Provide Comprehensive Security Services For Multiple Customers in Various Industries and Institutions Worldwide */}
+                <span className="text-gray-900 font-poppins text-left font-[600]">
+                ISO Certification: {" "}
+                </span>
+                <span className="text-gray-900 font-poppins text-left font-normal">
+                Elevating Standards in Security Solutions {" "} 
+                </span>
+                
+                <span className="text-gray-900 font-poppins text-left font-[600]">
+                  
+                </span>
+              </Text>
+              <Text
+                className="mt-[25px] text-[17px] leading-[32.00px] sm:text-[18px] text-gray-700  tracking-[0.50px] sm:w-full w-[85%]"
+                size="txtLatoRegular15Gray700"
+              >
+ Flanker Security is now ISO certified by HYM International Certifications Pvt Ltd since February 5, 2024. Our commitment to top-tier security services and property management is reinforced by this recognition. Clients can trust in our quality, reliability, and adherence to rigorous ISO standards, ensuring the safety of their assets. We prioritize security, professionalism, and efficiency, setting the industry standard for excellence.
+</Text>              {/* <div className="flex flex-row font-poppins  gap-[13px] items-center justify-start mt-[3px] sm:-ml-0.2 w-[56%] sm:w-[45%]  md:w-full">
+                <div className="flex  flex-col items-start justify-start w-[48%] sm:w-[90%] mt-5  ">
+                  <Button
+                    onClick={() => navigate("/aboutus")}
+                    className="  bg-transparent hover:bg-orange-400 hover:outline-orange-400 !text-orange-400 hover:!text-black-900 border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[142px] text-base text-center tracking-[0.16px]"
+                  >
+                    Know More
+                  </Button>
+                </div>
+              </div> */}
+            </div>
+            <Img
+              className="h-[540px] w-[50%] md:h-auto object-cover sm:h-auto  sm:hidden sm:mt-[1%] sm:w-[380px]"
+              // src="images/img_rectangle22076_640x502.png"
+              src="images/iso_cert.jpg"
+              alt="rectangle22076"
+            />
+          </div> 
           {/* bg-gray-50 */}
           <div className="bg-gray-200 flex flex-col font-opensans items-center justify-start mt-[106px] sm:h-[611px] p-[94px] sm:pb-0 md:px-10 sm:px-5 w-full sm:mt-12">
             <List
