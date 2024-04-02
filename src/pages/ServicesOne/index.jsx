@@ -402,10 +402,10 @@ const ServicesOnePage = () => {
             />
             <div className="absolute bottom-[40%] flex flex-col items-center justify-center w-full">
               <Text
-                className="capitalize sm:text-3xl sm:text-left sm:font-normal sm:w-[90%] leading-[89.00px] sm:leading-[45.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[55%] "
+                className="capitalize sm:text-3xl sm:text-left sm:font-normal sm:w-[90%] leading-[89.00px] sm:leading-[45.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[75%] "
                 size="txtPoppinsBold60"
               >
-                Secure your business with us.
+                Secure your business with us
               </Text>
               <Text
                 className="mt-[22px] text-[18px] sm:text-left sm:w-[90%] text-center text-white-A700_bc tracking-[0.50px]"
@@ -496,9 +496,8 @@ const ServicesOnePage = () => {
             {/* <Slider1/> */}
           </div>
         </div>
-        <div className="bg-gray-200  flex flex-col font-redhatdisplay items-end justify-start mt-[57px] sm:pb-5 sm:mt-0 sm:-mb-8 md:pl-10 sm:pl-5 pl-[100px] w-full">
-          <div className="flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1339px] mx-auto w-full">
-          <div className="flex flex-col gap-[22px] sm:gap-[2px] sm:-ml-2 items-start justify-start">
+        <div className="bg-gray-200  flex flex-col font-redhatdisplay items-start justify-start mt-[57px] sm:pb-5 sm:mt-0 sm:-mb-8 md:pl-10 sm:pl-5 pl-[100px] w-full">
+          <div className="flex mt-24  flex-col gap-[22px] w-[80%] sm:gap-[2px] sm:-ml-2 items-start justify-start">
                 <Text
                   className="text-gray-600 text-base tracking-[2.00px] sm:pt-5 uppercase"
                   size="txtRedHatDisplayRomanMedium14"
@@ -512,7 +511,8 @@ const ServicesOnePage = () => {
                   Property management services
                 </Text>
               </div>
-            <div className="flex flex-col md:gap-10 gap-[76px] items-start justify-start sm:-ml-1 ml-[-37px] md:ml-[0]">
+          <div className="w-full  flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1339px] mx-auto ">
+            <div className="flex flex-col md:gap-10 gap-[76px] items-start justify-start sm:-ml-1  md:ml-[0]">
               
               <div className="flex sm:mx-auto sm:pb-6 sm:flex-col flex-row font-opensans sm:gap-[55px] items-center justify-between w-full ">
                 <div
@@ -574,7 +574,7 @@ const ServicesOnePage = () => {
               </div>
             </div>
             <Img
-              className="h-[676px] md:h-auto object-cover sm:hidden sm:-ml-2"
+              className="h-[676px] md:h-auto object-cover sm:hidden  sm:-ml-2"
               src="images/img_rectangle22115.webp"
               alt="rectangle22115"
             />

@@ -94,10 +94,10 @@ const slidesData = [
                     &{" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-[600]">
-                    Property Management{" "}
+                    Property Management for{" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-normal">
-                  for Enterprise & Institutions 
+                   Enterprise & Institutions 
                   </span>
                 </Text>
               </div>
@@ -147,7 +147,7 @@ const slidesData = [
                     To usher in a paradigm shift in{" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-[600]">
-                    security services
+                    Security Services
                   </span>
                   <span className="text-gray-900 font-poppins font-normal">
                     {" "}
@@ -157,7 +157,7 @@ const slidesData = [
                     Property Management{" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-normal">
-                    through innovation & Automation
+                    through Innovation & Automation
                   </span>
                 </Text>
               </div>
@@ -199,10 +199,10 @@ const AboutusPage = () => {
               />
               <div className="absolute bottom-[41%] flex flex-col gap-[22px] inset-x-[0] items-center justify-start mx-auto">
                 <Text
-                  className="capitalize leading-[89.00px] sm:leading-[44.00px] text-6xl sm:text-left text-center text-white-A700 tracking-[0.25px] w-[70%] sm:w-[90%] sm:text-[31px]  sm:font-normal "
+                  className="capitalize leading-[89.00px] sm:leading-[44.00px] text-6xl sm:text-left text-center text-white-A700 tracking-[0.25px] w-[100%] sm:w-[90%] sm:text-[31px]  sm:font-normal "
                   size="txtPoppinsBold60"
                 >
-                  Your Partner in Firm Security
+                  Your Partner in Absolute Security
                 </Text>
                 <div className="sm:w-[90%] ">
 

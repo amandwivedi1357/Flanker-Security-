@@ -5,17 +5,16 @@ import Footer from "components/Footer";
 import Header from "components/Header";
 
 const typeOfServiceOptionsList = [
-  { label: "Drones and Counter Drones", value: "Drones and Counter Drones" },
-
-  { label: "Security Audits", value: "Security Audits" },
-  { label: "Security Infrastructure", value: "Security Infrastructure" },
-  { label: "Risk Assessment", value: "Risk Assessment" },
-  { label: "Security Training", value: "Security Training" },
   { label: "Security Guards", value: "Security Guards" },
-  { label: "Security Infrastructure", value: "option3" },
+  { label: "Security Infrastructure", value: "Security Infrastructure" },
+  { label: "Security Audits", value: "Security Audits" },
+  { label: "Risk Assessment", value: "Risk Assessment" },
+  { label: "Drones and Counter Drones", value: "Drones and Counter Drones" },
+  { label: "Security Training", value: "Security Training" },
+  { label: "Investigation", value: "Investigation" },
 ];
 const countryOptionsList = [
-  { label: "India", value: "india" },
+  { label: "India", value: "India" },
   
 ];
 const cityOptionsList = [
@@ -69,7 +68,7 @@ const ContactformPage = () => {
     e.preventDefault();
     console.log(formData)
     // Sending email using emailjs library
-    emailjs.send('service_syu7i3h', 'template_gurv3bi', {
+    emailjs.send('service_75aa9go', 'template_1y7g5kh', {
       user_name: formData.name,
       user_email: formData.email,
       company_name: formData.company,
@@ -79,7 +78,7 @@ const ContactformPage = () => {
       city: formData.city,
       postal_code: formData.postalCode,
       
-    }, "PAMSeoabaa0l3PiqP")
+    }, "3ESxGASAWjnkszibV")
       .then((result) => {
         setToast({ message: 'Thank You for contacting us. We will Contact you soon.', type: 'success' });
 
@@ -119,7 +118,7 @@ const ContactformPage = () => {
                 className="capitalize sm:leading-[45.00px] sm:text-3xl sm:text-left sm:w-[90%] sm:font-normal md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px]"
                 size="txtPoppinsBold60"
               >
-                Contact for Total the Security Solutions
+                Contact for the Total  Security Solutions
               </Text>
               <Text
                 className="text-[18px] sm:text-left sm:w-[90%] text-center text-white-A700_bc tracking-[0.50px]"

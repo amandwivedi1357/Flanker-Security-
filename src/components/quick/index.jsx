@@ -6,7 +6,7 @@ const QuickLinks = () => {
   const navigate = useNavigate();
   return (
     <div className="h-18 bg-gray-50 p-4 rounded-lg shadow-md flex flex-col justify-center w-full">
-      <h2 className="text-lg font-semibold mb-2 text-center">Other Services</h2>
+      <h2 className="text-lg font-semibold mb-2 text-center">Our Services Spectrums</h2>
       <div className="flex gap-4 mb-5 sm:block">
         <button
           onClick={() => navigate("/drones")}

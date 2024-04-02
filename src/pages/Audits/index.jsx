@@ -163,32 +163,25 @@ const Audits = () => {
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 	Identifying Vulnerabilities:</span>
+                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Internal Audits:</span>
                   <br />
-                  	Assessing the organization's infrastructure, networks, and systems to uncover potential vulnerabilities that could be exploited by malicious actors.
+                  Conducted by the organisation's internal team to assess the effectiveness of its security controls and policies.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Risk Assessment:</span>
+                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">	External Audits:</span>
                   <br />
-                  Evaluating potential risks and their impact on the organisation's assets, operations, and reputation.
-                 
+                  	Carried out by third-party auditors to provide an unbiased evaluation of an organisation's security posture.
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Compliance Verification:</span>
+                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">Physical Security Audits:</span>
                   <br />
-                  	Ensuring that the organisation complies with relevant industry regulations, standards, and legal requirements, such as GDPR, HIPAA, or ISO 27001.
-                 
+                  	Assessing the physical security measures in place, such as access controls, surveillance systems, and environmental controls.
                 </>
                 <br />
-                <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Policy Compliance:</span>
-                  <br />
-                  	Verifying adherence to internal security policies and procedures to maintain a consistent and secure operational environment.
-                 
-                </>
+               
               </Text>
               <Text
                 className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
@@ -201,21 +194,21 @@ const Audits = () => {
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 	Identifying Vulnerabilities:</span>
+                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Risk Assessment:</span>
                   <br />
                   	Assessing the organization's infrastructure, networks, and systems to uncover potential vulnerabilities that could be exploited by malicious actors.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Risk Assessment:</span>
+                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">Security Policy Review:</span>
                   <br />
-                  Evaluating potential risks and their impact on the organisation's assets, operations, and reputation.
+                  	Evaluating the effectiveness of existing security policies and suggesting improvements.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Compliance Verification:</span>
+                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 	Incident Response Planning:</span>
                   <br />
                   	Ensuring that the organisation complies with relevant industry regulations, standards, and legal requirements, such as GDPR, HIPAA, or ISO 27001.
                  

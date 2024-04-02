@@ -14,7 +14,7 @@ const GalleryPage = () => {
 
   return (
     <>
-      <div className="bg-white-A700 flex flex-col mb-[-20px]   font-poppins gap-[27px] items-center justify-start mx-auto w-full ">
+      <div className="bg-white-A700 flex flex-col mb-[-20px]  font-poppins gap-[27px] items-center justify-start mx-auto w-full ">
         <div className="h-[648px] md:px-5 relative w-full ">
           <div className="h-[648px] inset-[0] justify-center absolute m-auto w-full ">
             <Img
@@ -32,7 +32,7 @@ const GalleryPage = () => {
                 className="text-[18px] sm:w-[90%] sm:leading-7 sm:text-left text-center text-white-A700_bc tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-               Safety framed in every image, security woven in every pixel.
+               Safety framed in every image, Security woven in every pixel.
               </Text>
             </div>
           </div>
@@ -40,7 +40,7 @@ const GalleryPage = () => {
         </div>
         <div className="gallery_cont">
           <div className="head_cont">
-              <p className="head_text sm:text-xl">Security Guard</p>
+              <p className="head_text sm:text-xl">Security Team</p>
           </div>
           <div className="image-container">
       <img className="w-full" src={collage} alt="" />
@@ -52,6 +52,15 @@ const GalleryPage = () => {
           <div className="gal_cont">
             <img src={collage2} className="w-full" alt="" />
           </div>
+        </div>
+        <div className="w-full">
+          <div className="w-[90%]  mx-auto">
+          <Text className="text-4xl">
+          Our Certification
+</Text>
+<Img src="images/iso_cert.jpg" className=' mt-8 h-[50%] w-[50%]' />
+          </div>
+          
         </div>
        
         <Footer className="flex items-center justify-center md:px-5 w-full bg-[#070710]" />

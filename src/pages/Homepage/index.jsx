@@ -321,7 +321,7 @@ const HomepagePage = () => {
       className="leading-[29.00px] mt-6 text-[18px] font-[300] text-white-A700_bc sm:ml-[0%] tracking-[0.50px] w-[71%] sm:w-[298px]"
       size="txtLatoRegular15"
     >
-      We’re not just a security company, we’re the solution to all your safety needs
+      We’re the one stop solution for all your safety and security needs
     </Text>
     <div className="flex flex-col sm:flex-row font-poppins gap-[21px] items-start justify-start mt-11 w-[41%] md:w-full sm:ml-[0%]">
       <button
@@ -363,14 +363,15 @@ const HomepagePage = () => {
                 className="capitalize sm:text-[20px] sm:w-full sm:leading-6 leading-[49.00px] mt-[19px] text-4xl md:text-[34px] text-gray-900 tracking-[1.00px] w-full"
                 size="txtPoppinsMedium16"
               >
+                {/* We Provide Comprehensive Security Services For Multiple Customers in Various Industries and Institutions Worldwide */}
                 <span className="text-gray-900 font-poppins text-left font-normal">
-                  We Provide services for{" "} 
+                We Provide Comprehensive Security Services For{" "} 
                 </span>
                 <span className="text-gray-900 font-poppins text-left font-[600]">
                   multiple{" "}
                 </span>
                 <span className="text-gray-900 font-poppins text-left font-[600]">
-                  customers in various  industries worldwide
+                  customers in various industries and Institutions Worldwide
                 </span>
               </Text>
               <Text
@@ -782,17 +783,17 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
                     </span>
                   </span>
                 </div>
-                <div className="flex sm:flex-col flex-row sm:gap-10 gap-[97px] items-center justify-start w-[96%] md:w-full">
+                <div className="flex flex-row items-center justify-between w-[94%] md:w-full">
                   <span className="flex gap-3">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
                     <span className="font-semibold  text-base text-black-900 text-left tracking-[0.25px]">
-                    Advance Technology
+                      Advance Technology
                     </span>
                   </span>
-                  <span className="flex gap-3 ml-2">
+                  <span className="flex gap-3 mr-8">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
                     <span className="font-semibold  text-base text-black-900 text-left tracking-[0.25px]">
-                    Emergency help
+                    Emergency Help
                     </span>
                   </span>
                 </div>
@@ -835,7 +836,7 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
               number of{" "}
             </span>
             <span className="text-gray-900 font-opensans font-bold">
-              customers{" "}
+              Clients{" "}
             </span>
           </Text>
           <Slider

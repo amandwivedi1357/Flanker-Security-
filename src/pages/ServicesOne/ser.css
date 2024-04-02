@@ -87,3 +87,57 @@ transition: background-color 0.3s ease-in-out;
     }
   }
   
+
+  /*  const ser_data = [
+    {
+      path: "/guards",
+      hover: "images/img_guard_black_900.svg",
+      image: "images/img_guard.svg",
+      title: "Security Guards",
+      desc: "Guarding the Now, Securing the Future.",
+    },
+    {
+      path: "/infrastructure",
+      hover: "images/infra_black.svg",
+      image: "images/infra_yellow.svg",
+      title: "Security Infra",
+      desc: `Guarding Tomorrow's Security Today.`,
+    },
+    {
+      path: "/security-audits",
+      image: "images/Audits_yellow.svg",
+      hover: "images/Audits_Black.svg",
+      title: "Security Audits",
+      desc: "Ensuring Safety with Strategic Audits.",
+    },
+    {
+      path: "/risk-assessment",
+      hover: "images/Risk_black.svg",
+      image: "images/Risk_yellow.svg",
+      title: "Risk Assessment",
+      desc: "Assessing Today, Securing Tomorrow.",
+    },
+    {
+      path: "/drones",
+      image: "images/drones_new_yellow.svg",
+      hover: "images/drone_new.svg",
+      title: "Drones",
+      desc: "Our counter-drone technology stands vigilant.",
+    },
+    {
+      path: "/training",
+      image: "images/training_yel.svg",
+      hover: "images/training_blackk.svg",
+      title: "Security Training",
+      desc: "Training the first line of defense.",
+    },
+   
+   
+    
+    {
+      path: "/investigation",
+      hover: "images/img_guard_black_900.svg",
+      image: "images/img_guard.svg",
+      title: "Investigation",
+      desc: "Expert security investigations uncover threats accurately.",
+    }, */
