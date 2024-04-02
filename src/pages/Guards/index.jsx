@@ -75,13 +75,13 @@ const Guard = () => {
                 className="sm:text-3xl sm:w-4/5 sm:font-normal capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
                 size="txtPoppinsBold60"
               >
-                Security service for your personal safety
+                Security service for your personal safety and Asset Protection
               </Text>
               <Text
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-                Trust the experts with your safety
+                Trust the experts with your safety and security
               </Text>
             </div>
           </div>
@@ -106,7 +106,7 @@ const Guard = () => {
                 className="mt-[37px] md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
                 size="txtOpenSansRomanBold32"
               >
-               Security Guard{" "}
+               Security Guards{" "}
               </Text>
               <Text
                 className="leading-[29.00px] mt-4 text-[18px] text-black-900_cc tracking-[0.50px] w-full"

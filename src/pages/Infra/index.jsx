@@ -82,7 +82,7 @@ const Infra = () => {
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-                Trust the experts with your safety
+                Trust the experts with your safety and security
               </Text>
             </div>
           </div>
@@ -128,9 +128,9 @@ const Infra = () => {
                   <br />
                  <strong> Access Control Systems:</strong> Implementing measures like biometric access, key cards, or PIN codes to regulate entry.
                   <br />
-                 <strong> Perimeter Security:</strong> Fencing, barriers, and surveillance to secure the outer boundaries
+                 <strong> Perimeter Security:</strong> Fencing, barriers, and surveillance to secure the outer boundaries.
                   <br />
-                 <strong> Security Personnel: </strong>Trained guards strategically placed for observation and immediate response
+                 <strong> Security Personnel: </strong>Trained guards strategically placed for observation and immediate response.
                 </>
               </Text>
               <Text
@@ -203,7 +203,7 @@ const Infra = () => {
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   	
-                     	Access Badges: Issuing temporary access credentials to visitors
+                     	Access Badges: Issuing temporary access credentials to visitors.
                     <br />
                      	Check-In Systems: Recording and monitoring the entry and exit of visitors.
                   </>
@@ -244,7 +244,7 @@ const Infra = () => {
                    
                    
                     <br />
-                     	Information Sharing: Collaborating on intelligence to enhance overall security
+                     	Information Sharing: Collaborating on intelligence to enhance overall security.
                   </>
                 </span>
               </Text>
@@ -282,7 +282,7 @@ const Infra = () => {
                   <>
                    	Balancing Security and Privacy: Implementing measures that prioritize security without compromising individual privacy rights
                     <br />
-                     	Compliance with Regulations: Adhering to legal requirements regarding the collection and handling of personal information
+                     	Compliance with Regulations: Adhering to legal requirements regarding the collection and handling of personal information.
                     
                   </>
                 </span>

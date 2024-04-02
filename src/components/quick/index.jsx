@@ -8,13 +8,14 @@ const QuickLinks = () => {
     <div className="h-18 bg-gray-50 p-4 rounded-lg shadow-md flex flex-col justify-center w-full">
       <h2 className="text-lg font-semibold mb-2 text-center">Our Services Spectrums</h2>
       <div className="flex gap-4 mb-5 sm:block">
-        <button
-          onClick={() => navigate("/drones")}
-          className="flex flex-1 sm:w-full bg-[#fff] sm:mb-3 items-center justify-between bg-transparent hover:text-black-900 hover:bg-[#fcb131] text-[#fcb131] border border-[#c4c2bf] hover:text-black hover:border-transparent py-2 px-4 rounded-lg transition duration-300 ease-in-out"
+      <button
+          onClick={() => navigate("/guards")}
+          className="flex sm:w-full bg-[#fff]  flex-1  items-center justify-between bg-transparent hover:text-black-900 hover:bg-[#fcb131] text-[#fcb131] border border-[#c4c2bf] hover:text-black hover:border-transparent py-2 px-4 rounded-lg transition duration-300 ease-in-out"
         >
-          <img src="images/drone_new.svg" alt="" className="w-8" />
+          <img src="images/img_guard_black_900.svg" alt="" className="w-8" />
 
-          <span className="sm:-ml-[135px] -ml-[195px]"> Drones</span>
+          <span className="-ml-[120px] sm:-ml-[60px]"> Security Guards</span>
+
           <FaArrowRight className="w-4 h-4 ml-2" />
         </button>
         <button
@@ -28,13 +29,12 @@ const QuickLinks = () => {
           <FaArrowRight className="w-4 h-4 ml-2" />
         </button>
         <button
-          onClick={() => navigate("/guards")}
-          className="flex sm:w-full bg-[#fff]  flex-1  items-center justify-between bg-transparent hover:text-black-900 hover:bg-[#fcb131] text-[#fcb131] border border-[#c4c2bf] hover:text-black hover:border-transparent py-2 px-4 rounded-lg transition duration-300 ease-in-out"
+          onClick={() => navigate("/drones")}
+          className="flex flex-1 sm:w-full bg-[#fff] sm:mb-3 items-center justify-between bg-transparent hover:text-black-900 hover:bg-[#fcb131] text-[#fcb131] border border-[#c4c2bf] hover:text-black hover:border-transparent py-2 px-4 rounded-lg transition duration-300 ease-in-out"
         >
-          <img src="images/img_guard_black_900.svg" alt="" className="w-8" />
+          <img src="images/drone_new.svg" alt="" className="w-8" />
 
-          <span className="-ml-[120px] sm:-ml-[60px]"> Security Guards</span>
-
+          <span className="sm:-ml-[135px] -ml-[195px]"> Drones</span>
           <FaArrowRight className="w-4 h-4 ml-2" />
         </button>
       </div>
@@ -45,7 +45,7 @@ const QuickLinks = () => {
         >
           <img src="images/infra_black.svg" alt="" className="w-8" />
 
-          <span className="-ml-[150px] sm:-ml-[80px]"> Security infra</span>
+          <span className="-ml-[150px] sm:-ml-[80px]"> Security Infra</span>
           <FaArrowRight className="w-4 h-4 ml-2" />
         </button>
         <button

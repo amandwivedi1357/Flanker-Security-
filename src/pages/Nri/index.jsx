@@ -76,13 +76,13 @@ const Risk = () => {
                 className="sm:text-3xl sm:w-4/5 sm:font-normal capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
                 size="txtPoppinsBold60"
               >
-                Security service for your personal safety
+                Security service for your personal safety and Asset Protection
               </Text>
               <Text
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-                Trust the experts with your safety
+                Trust the experts with your safety and security
               </Text>
             </div>
           </div>
@@ -91,7 +91,7 @@ const Risk = () => {
         <Img
                 className="sm:block hidden sm:rounded-none -mt-[12rem] h-[488px] sm:h-auto object-cover w-full rounded-xl"
                 // src="images/risk.jpg"
-                src={riskM}
+                src='images/nri.jpg'
                 alt="rectangle22116"
               />
         <div className="flex sm:pt-0 flex-col pt-0 items-center justify-start p-[82px] pb-0 md:px-10 sm:px-5 w-full">
@@ -100,7 +100,7 @@ const Risk = () => {
               <Img
                 className="h-[488px] sm:hidden  sm:h-auto object-cover w-full rounded-xl"
                 // src="images/risk.jpg"
-                src={riskM}
+                src='images/nri.jpg'
                 alt="rectangle22116"
               />
               <Text

@@ -118,7 +118,7 @@ const ContactformPage = () => {
                 className="capitalize sm:leading-[45.00px] sm:text-3xl sm:text-left sm:w-[90%] sm:font-normal md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px]"
                 size="txtPoppinsBold60"
               >
-                Contact for the Total  Security Solutions
+                Contact us for the Total  Security Solutions
               </Text>
               <Text
                 className="text-[18px] sm:text-left sm:w-[90%] text-center text-white-A700_bc tracking-[0.50px]"

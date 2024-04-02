@@ -299,32 +299,25 @@ const ServicesOnePage = () => {
   ];
   const ser_data = [
     {
-      path: "/drones",
-      image: "images/drones_new_yellow.svg",
-      hover: "images/drone_new.svg",
-      title: "Drones",
-      desc: "Our counter-drone technology stands vigilant.",
-    },
-    {
-      path: "/training",
-      image: "images/training_yel.svg",
-      hover: "images/training_blackk.svg",
-      title: "Security Training",
-      desc: "Training the first line of defense.",
-    },
-    {
       path: "/guards",
       hover: "images/img_guard_black_900.svg",
       image: "images/img_guard.svg",
       title: "Security Guards",
-      desc: "Guarding the Now, Securing the Future.",
+      desc: "Guarding the Present, Securing the Future.",
     },
     {
       path: "/infrastructure",
       hover: "images/infra_black.svg",
       image: "images/infra_yellow.svg",
       title: "Security Infra",
-      desc: `Guarding Tomorrow's Security Today.`,
+      desc: `Enhanced Security with Digital & Physical Infrastructure.`,
+    },
+    {
+      path: "/security-audits",
+      image: "images/Audits_yellow.svg",
+      hover: "images/Audits_Black.svg",
+      title: "Security Audits",
+      desc: "Ensuring Safety with Strategic Audits.",
     },
     {
       path: "/risk-assessment",
@@ -334,19 +327,28 @@ const ServicesOnePage = () => {
       desc: "Assessing Today, Securing Tomorrow.",
     },
     {
+      path: "/drones",
+      image: "images/drones_new_yellow.svg",
+      hover: "images/drone_new.svg",
+      title: "Drones",
+      desc: "Aerial Surveillance beyond Horizons.",
+    },
+    {
+      path: "/training",
+      image: "images/training_yel.svg",
+      hover: "images/training_blackk.svg",
+      title: "Security Training",
+      desc: "Training the first line of defense.",
+    },
+    
+    {
       path: "/investigation",
       hover: "images/img_guard_black_900.svg",
       image: "images/img_guard.svg",
       title: "Investigation",
-      desc: "Expert security investigations uncover threats accurately.",
+      desc: "Investigating the Unknown - Uncovering the Truth.",
     },
-    {
-      path: "/security-audits",
-      image: "images/Audits_yellow.svg",
-      hover: "images/Audits_Black.svg",
-      title: "Security Audits",
-      desc: "Ensuring Safety with Strategic Audits.",
-    },
+    
   ];
   function handleMouseEnter(event, index, hoverImage) {
     const elements = event.currentTarget.getElementsByClassName("vector");
@@ -496,8 +498,8 @@ const ServicesOnePage = () => {
             {/* <Slider1/> */}
           </div>
         </div>
-        <div className="bg-gray-200  flex flex-col font-redhatdisplay items-start justify-start mt-[57px] sm:pb-5 sm:mt-0 sm:-mb-8 md:pl-10 sm:pl-5 pl-[100px] w-full">
-          <div className="flex mt-24  flex-col gap-[22px] w-[80%] sm:gap-[2px] sm:-ml-2 items-start justify-start">
+        <div className="bg-gray-200  flex flex-col font-redhatdisplay items-start justify-start mt-[57px] sm:pb-5 sm:mt-0 sm:-mb-8 md:pl-10 sm:pl-5 pl-[50px] w-full">
+          <div className="flex mt-24  flex-col gap-[22px] w-[90%] sm:gap-[2px] sm:-ml-2 items-start justify-start">
                 <Text
                   className="text-gray-600 text-base tracking-[2.00px] sm:pt-5 uppercase"
                   size="txtRedHatDisplayRomanMedium14"
@@ -574,7 +576,7 @@ const ServicesOnePage = () => {
               </div>
             </div>
             <Img
-              className="h-[676px] md:h-auto object-cover sm:hidden  sm:-ml-2"
+              className="h-[576px] md:h-auto object-cover sm:hidden  sm:-ml-2"
               src="images/img_rectangle22115.webp"
               alt="rectangle22115"
             />

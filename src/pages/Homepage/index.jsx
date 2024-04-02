@@ -495,8 +495,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                     className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
-                    Guarding the Now, Securing the Future.
-                  </Text>
+Guarding the Present, Securing the Future.                  </Text>
                 </div>
                 
                 <div
@@ -526,7 +525,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                     className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
-                    Guarding Tomorrow's Security Today.
+                    Enhanced Security with amazing Infrastructure.
                   </Text>
                 </div>
                 
@@ -623,7 +622,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                     className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
-                    Our counter-drone technology stands vigilant.
+                    Aerial Surveillance beyond Horizons.
                   </Text>
                 </div>
                 <div
@@ -653,7 +652,7 @@ Welcome to Flanker Security Services, your premier security partner. With unwave
                     className="leading-[24.00px] mb-[23px] mt-[7px] text-black-900_b2 text-sm tracking-[0.90px] w-full font-normal"
                     size="txtLatoRegular15Gray700"
                   >
-                    Strengthening the first line of defense through training.
+                    Training the first line of defense.
                   </Text>
                 </div>
                 
@@ -790,7 +789,7 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
                       Advance Technology
                     </span>
                   </span>
-                  <span className="flex gap-3 mr-8">
+                  <span className="flex gap-3 mr-7">
                     <FaCheck className=" mt-1 font-semibold text-base text-black-900 text-left tracking-[0.25px]" />{" "}
                     <span className="font-semibold  text-base text-black-900 text-left tracking-[0.25px]">
                     Emergency Help

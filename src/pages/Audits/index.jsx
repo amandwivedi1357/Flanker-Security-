@@ -83,7 +83,7 @@ const Audits = () => {
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-                Trust the experts with your safety
+                Trust the experts with your safety and security
               </Text>
             </div>
           </div>

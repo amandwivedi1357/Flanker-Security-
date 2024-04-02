@@ -68,7 +68,7 @@ const ServicesPage = () => {
                 className="capitalize sm:text-3xl sm:font-normal sm:w-4/5 leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
                 size="txtPoppinsBold60"
               >
-                Security service for your personal safety
+                Security service for your personal safety and Asset Protection
               </Text>
               <Text
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
@@ -108,7 +108,7 @@ const ServicesPage = () => {
                 industries. These unmanned aircraft are equipped with cameras,
                 sensors, and other technologies, offering unprecedented
                 capabilities in areas such as surveillance, mapping,
-                agriculture, and emergency response.
+               and emergency response.
               </Text>
               <Text
                 className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
@@ -148,8 +148,7 @@ const ServicesPage = () => {
                     contribute to accurate and rapid surveying of terrains,
                     construction sites, and geographical features.
                     <br />
-                    This aids in disaster response, and infrastructure
-                    development.
+                    Geographical features which aids in disaster response and security infrastructure development.
                   </>
                 </span>
               </Text>

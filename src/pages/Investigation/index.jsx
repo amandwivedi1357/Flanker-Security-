@@ -76,13 +76,13 @@ const Investigation = () => {
                 className=" sm:text-3xl sm:w-4/5 sm:font-normal capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
                 size="txtPoppinsBold60"
               >
-                Security service for your personal safety
+                Security service for your personal safety and Asset Protection
               </Text>
               <Text
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-                Trust the experts with your safety
+                Trust the experts with your safety and security
               </Text>
             </div>
           </div>
@@ -97,8 +97,8 @@ const Investigation = () => {
           <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
-                className=" sm:hidden h-[488px] sm:h-auto object-cover w-full"
-                src="images/img_rectangle22116.webp"
+                className=" sm:hidden h-[488px] sm:h-auto object-cover w-full rounded-xl"
+                src="images/investigation.webp"
                 alt="rectangle22116"
               />
               <Text
