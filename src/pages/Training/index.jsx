@@ -66,29 +66,29 @@ const Training = () => {
         <div className="md:h-[848px] h-[675px] md:px-5 relative w-full ">
           <div className="absolute h-[648px] inset-[0] justify-center  w-full">
             <Img
-              className="h-[648px] m-auto object-cover w-full"
+              className="h-[648px] m-auto object-cover w-full sm:h-[487px]"
               src="images/img_rectangle21985_1.webp"
               alt="rectangle21985"
             />
-            <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto">
+            <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto sm:mt-48">
               <Text
                 className="sm:text-3xl sm:w-4/5 sm:font-normal capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
                 size="txtPoppinsBold60"
               >
-                Security service for your personal safety and Asset Protection
+                Security Training
               </Text>
               <Text
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-                Trust the experts with your safety and security
+              Training the first line of defense.
               </Text>
             </div>
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
         <Img
-                className="h-[488px] -mt-[12rem] sm:block hidden sm:h-auto object-cover  w-full rounded-xl"
+                className="h-[488px] -mt-[22rem] sm:block hidden sm:h-auto object-cover  w-full rounded-xl"
                 // src="images/training.jpg"
                 src={sec_guard}
                 alt="rectangle22116"

@@ -66,29 +66,29 @@ const Guard = () => {
         <div className="md:h-[848px] h-[675px] md:px-5 relative w-full ">
           <div className="absolute h-[648px] inset-[0] justify-center  w-full">
             <Img
-              className="h-[648px] m-auto object-cover w-full"
+              className="h-[648px] m-auto object-cover w-full sm:h-[487px]"
               src="images/img_rectangle21985_1.webp"
               alt="rectangle21985"
             />
-            <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto">
+            <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto sm:mt-48">
               <Text
                 className="sm:text-3xl sm:w-4/5 sm:font-normal capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
                 size="txtPoppinsBold60"
               >
-                Security service for your personal safety and Asset Protection
+                Security Guards
               </Text>
               <Text
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-                Trust the experts with your safety and security
+                Guarding the Present, Securing the Future.
               </Text>
             </div>
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
         <Img
-                className="sm:block hidden -mt-[12rem] h-[488px] sm:h-auto object-cover w-full"
+                className="sm:block hidden sm:-mt-[22rem] h-[488px] sm:h-auto object-cover w-full"
                 // src="images/sec_guard.jpg"
                 src={guards}
                 alt="rectangle22116"
@@ -97,22 +97,22 @@ const Guard = () => {
           <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
-                className="sm:hidden h-[488px] sm:h-auto object-cover w-full"
+                className="sm:hidden h-[488px] sm:h-auto object-cover w-full rounded-xl"
                 // src="images/sec_guard.jpg"
                 src={guards}
                 alt="rectangle22116"
               />
               <Text
-                className="mt-[37px] md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
+                className="mt-[37px] sm:mt-5 md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
                 size="txtOpenSansRomanBold32"
               >
                Security Guards{" "}
               </Text>
               <Text
-                className="leading-[29.00px] mt-4 text-[18px] text-black-900_cc tracking-[0.50px] w-full"
+                className="leading-[29.00px] mt-4 sm:mt-2 text-[18px] text-black-900_cc tracking-[0.50px] w-full"
                 size="txtLatoRegular15Black900cc"
               >
-                Certainly, deploying security guards is a crucial aspect of maintaining a safe and secure environment. The effectiveness of security guard deployment relies on strategic planning, proper training, and adherence to established security protocols. Here's a breakdown of key considerations for security guards deployment:
+                Certainly, deploying security guards is a crucial aspect of maintaining a safe and secure environment. The effectiveness of security guard deployment relies on strategic planning, proper training, and adherence to established security protocols. Here's a breakdown of key considerations for our security guards deployment:
               </Text>
               <Text
                 className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
@@ -177,7 +177,7 @@ const Guard = () => {
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Ensure that security guards undergo proper training and certification programs. Training should cover emergency response procedures, conflict resolution, communication skills, and use of security equipment.
+                  Ensure that security guards undergo proper training and certification programs.Our training covers emergency response procedures, conflict resolution, communication skills, and use of security equipment.
                   </>
                 </span>
               </Text>
@@ -194,7 +194,7 @@ const Guard = () => {
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Implement effective communication systems among security personnel. This may include radios, mobile phones, or other communication devices to facilitate quick response and coordination.
+                  Implement effective communication systems among security personnel. It include radios,Walkie Talkie mobile, or other communication devices to facilitate quick response and coordination.
                   </>
                 </span>
               </Text>
@@ -279,7 +279,7 @@ const Guard = () => {
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Conduct regular training updates to keep security guards informed about the latest security threats, technologies, and best practices.
+                  Conduct regular on-site training sessions to keep security guards informed about the latest security threats, technologies, and best practices.
                   </>
                 </span>
               </Text>
@@ -330,7 +330,7 @@ const Guard = () => {
                 </span>
                 <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
-                  Regularly review and assess the effectiveness of security measures. Implement changes and improvements xld on lessons learned from incidents or changing security landscapes.
+                  Regularly review and assess the effectiveness of security measures. Implement changes and improvements based on lessons learned from incidents or changing security landscapes.
                   </>
                 </span>
               </Text>

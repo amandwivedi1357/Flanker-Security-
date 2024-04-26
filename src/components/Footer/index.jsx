@@ -9,7 +9,7 @@ const Footer = (props) => {
     <>
       <footer className={props.className}>
         <div className="bg-[#070710] flex flex-col items-center justify-center sm:items-start sm:justify-start p-[105px] md:px-10  sm:px-5 w-full ">
-          <div className="flex flex-col gap-[7px] items-center justify-center mt-[13px]  w-[100%] md:w-full ">
+          <div className="flex flex-col gap-[7px] items-center justify-center mt-[13px] sm:-mt-12 w-[100%] md:w-full ">
             <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between w-full ">
               <div className="flex md:flex-1 flex-col gap-3.5 items-start justify-start w-1/4 md:w-full  ">
                 <Text
@@ -105,17 +105,25 @@ const Footer = (props) => {
                 </ul>
               </div>
             </div>
+            <Text 
+            className="text-lg sm:mt-8 cursor-pointer text-white-A700 tracking-[0.03px]"
+
+            >
+            @2024 Flanker Security. All Rights Reserved . Privacy Policy
+            </Text>
+<div className=" sm:-ml-24">
 
             <Text onClick={()=>window.open('https://rayformula.com/','_blank')}
-              className="text-lg sm:mt-8 cursor-pointer text-white-A700 tracking-[0.03px]"
+              className="text-lg sm:mt-8 cursor-pointer float-left text-left text-white-A700 tracking-[0.03px]"
               size="txtNunitoMedium18"
-            >
+              >
               <div className="flex">
               <img className="w-5 mr-4" src="images/rayformula.svg" alt="" />  <span>Website by Rayformula </span>
               </div>
              
             </Text>
           </div>
+              </div>
         </div>
       </footer>
     </>

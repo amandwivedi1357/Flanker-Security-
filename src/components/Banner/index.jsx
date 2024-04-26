@@ -65,7 +65,7 @@ const Banner = ({className}) => {
         src={Banner1}
         alt="rectangle22077"
       />
-      <form onSubmit={sendEmail} className=" rounded-lg sm:mt-[6%] sm:w-[90%] absolute bg-white-A700 flex flex-col gap-[52px] h-max inset-y-[0] items-start justify-center my-auto p-[60px] md:px-10  right-[5%]  w-[43%] ">
+      <form onSubmit={sendEmail} className="rounded-lg sm:rounded-md sm:mt-[6%] sm:w-[90%] absolute bg-white-A700 flex flex-col gap-[52px] h-max inset-y-[0] items-start justify-center my-auto p-[60px] md:px-10  right-[5%]  w-[43%] ">
         <div className=" flex flex-col items-center justify-start mt-[3px] w-full ">
           <div className="flex flex-col items-start justify-start w-full">
             <a

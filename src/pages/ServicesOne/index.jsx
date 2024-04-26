@@ -309,8 +309,10 @@ const ServicesOnePage = () => {
       path: "/infrastructure",
       hover: "images/infra_black.svg",
       image: "images/infra_yellow.svg",
-      title: "Security Infra",
-      desc: `Enhanced Security with Digital & Physical Infrastructure.`,
+      title: (<>
+      <p className="mt-2">Security Infra</p>
+      </>),
+      desc: `Security & Intergrated Infrastructure.`,
     },
     {
       path: "/security-audits",
@@ -323,7 +325,9 @@ const ServicesOnePage = () => {
       path: "/risk-assessment",
       hover: "images/Risk_black.svg",
       image: "images/Risk_yellow.svg",
-      title: "Risk Assessment",
+      title:(<>
+        <p className="mt-2">Risk Assessment</p>
+        </>),
       desc: "Assessing Today, Securing Tomorrow.",
     },
     {
@@ -350,6 +354,23 @@ const ServicesOnePage = () => {
     },
     
   ];
+  const pms_data = [
+    {
+      path: "/housekeeping",
+      hover: "images/img_cleaningcart.svg",
+      image: "images/HouseKeep.svg",
+      title: " Housekeeping",
+      desc: "Beyond Clean: It's Housekeeping Brilliance.",
+    },
+    {
+      path: "/nri-properties",
+      hover: "images/img_propertyagent.svg",
+      image: "images/propertyAgent.svg",
+      title: "NRI Property",
+      desc: " NRI Property Solutions at Your Service.",
+   
+    },
+  ]
   function handleMouseEnter(event, index, hoverImage) {
     const elements = event.currentTarget.getElementsByClassName("vector");
     if (elements.length > 0) {
@@ -398,11 +419,11 @@ const ServicesOnePage = () => {
         <div className="md:h-[755px] h-[655px] md:px-5 relative w-full ">
           <div className="absolute h-[655px] inset-[0] justify-center  w-full">
             <Img
-              className="h-[655px] filter brightness-50 m-auto object-cover w-full"
+              className="h-[655px] filter  m-auto object-cover w-full sm:h-[487px]"
               src="images/img_rectangle21985_848x1440.webp"
               alt="rectangle21985"
             />
-            <div className="absolute bottom-[40%] flex flex-col items-center justify-center w-full">
+            <div className="absolute bottom-[40%] flex flex-col items-center justify-center w-full  sm:bottom-[45%]">
               <Text
                 className="capitalize sm:text-3xl sm:text-left sm:font-normal sm:w-[90%] leading-[89.00px] sm:leading-[45.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[75%] "
                 size="txtPoppinsBold60"
@@ -420,25 +441,27 @@ const ServicesOnePage = () => {
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
         <div
-          className=" bg-gray-200 sm:-mt-24 flex flex-col font-redhatdisplay items-center justify-end p-[52px] md:px-10 sm:px-5 w-full "
+          className=" bg-gray-200 sm:-mt-64 flex flex-col font-redhatdisplay items-center justify-end p-[52px] md:px-10 sm:px-4 w-full "
           ref={serviceCardsRef}
         >
           <div className="flex flex-col items-start justify-start max-w-[1239px] sm:mt-0 mt-[90px] mx-auto w-full">
-            <div className="flex flex-col gap-[22px] sm:gap-[2px] items-start justify-start ">
+            <div className="flex flex-col gap-[22px] sm:gap-[2px] items-start justify-start sm:-mt-4">
               <Text
-                className="text-gray-600 text-base tracking-[2.00px] uppercase "
+                className="text-gray-600 text-base tracking-[2.00px] uppercase sm:text-[14px] "
                 size="txtRedHatDisplayRomanMedium14"
               >
                 premium security services
               </Text>
               <Text
-                className="capitalize text-4xl  sm:mb-2 font-[600] sm:text-[20px] md:text-[34px] text-gray-900 tracking-[1.00px]"
+                className="capitalize text-4xl sm:-mt-2 sm:mb-2 font-[600] sm:text-[18px] md:text-[34px] text-gray-900 tracking-[1.00px]"
                 size="txtPoppinsRegular36"
               >
                 Security Services
               </Text>
             </div>
 
+
+          
             <div className="ser_cont">
               {ser_data.map((data, index) => (
                 <div
@@ -459,7 +482,7 @@ const ServicesOnePage = () => {
                 </div>
               ))}
             </div>
-            <div className="slider-container mt-6 sm:block hidden w-[100%]" 
+            {/* <div className="slider-container mt-6 sm:block hidden w-[100%]" 
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}
@@ -476,12 +499,7 @@ const ServicesOnePage = () => {
                 ))}
               </div>
 
-              {/* <button className="prev-btn" onClick={goToPrevSlide}>
-                {"<"}
-              </button>
-              <button className="next-btn" onClick={goToNextSlide}>
-                {">"}
-              </button> */}
+             
             </div>
             <div className="hidden sm:block w-full mt-10">
               <div className="dots  hidden  sm:flex items-center justify-center">
@@ -493,27 +511,105 @@ const ServicesOnePage = () => {
                   ></button>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* <Slider1/> */}
           </div>
         </div>
+
+        
+        {/* <div className="bg-gray-200 hidden sm:block w-full">
+            <div className="w-[92%]  border border-red-500 grid grid-cols-2 gap-2 mx-auto">
+            
+    
+     <div className="bg-white-A700 w-[11.5rem] rounded-md mb-2 flex flex-col ">
+           <Img src='images/img_guard.svg' className='w-10 ml-5 mt-8' alt=''/>
+           <Text
+                    size="txtOpenSansRomanBold24"
+                    className=" mt-5 text-md mb-2 ml-5  text-black-900  tracking-[0.25px]"
+                  >
+                   Security Guards
+                  </Text>
+                  <p className="desc mr-5">Guarding the Present, Securing the Future.</p>
+                  <div className="w-[80%] mx-auto  mb-4">
+                  <Img
+                      className="h-[29px] float-right  w-[29px] transition-all hover:filter hover:grayscale hover:invert"
+                      src="images/Arrow.svg"
+                      alt="arrowleft"
+                    />
+                  </div>
+
+      </div>
+      <div className="bg-white-A700 w-[11.5rem] rounded-md mb-2 flex flex-col ">
+           <Img src='images/img_guard.svg' className='w-10 ml-5 mt-8' alt=''/>
+           <Text
+                    size="txtOpenSansRomanBold24"
+                    className=" mt-5 text-md mb-2 ml-5  text-black-900  tracking-[0.25px]"
+                  >
+                     Security Guards
+                  </Text>
+                  <p className="desc mr-5">Guarding the Present, Securing the Future.</p>
+                  <div className="w-[80%] mx-auto  mb-4">
+                  <Img
+                      className="h-[29px] float-right border border-black-900  w-[29px] transition-all hover:filter hover:grayscale hover:invert"
+                      src="images/Arrow.svg"
+                      alt="arrowleft"
+                    />
+                  </div>
+
+      </div> 
+   
+            </div>
+
+          </div> */}
+          <div className="bg-gray-200 mb-4 hidden sm:block pb-8 w-full sm:-mt-8">
+  <div className="grid grid-cols-2 gap-2 mx-auto w-[90%]">
+    {
+      ser_data.map((data,idx)=>(
+        <div key={idx} className="bg-white-A700 rounded-md  flex flex-col ">
+        <Img src={data.image} className="w-10 mt-6 mx-4" alt="" />
+        <Text
+          size="txtOpenSansRomanBold24"
+          className="mt-5 text-md mb-2 mx-4 text-black-900 tracking-[0.25px]"
+        >
+          {data.title}
+        </Text>
+        <p className="desc ">{data.desc}</p>
+        <div className="w-[80%] mx-auto mb-2">
+          <Img
+            className="h-[29px] float-right  w-[29px] transition-all hover:filter hover:grayscale hover:invert"
+            src="images/Arrow.svg"
+            alt="arrowleft"
+            onClick = {()=>navigate(data.path)}
+          />
+        </div>
+      </div>
+      ))
+    }
+   
+   
+    
+    
+    {/* Repeat the same structure for additional cards */}
+  </div>
+</div>
+
         <div className="bg-gray-200  flex flex-col font-redhatdisplay items-start justify-start mt-[57px] sm:pb-5 sm:mt-0 sm:-mb-8 md:pl-10 sm:pl-5 pl-[50px] w-full">
-          <div className="flex mt-24  flex-col gap-[22px] w-[90%] sm:gap-[2px] sm:-ml-2 items-start justify-start">
+          <div className="flex mt-24 sm:mt-2 flex-col gap-[22px] w-[90%] sm:gap-[2px]  items-start justify-start">
                 <Text
-                  className="text-gray-600 text-base tracking-[2.00px] sm:pt-5 uppercase"
+                  className="text-gray-600 text-base sm:text-[14px] tracking-[2.00px] sm:pt-5 uppercase"
                   size="txtRedHatDisplayRomanMedium14"
                 >
                   premium services
                 </Text>
                 <Text
-                  className="capitalize text-4xl font-[600] sm:text-[20px] md:text-[34px] text-gray-900 tracking-[1.00px]"
+                  className="capitalize sm:-mt-2 text-4xl font-[600] sm:text-[18px] md:text-[34px] text-gray-900 tracking-[1.00px]"
                   size="txtPoppinsBold60"
                 >
                   Property management services
                 </Text>
               </div>
-          <div className="w-full  flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1339px] mx-auto ">
+          <div className="w-full sm:hidden flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1339px] mx-auto ">
             <div className="flex flex-col md:gap-10 gap-[76px] items-start justify-start sm:-ml-1  md:ml-[0]">
               
               <div className="flex sm:mx-auto sm:pb-6 sm:flex-col flex-row font-opensans sm:gap-[55px] items-center justify-between w-full ">
@@ -580,6 +676,39 @@ const ServicesOnePage = () => {
               src="images/img_rectangle22115.webp"
               alt="rectangle22115"
             />
+          </div>
+          <div className="sm:block hidden mt-6">
+          <div className="bg-gray-200 hidden sm:block w-full">
+  <div className="grid grid-cols-2 gap-2  w-[95%]">
+    {
+      pms_data.map((data,idx)=>(
+        <div key={idx} className="bg-white-A700 rounded-md  flex flex-col ">
+        <Img src={data.image} className="w-10 mt-6 mx-4" alt="" />
+        <Text
+          size="txtOpenSansRomanBold24"
+          className="mt-5 text-md mb-2 mx-4 text-black-900 tracking-[0.25px]"
+        >
+          {data.title}
+        </Text>
+        <p className="desc ">{data.desc}</p>
+        <div className="w-[80%] mx-auto mb-2">
+          <Img
+            className="h-[29px] float-right  w-[29px] transition-all hover:filter hover:grayscale hover:invert"
+            src="images/Arrow.svg"
+            alt="arrowleft"
+            onClick={()=>navigate(data.path)}
+          />
+        </div>
+      </div>
+      ))
+    }
+   
+   
+    
+    
+    {/* Repeat the same structure for additional cards */}
+  </div>
+</div>
           </div>
         </div>
 

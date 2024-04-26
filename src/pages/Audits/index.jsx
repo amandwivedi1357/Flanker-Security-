@@ -68,29 +68,29 @@ const Audits = () => {
         <div className="md:h-[848px] h-[675px] md:px-5 relative w-full ">
           <div className="absolute h-[648px] inset-[0] justify-center  w-full">
             <Img
-              className="h-[648px] m-auto object-cover w-full"
+              className="h-[648px] m-auto object-cover w-full sm:h-[487px]"
               src="images/img_rectangle21985_1.webp"
               alt="rectangle21985"
             />
-            <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto">
+            <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto sm:mt-48">
               <Text
                 className="sm:text-3xl sm:w-4/5 sm:font-normal capitalize leading-[89.00px] md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px] w-[70%]"
                 size="txtPoppinsBold60"
               >
-                Security service for your personal safety
+              Security Audits
               </Text>
               <Text
                 className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
-                Trust the experts with your safety and security
+                Ensuring Safety with Strategic Audits.
               </Text>
             </div>
           </div>
-          <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
+          <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full " />
         </div>
         <Img
-                className="h-[488px] sm:h-auto object-cover w-full sm:block sm:-mt-[12rem] hidden"
+                className="h-[488px] sm:h-auto object-cover w-full sm:block sm:-mt-[22rem] hidden"
                 src={comp}
                 alt="rectangle22116"
               />
@@ -98,7 +98,7 @@ const Audits = () => {
           <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
-                className="sm:hidden h-[488px] sm:h-auto object-cover w-full"
+                className="sm:hidden h-[488px] sm:h-auto object-cover w-full rounded-xl"
                 src={comp}
                 alt="rectangle22116"
               />

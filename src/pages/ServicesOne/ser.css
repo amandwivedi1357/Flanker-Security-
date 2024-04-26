@@ -50,14 +50,14 @@ transition: background-color 0.3s ease-in-out;
   }
   .desc{
     
-    font-size: 14px;
-  font-weight: 400;
+    font-size: 12px;
+  font-weight: 500;
   font-family: poppins;
   font-stretch: normal;
   font-style: normal;
-  margin-left: 24px;
-  
-  line-height: 1.75;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  line-height: 1.45;
   letter-spacing: 0.25px;
   text-align: left;
   color: rgba(3, 3, 3, 0.7);

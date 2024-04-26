@@ -18,11 +18,11 @@ const GalleryPage = () => {
         <div className="h-[648px] md:px-5 relative w-full ">
           <div className="h-[648px] inset-[0] justify-center absolute m-auto w-full ">
             <Img
-              className="h-[648px] filter brightness-50 m-auto object-cover w-full "
+              className="h-[648px] filter m-auto object-cover w-full sm:h-[487px]"
               src="images/img_rectangle21985_2.webp"
               alt="rectangle21985"
             />
-            <div className="absolute flex flex-col gap-[15px] h-max inset-[0] items-center justify-center m-auto ">
+            <div className="absolute flex flex-col gap-[15px] h-max inset-[0] items-center justify-center m-auto   sm:mt-52">
               <Text
                 className="capitalize sm:text-left leading-[102.00px] sm:leading-[45.00px] md:text-5xl text-6xl sm:font-normal sm:text-3xl text-center text-white-A700 tracking-[0.25px] w-[90%] sm:w-[90%]"
                 size="txtPoppinsBold60"
@@ -38,7 +38,7 @@ const GalleryPage = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className="gallery_cont">
+        <div className="gallery_cont sm:-mt-32">
           <div className="head_cont">
               <p className="head_text sm:text-xl">Security Team</p>
           </div>
@@ -53,7 +53,7 @@ const GalleryPage = () => {
             <img src={collage2} className="w-full" alt="" />
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full hidden">
           <div className="w-[90%]  mx-auto">
           <Text className="text-4xl">
           Our Certification

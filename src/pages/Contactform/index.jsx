@@ -107,15 +107,11 @@ const ContactformPage = () => {
     <>
       <div className="bg-white-A700 flex flex-col font-poppins items-center mb-[-20px] justify-start mx-auto w-full">
         <div className="md:h-[848px] h-[648px] md:px-5 relative w-full sm:-mb-44">
-          <div className="absolute h-[648px] inset-[0] justify-center   w-full">
-            <Img
-              className="h-[648px] m-auto filter brightness-50 object-cover w-full "
-              src="images/img_rectangle21985_2.webp"
-              alt="rectangle21985"
-            />
-            <div className="absolute flex flex-col gap-[21px] h-max inset-[0] items-center justify-center m-auto">
+          <div className="absolute  h-[648px] sm:h-[487px] inset-[0] justify-center bg-[#070710]  w-full">
+           
+            <div className="absolute flex flex-col gap-[21px] h-max inset-[0] items-center justify-center m-auto sm:mt-52">
               <Text
-                className="capitalize sm:leading-[45.00px] sm:text-3xl sm:text-left sm:w-[90%] sm:font-normal md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px]"
+                className="capitalize sm:leading-[45.00px] w-[90%] sm:text-3xl sm:text-left sm:w-[90%] sm:font-normal md:text-5xl text-6xl text-center text-white-A700 tracking-[0.25px]"
                 size="txtPoppinsBold60"
               >
                 Contact us for the Total  Security Solutions
@@ -130,7 +126,7 @@ const ContactformPage = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <div className="bg-gray-50 sm:pt-3 sm:-mt-5 flex flex-col font-lato items-center justify-start p-[69px] sm:p-0 md:px-10 sm:px-5 w-full ">
+        <div className="bg-gray-50 sm:pt-5 sm:-mt-44 flex flex-col font-lato items-center justify-start p-[69px]  md:px-10 sm:px-5 sm:py-5 w-full ">
           <div className="bg-[#fff] sm:shadow-2xl flex flex-col  rounded-xl items-end justify-start max-w-[1240px] mb-9 mx-auto pl-[60px] md:px-5 w-full">
             <div className="flex md:flex-col flex-row md:gap-10 sm:px-3 gap-[93px] items-center justify-end w-full">
               <form onSubmit={sendEmail} className=" flex md:flex-1 flex-col gap-[53px] items-start justify-start w-[44%] md:w-full">
@@ -258,13 +254,13 @@ const ContactformPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="flex flex-col font-poppins sm:items-start items-center justify-start w-[31%] md:w-full">
-                  <Button type="submit" className="hover:bg-transparent border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[155px] text-base text-center tracking-[0.16px]">
+                <div className="flex flex-col font-poppins sm:items-start items-center justify-start w-[31%] md:w-full sm:mb-10">
+                  <Button type="submit" className="hover:bg-transparent border border-orange-400 border-solid capitalize cursor-pointer font-medium h-11 leading-[normal] min-w-[155px] text-base text-center tracking-[0.16px] sm:mb-6">
                     get in touch
                   </Button>
                 </div>
               </form>
-              <div className="bg-orange-400 rounded-xl rounded-l-none sm:rounded-tr-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] sm:gap-5  items-center justify-center p-[54px] sm:p-0  md:px-10 sm:px-5 w-[49%] md:w-full sm:w-[345px] sm:rounded-b-xl  ">
+              <div className="bg-orange-400 rounded-xl rounded-l-none sm:rounded-tr-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] sm:gap-5  items-center justify-center p-[54px] sm:p-0 sm:px-5 w-[49%] md:w-full sm:w-[348px] sm:rounded-b-xl sm:hidden">
                 <Text
                   className="mt-[58px] sm:mt-8 text-4xl sm:text-[20px] md:text-[34px] text-black-900 tracking-[0.36px]"
                   size="txtPoppinsSemiBold36Black900"
@@ -321,6 +317,61 @@ const ContactformPage = () => {
               </div>
             </div>
           </div>
+          <div className="bg-orange-400 rounded-xl hidden sm:block rounded-l-none sm:rounded-tr-none flex md:flex-1 flex-col font-poppins md:gap-10 gap-[66px] sm:gap-5  items-center justify-center p-[54px] sm:p-0 sm:px-5 w-[49%] md:w-full sm:w-full sm:rounded-b-xl sm:-mt-12">
+                <Text
+                  className="mt-[58px] sm:mt-8 text-4xl sm:text-[20px] md:text-[34px] text-black-900 tracking-[0.36px]"
+                  size="txtPoppinsSemiBold36Black900"
+                >
+                  Contact Information
+                </Text>
+                <div className="flex flex-col sm:mt-4 font-lato items-start justify-start mb-[156px] sm:mb-12 w-[95%] md:w-full">
+                  <div className="flex sm:flex-col flex-row gap-[25px] items-start justify-start w-full">
+                    <Img
+                      className="h-[30px] sm:mt-0 mt-[3px] w-[30px]"
+                      src="images/img_location_black_900.svg"
+                      alt="location"
+                    />
+                    <Text
+                      className="sm:flex-1 sm:ml-[15%]  sm:mt-[-19%] leading-[33.00px] sm:text-base  text-black-900_e5_01 text-lg tracking-[0.25px] w-[88%] sm:w-[80%]"
+                      size="txtLatoRegular18"
+                    >
+                      P 1, Karthik Enclave, Road No 1, KPHB Colony, Kukatpally,
+                      Hyderabad - 500085
+                    </Text>
+                  </div>
+                  <div className="flex flex-row gap-[23px] items-center justify-start mt-[45px] sm:mt-4 w-3/5 md:w-full">
+
+                    <Img
+                      className="h-8 w-8"
+                      src="images/img_phone_black_900.svg"
+                      alt="phone"
+                    />
+                    <Text
+                      className="text-black-900_e5_01 text-lg sm:-ml-2 tracking-[0.25px] sm:text-base"
+                      size="txtLatoRegular18"
+                    >
+                      +91 91007 92007
+                    </Text>
+
+                  
+                   
+
+                  </div>
+                  <div className="flex sm:mt-4 flex-row gap-[29px] items-start justify-start md:ml-[0] ml-[5px] mt-12 w-[58%] md:w-full">
+                    <Img
+                      className="h-[17px] mt-2 sm:ml-2"
+                      src="images/img_lock_black_900.svg"
+                      alt="lock"
+                    />
+                    <Text
+                      className="text-black-900_e5_01 sm:-ml-2 text-lg tracking-[0.25px] sm:mt-1 sm:pb-0"
+                      size="txtLatoRegular18"
+                    >
+                      info@flankersecurity.com
+                    </Text>
+                  </div>
+                </div>
+              </div>
         </div>
         <Footer className="flex items-center  justify-center md:px-5 w-full bg-[#070710]" />
       </div>

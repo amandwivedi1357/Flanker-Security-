@@ -68,13 +68,13 @@ const slidesData = [
     content: (
       <div className="slide-content sm:-mt-8">
         <div 
-            className="bg-cover bg-orange-300 bg-no-repeat font-redhatdisplay h-[514px]  mt-28 md:px-5 py-[5px] relative w-full"
+            className="bg-cover bg-orange-300 bg-no-repeat font-redhatdisplay h-[514px] sm:h-[360px]  mt-28 md:px-5 py-[5px] relative w-full"
             
           >
-            <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
+            <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px]  mx-auto w-[59%]  z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
                 <Text
-                  className="text-black-900_e5 text-center text-[15px] tracking-[2.00px] uppercase"
+                  className="text-black-900_e5  text-center text-[15px] tracking-[2.00px] uppercase"
                   size="txtRedHatDisplayRomanMedium14Black900e5"
                 >
                   vision
@@ -102,7 +102,7 @@ const slidesData = [
                 </Text>
               </div>
             </div>
-            <div className="flex sm:mt-10 sm:flex-col flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full">
+            <div className="flex   flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full ">
               <Img
                 className="sm:flex-1 h-[233px] md:h-auto object-cover w-[34%] sm:w-full sm:mt-24"
                 src="images/img_pngwing1.webp"
@@ -190,21 +190,21 @@ const AboutusPage = () => {
     <>
       <div className="bg-white-A700 flex flex-col items-center justify-start mx-auto w-full">
         <div className="flex flex-col items-center justify-start w-full mb-[-20px]">
-          <div className="font-poppins md:h-[848px] h-[675px] md:px-5 relative w-full">
-            <div className="absolute h-[648px] inset-[0] justify-center  w-full">
+          <div className="font-poppins md:h-[848px] h-[675px] relative w-full ">
+            <div className="absolute h-[648px]  inset-[0] justify-center   w-full">
               <Img
-                className="h-[648px] filter brightness-50 m-auto object-cover w-full"
+                className="h-[648px] filter  m-auto object-cover w-full sm:h-[487px]"
                 src="images/img_rectangle21985.webp"
                 alt="rectangle21985"
               />
-              <div className="absolute bottom-[41%] flex flex-col gap-[22px] inset-x-[0] items-center justify-start mx-auto">
+              <div className="absolute bottom-[41%] flex flex-col gap-[22px] inset-x-[0] items-center justify-start mx-auto sm:bottom-[45%]">
                 <Text
                   className="capitalize leading-[89.00px] sm:leading-[44.00px] text-6xl sm:text-left text-center text-white-A700 tracking-[0.25px] w-[100%] sm:w-[90%] sm:text-[31px]  sm:font-normal "
                   size="txtPoppinsBold60"
                 >
                   Your Partner in Absolute Security
                 </Text>
-                <div className="sm:w-[90%] ">
+                <div className="sm:w-[90%]">
 
                 <Text
                   className="text-[18px] text-center sm:text-left text-white-A700_bc tracking-[0.50px] "
@@ -218,19 +218,15 @@ const AboutusPage = () => {
             <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
             
           </div>
-          <Img
-              className="h-[640px] md:h-auto object-cover sm:-mt-52  hidden sm:block"
-              src='images/about_drone.jpg'
-              alt="rectangle22076"
-            />
-          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[45px] mx-auto md:px-5 w-full">
+          
+          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[45rem] mx-auto md:px-5 w-full sm:mt-[-20rem]">
             <Img
-              className="h-[640px] sm:hidden md:h-auto object-cover rounded-xl"
-              src='images/about_drone.jpg'
+              className="h-[640px] sm:hidden w-[40%] md:h-auto object-cover sm:h-auto "
+              src='images/original_sec.jpg'
               alt="rectangle22076"
             />
-            <div className="flex flex-col md:gap-10 gap-[166px] justify-start md:mt-0 mt-[125px]">
-              <div className="flex flex-col gap-[19px] items-start justify-start md:ml-[0] ml-[125px]">
+            <div className="flex flex-col md:gap-10 gap-[166px] justify-start md:mt-0 mt-[50px]">
+              <div className="flex flex-col gap-[19px] items-start justify-start md:ml-[0] ml-[105px]">
                 <Text
                   className="text-gray-600 text-sm tracking-[2.00px] uppercase sm:text-[14px]"
                   size="txtRedHatDisplayRomanMedium14"
@@ -264,6 +260,11 @@ const AboutusPage = () => {
               
             </div>
           </div>
+          <Img
+              className=" md:h-auto  object-cover sm:mt-8 sm:px-5 hidden sm:block sm:w-[380px]"
+              src='images/original_sec.jpg'
+              alt="rectangle22076"
+            />
           <Slider slidesData={slidesData} time={5000}/>
           <div className="w-[90%] sm:block hidden  h-auto">
           <Text
@@ -353,7 +354,7 @@ const AboutusPage = () => {
      </ul>
    </div>
    {/* mobile view box ends */}
-          <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] -mb-12 sm:-mb-20 mt-[62px] sm:mt-0 mx-auto md:px-5 relative w-full">
+          <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] -mb-12 sm:-mb-20 mt-[62px] sm:mt-0 mx-auto md:px-5 relative w-full border border-red-500">
             <Img
               className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-[100%]  rounded-xl sm:rounded-none"
               src="images/cctv_about.jpg"
