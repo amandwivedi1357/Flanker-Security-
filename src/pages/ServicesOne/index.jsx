@@ -478,7 +478,7 @@ const ServicesOnePage = () => {
                   >
                     {data.title}
                   </Text>
-                  <p className="desc">{data.desc}</p>
+                  <p className="desc ml-2">{data.desc}</p>
                 </div>
               ))}
             </div>
@@ -574,7 +574,7 @@ const ServicesOnePage = () => {
         >
           {data.title}
         </Text>
-        <p className="desc ">{data.desc}</p>
+        <p className="desc1 ">{data.desc}</p>
         <div className="w-[80%] mx-auto mb-2">
           <Img
             className="h-[29px] float-right  w-[29px] transition-all hover:filter hover:grayscale hover:invert"
@@ -663,7 +663,7 @@ const ServicesOnePage = () => {
                     NRI Property
                   </Text>
                   <Text
-                    className="leading-[24.00px] mb-[23px] mt-[8px] font-normal text-black-900_b2 text-base sm:font-bold tracking-[0.25px] w-full"
+                    className="leading-[24.00px] mb-[23px] mt-[8px] sm:pr-2 font-normal text-black-900_b2 text-base sm:font-bold tracking-[0.25px] w-full"
                     size="txtLatoRegular15Gray700"
                   >
                     NRI Property Solutions at Your Service.
@@ -690,7 +690,7 @@ const ServicesOnePage = () => {
         >
           {data.title}
         </Text>
-        <p className="desc ">{data.desc}</p>
+        <p className="desc1 ">{data.desc}</p>
         <div className="w-[80%] mx-auto mb-2">
           <Img
             className="h-[29px] float-right  w-[29px] transition-all hover:filter hover:grayscale hover:invert"

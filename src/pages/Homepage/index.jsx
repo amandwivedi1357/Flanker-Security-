@@ -421,7 +421,7 @@ const HomepagePage = () => {
               src="images/portrait-male.jpg"
               alt="rectangle22076"
             />
-            <div className="flex  flex-col items-start justify-start md:ml-[0] ml-[105px] md:mt-0 mt-[50px] sm:mt-20">
+            <div className="flex  flex-col items-start justify-start md:ml-[0] ml-[105px] md:mt-0 mt-[50px] sm:mt-8">
               <Text
             className="text-gray-600 text-sm sm:ml-1 tracking-[2.00px] uppercase sm:text-[14px]"
                 size="txtRedHatDisplayRomanMedium14"

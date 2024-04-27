@@ -133,7 +133,7 @@ const Guard = () => {
                 </>
               </Text>
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -149,7 +149,7 @@ const Guard = () => {
                 </span>
               </Text>
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -166,7 +166,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -183,7 +183,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -200,7 +200,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -217,7 +217,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -234,7 +234,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -251,7 +251,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -268,7 +268,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -285,7 +285,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -302,7 +302,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -319,7 +319,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">

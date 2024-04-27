@@ -103,7 +103,7 @@ const Audits = () => {
                 alt="rectangle22116"
               />
               <Text
-                className="mt-[37px] md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
+                className="mt-[37px] md:text-3xl sm:mt-5 sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
                 size="txtOpenSansRomanBold32"
               >
                Security Audits{" "}
@@ -115,7 +115,7 @@ const Audits = () => {
                 Security audits are systematic evaluations of an organisation's information systems, processes, and policies to identify and mitigate potential security risks. These audits play a crucial role in maintaining the confidentiality, integrity, and availability of sensitive information. Here's an overview of key aspects related to security audits:
               </Text>
               <Text
-                className="mt-[30px] text-black-900 text-2xl tracking-[0.50px]"
+                className="mt-[30px] sm:mt-5 text-black-900 text-2xl tracking-[0.50px]"
                 size="txtOpenSansRomanBold20"
               >
                 Purpose of Security Audits:
@@ -132,21 +132,21 @@ const Audits = () => {
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Risk Assessment:</span>
+                 <span className="text-black-900_01 sm:mt-4 font-lato text-left text-xl font-bold"> 		Risk Assessment:</span>
                   <br />
                   Evaluating potential risks and their impact on the organisation's assets, operations, and reputation.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Compliance Verification:</span>
+                 <span className="text-black-900_01 sm:mt-4 font-lato text-left text-xl font-bold"> 		Compliance Verification:</span>
                   <br />
                   	Ensuring that the organisation complies with relevant industry regulations, standards, and legal requirements, such as GDPR, HIPAA, or ISO 27001.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Policy Compliance:</span>
+                 <span className="text-black-900_01 sm:mt-4 font-lato text-left text-xl font-bold"> 		Policy Compliance:</span>
                   <br />
                   	Verifying adherence to internal security policies and procedures to maintain a consistent and secure operational environment.
                  

@@ -95,7 +95,7 @@ const Risk = () => {
                 alt="rectangle22116"
               />
         <div className="flex flex-col pt-0 sm:pt-0 items-center justify-start p-[82px] pb-0 md:px-10 sm:px-5 w-full">
-          <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[172px] mx-auto w-full">
+          <div className="flex md:flex-col sm:mb-5 flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[172px] mx-auto w-full">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
               <Img
                 className="sm:hidden rounded-xl  h-[488px] sm:h-auto object-cover w-full"
@@ -135,7 +135,7 @@ const Risk = () => {
                 </>
               </Text>
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -153,7 +153,7 @@ const Risk = () => {
                 </span>
               </Text>
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -169,7 +169,7 @@ const Risk = () => {
                 </span>
               </Text>
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-  xl font-bold">
@@ -185,7 +185,7 @@ const Risk = () => {
                 </span>
               </Text>
               <Text
-                className="leading-[29.00px] mt-[39px] text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-  xl font-bold">
@@ -204,6 +204,7 @@ const Risk = () => {
             </div>
             
           </div>
+          
           <QuickLinks/>
         </div>
         <Banner/>
