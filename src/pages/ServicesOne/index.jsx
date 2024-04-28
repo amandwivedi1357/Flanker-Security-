@@ -431,7 +431,7 @@ const ServicesOnePage = () => {
                 Secure your business with us
               </Text>
               <Text
-                className="mt-[22px] text-[18px] sm:text-left sm:w-[90%] text-center text-white-A700_bc tracking-[0.50px]"
+                className="mt-[1px] text-[18px] sm:text-left sm:w-[90%] text-center text-white-A700_bc tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
                 Trust the experts with your safety
@@ -444,7 +444,7 @@ const ServicesOnePage = () => {
           className=" bg-gray-200 sm:-mt-64 flex flex-col font-redhatdisplay items-center justify-end p-[52px] md:px-10 sm:px-4 w-full "
           ref={serviceCardsRef}
         >
-          <div className="flex flex-col items-start justify-start max-w-[1239px] sm:mt-0 mt-[90px] mx-auto w-full">
+          <div className="flex flex-col items-start justify-start max-w-[1239px] sm:mt-0 mt-[40px] mx-auto w-full">
             <div className="flex flex-col gap-[22px] sm:gap-[2px] items-start justify-start sm:-mt-4">
               <Text
                 className="text-gray-600 text-base tracking-[2.00px] uppercase sm:text-[14px] "

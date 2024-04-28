@@ -195,6 +195,7 @@ const AboutusPage = () => {
               <Img
                 className="h-[648px] filter  m-auto object-cover w-full sm:h-[487px]"
                 src="images/img_rectangle21985.webp"
+                // src="images/about_us_banner.jpeg"
                 alt="rectangle21985"
               />
               <div className="absolute bottom-[41%] flex flex-col gap-[22px] inset-x-[0] items-center justify-start mx-auto sm:bottom-[45%]">
@@ -207,7 +208,7 @@ const AboutusPage = () => {
                 <div className="sm:w-[90%]">
 
                 <Text
-                  className="text-[18px] text-center sm:text-left text-white-A700_bc tracking-[0.50px] "
+                  className="text-[18px] -mt-5 sm:mt-0 text-center sm:text-left text-white-A700_bc tracking-[0.50px] "
                   size="txtLatoRegular15"
                   >
                   Trust the experts with your safety
@@ -219,7 +220,7 @@ const AboutusPage = () => {
             
           </div>
           
-          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[45rem] mx-auto md:px-5 w-full sm:mt-[-20rem]">
+          <div className="flex md:flex-col flex-row md:gap-10 items-start justify-between max-w-[1164px] mt-[4rem] mx-auto md:px-5 w-full sm:mt-[-20rem]">
             <Img
               className="h-[640px] sm:hidden w-[40%] md:h-auto object-cover sm:h-auto "
               src='images/original_sec.jpg'
@@ -275,7 +276,7 @@ const AboutusPage = () => {
           </Text>
           </div>
           <Text
-            className="mt-[151px] sm:hidden  text-gray-600 sm:text-left text-sm tracking-[2.00px] uppercase  sm:ml-0"
+            className="mt-[81px] sm:hidden  text-gray-600 sm:text-left text-sm tracking-[2.00px] uppercase  sm:ml-0"
             size="txtRedHatDisplayRomanMedium14"
           >
             why choose us
@@ -354,7 +355,7 @@ const AboutusPage = () => {
      </ul>
    </div>
    {/* mobile view box ends */}
-          <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] -mb-12 sm:-mb-20 mt-[62px] sm:mt-0 mx-auto md:px-5 relative w-full border border-red-500">
+          <div className="font-lato md:h-[503px] h-[553px] max-w-[1240px] -mb-12 sm:-mb-20 mt-[62px] sm:mt-0 mx-auto md:px-5 relative w-full ">
             <Img
               className="absolute h-[441px] left-[0] object-cover top-[0] w-[62%] sm:w-[100%]  rounded-xl sm:rounded-none"
               src="images/cctv_about.jpg"

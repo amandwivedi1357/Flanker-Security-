@@ -386,13 +386,13 @@ const HomepagePage = () => {
       </div>
   <div className="absolute bottom-[30%] flex flex-col items-start justify-start sm:left-0 left-[3%] w-[53%] sm:w-full md:px-5  sm:-top-2">
     <Text
-      className="capitalize leading-[89.00px] sm:leading-[45.00px] sm:text-[31px] sm:font-normal sm:mt-[15rem] sm:ml-[0%] sm:w-[334px] md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
+      className="capitalize leading-[59.00px] sm:leading-[45.00px] sm:text-[31px] sm:font-normal sm:mt-[15rem] sm:ml-[0%] sm:w-[334px] md:text-5xl text-6xl text-white-A700 tracking-[0.25px] w-full"
       size="txtPoppinsBold60"
     >
       Your Security is Our Priority
     </Text>
     <Text
-      className="leading-[29.00px] mt-6 text-[18px] font-[300] text-white-A700 sm:ml-[0%] tracking-[0.50px] w-[71%] sm:w-[298px] sm:leading-6 sm:mt-2"
+      className="leading-[29.00px] mt-4 text-[18px] font-[300] text-white-A700 sm:ml-[0%] tracking-[0.50px] w-[71%] sm:w-[298px] sm:leading-6 sm:mt-2"
       size="txtLatoRegular15"
     >
       We’re the one stop solution for all your safety and security needs
@@ -1037,7 +1037,7 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
           </div>
           
           <Text
-            className="mt-[150px] text-gray-600 text-sm tracking-[2.00px] uppercase sm:mt-[90%]"
+            className="mt-[90px] text-gray-600 text-sm tracking-[2.00px] uppercase sm:mt-[90%]"
             size="txtRedHatDisplayRomanMedium14"
           >
             TESTIMONIAL
@@ -1070,7 +1070,7 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
               setsliderState(e?.item);
             }}
             ref={sliderRef}
-            className="flex gap-[74px] max-w-[1165px] mt-[111px]  sm:mt-12 mx-auto md:px-5 w-full"
+            className="flex gap-[74px] max-w-[1165px] mt-[81px]  sm:mt-12 mx-auto md:px-5 w-full"
             items={[...Array(12)].map(() => (
               <React.Fragment key={Math.random()}>
                 <div className="flex flex-col items-center justify-start mx-2.5 sm:mx-0">

@@ -29,7 +29,7 @@ const GalleryPage = () => {
               >
  Every Image Tells a Story!</Text>
               <Text
-                className="text-[18px] sm:w-[90%] sm:leading-7 sm:text-left text-center text-white-A700_bc tracking-[0.50px]"
+                className="text-[18px] sm:w-[90%] -mt-3 sm:mt-0 sm:leading-7 sm:text-left text-center text-white-A700_bc tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
                Safety framed in every image, Security woven in every pixel.
