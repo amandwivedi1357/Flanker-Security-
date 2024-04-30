@@ -4,8 +4,10 @@ import { Banner, Button, Img, QuickLinks, Text, Toast } from "components";
 import Footer from "components/Footer";
 import Header from "components/Header";
 import guards from "../../assets/Event_Sec/sec_guard3.jpg"
+import { useParams } from "react-router-dom";
 
 const Guard = () => {
+  
   const [toast, setToast] = useState(null);
   const [formData, setFormData] = useState({
     name: "",
@@ -78,7 +80,7 @@ const Guard = () => {
                 Security Guards
               </Text>
               <Text
-                className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
+                className="text-[15px] -mt-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
                 Guarding the Present, Securing the Future.
@@ -87,21 +89,16 @@ const Guard = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
-        <Img
-                className="sm:block hidden sm:-mt-[22rem] h-[488px] sm:h-auto object-cover w-full"
-                // src="images/sec_guard.jpg"
-                src={guards}
-                alt="rectangle22116"
-              />
-        <div className=" flex flex-col sm:pt-0 items-center justify-start p-[82px] pb-0 pt-0 md:px-10 sm:px-5 w-full">
-          <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
+       
+        <div className=" flex flex-row sm:flex-col  sm:pt-0 inner_left justify-start gap-12 p-[50px] pb-0 pt-0 md:px-10 sm:px-5 w-full  sm:w-full sm:-mt-[22rem]">
+          <div className="flex w-[70%] sm:w-full -mt-[2rem] md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] overflow-y-auto">
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
-              <Img
+              {/* <Img
                 className="sm:hidden h-[488px] sm:h-auto object-cover w-full rounded-xl"
                 // src="images/sec_guard.jpg"
                 src={guards}
                 alt="rectangle22116"
-              />
+              /> */}
               <Text
                 className="mt-[37px] sm:mt-5 md:text-3xl sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
                 size="txtOpenSansRomanBold32"
@@ -133,7 +130,7 @@ const Guard = () => {
                 </>
               </Text>
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -142,14 +139,14 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Establish a comprehensive shift schedule to ensure 24/7 coverage. Rotate shifts to prevent predictability and ensure that guards are alert and effective at all times.
                   </>
                 </span>
               </Text>
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -158,7 +155,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Despite their numerous advantages, the proliferation of drones has raised concerns related to privacy, airspace safety, and potential misuse. Unauthorized drone flights near sensitive areas or crowded spaces pose risks, and the need for regulatory frameworks to address these challenges becomes increasingly apparent.
                   </>
@@ -166,7 +163,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -175,7 +172,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Ensure that security guards undergo proper training and certification programs.Our training covers emergency response procedures, conflict resolution, communication skills, and use of security equipment.
                   </>
@@ -183,7 +180,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -192,7 +189,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Implement effective communication systems among security personnel. It include radios,Walkie Talkie mobile, or other communication devices to facilitate quick response and coordination.
                   </>
@@ -200,7 +197,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -209,7 +206,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Integrate surveillance technology such as CCTV cameras, access control systems, and alarms to augment the capabilities of security guards. This provides an extra layer of monitoring and deters potential threats.
                   </>
@@ -217,7 +214,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -226,7 +223,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Establish clear and concise emergency protocols. Ensure that security guards are well-versed in these procedures, including evacuation plans, first aid, and coordination with emergency services.
                   </>
@@ -234,7 +231,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -243,7 +240,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Emphasise the importance of accurate documentation and reporting. Security guards should maintain detailed logs of their activities, incidents, and observations.
                   </>
@@ -251,7 +248,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -260,7 +257,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Foster collaboration with local law enforcement agencies. Establish communication channels and protocols for reporting incidents that may require their involvement.
                   </>
@@ -268,7 +265,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -277,7 +274,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Conduct regular on-site training sessions to keep security guards informed about the latest security threats, technologies, and best practices.
                   </>
@@ -285,7 +282,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -294,7 +291,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Clearly define the procedures for responding to incidents. This includes communication with management, law enforcement, and any necessary follow-up actions.
                   </>
@@ -302,7 +299,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -311,7 +308,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Promote awareness among clients and employees regarding security measures in place. This can contribute to a collective effort in maintaining a secure environment.
                   </>
@@ -319,7 +316,7 @@ const Guard = () => {
               </Text>
               
               <Text
-                className="leading-[29.00px] mt-[39px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
+                className="leading-[29.00px] mt-[20px] sm:mt-4 text-black-900_01 text-xl tracking-[0.50px]"
                 size="txtLatoMedium20"
               >
                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">
@@ -328,7 +325,7 @@ const Guard = () => {
                     <br />
                   </>
                 </span>
-                <span className="leading-[29.00px] mt-[18px] text-[18px] text-black-900_cc tracking-[0.50px]">
+                <span className="leading-[29.00px] mt-[1px] text-[18px] text-black-900_cc tracking-[0.50px]">
                   <>
                   Regularly review and assess the effectiveness of security measures. Implement changes and improvements based on lessons learned from incidents or changing security landscapes.
                   </>
@@ -337,15 +334,20 @@ const Guard = () => {
               
              
             
-              
+              {/* <Img
+                className="sm:block hidden sm:-mt-[22rem] h-[488px] sm:h-auto object-cover w-full"
+                // src="images/sec_guard.jpg"
+                src={guards}
+                alt="rectangle22116"
+              /> */}
             </div>
-          
+            
 
           </div>
           <QuickLinks/>
         </div>
-        <Banner/>
-        <Footer className="flex items-center justify-center mt-[29px] md:px-5 w-full bg-[#070710]" />
+        {/* <Banner/> */}
+        <Footer className="flex items-center justify-center mt-[49px] md:px-5 w-full bg-[#070710]" />
       </div>
       {toast && <Toast message={toast.message} type={toast.type} onClose={handleCloseToast} />}
     </>

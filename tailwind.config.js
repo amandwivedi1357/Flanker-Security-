@@ -52,6 +52,9 @@ module.exports = {
         inter: "Inter",
       },
       backgroundImage: { gradient: "linear-gradient(0deg ,#fcb131,#cb7908)" },
+      filter: {
+        brightness: "brightness(var(--brightness))",
+      },
     },
   },
   plugins: [require("@tailwindcss/forms")],

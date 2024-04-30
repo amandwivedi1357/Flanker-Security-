@@ -20,6 +20,7 @@
     "react-select": "^5.2.1",
     "react-slick": "^0.30.2",
     "react-toastify": "^10.0.4",
+    "rsuite": "^5.60.0",
     "slick-carousel": "^1.8.1",
     "vercel": "^33.5.2"
   },

@@ -1070,13 +1070,13 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
               setsliderState(e?.item);
             }}
             ref={sliderRef}
-            className="flex gap-[74px] max-w-[1165px] mt-[81px]  sm:mt-12 mx-auto md:px-5 w-full"
+            className="flex gap-[74px] max-w-[1165px] mt-[51px] sm:mt-12 mx-auto md:px-5 w-full"
             items={[...Array(12)].map(() => (
               <React.Fragment key={Math.random()}>
-                <div className="flex flex-col items-center justify-start mx-2.5 sm:mx-0">
-                  <div className="bg-gray-100   border-solid flex flex-col  items-center justify-end p-[50px] md:px-10 sm:px-5 rounded-xl w-full ">
+                <div className="flex flex-col  mt-5 items-center justify-start mx-2.5 sm:mx-">
+                  <div className="bg-gray-100   border-solid flex flex-col  items-center justify-end p-[20px] md:px-10 sm:px-5 rounded-md w-full ">
                     <div className="flex flex-col  items-start justify-start mt-1 w-[96%]  md:w-full">
-                      <div className="flex flex-row items-center justify-start ml-1 md:ml-[0] w-[46%] md:w-full">
+                      <div className="flex flex-row items-center justify-start -ml-3 md:ml-[0] w-[46%] md:w-full">
                         <Img
                           className="h-[22px] w-[22px]"
                           src="images/img_star.svg"
@@ -1105,11 +1105,11 @@ The Property Management Vertical encompasses the full spectrum of House Keeping 
                         “
                       </Text>
                       <Text
-                        className="h-[228px] leading-[29.00px] text-[18px] text-black-900 tracking-[0.50px] w-[308px] "
+                        className=" leading-[29.00px] text-[18px] text-black-900 tracking-[0.50px] w-[308px] "
                         size="txtLatoRegular15Gray700"
                         style={{ lineHeight: "1.53" }}
                       >
-                        Choosing Flanker security was a game-changer for us. Their proactive security measures and highly trained personnel have created a safe environment that we can rely on.
+                        Outstanding professionalism! Our experience with Flanker Security has been exceptional. Their team's vigilance and prompt response have truly enhanced our sense of safety and security.
                       </Text>
                       <Text
                         className="mt-7 text-black-900 text-lg tracking-[0.50px]"

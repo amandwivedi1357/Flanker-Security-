@@ -66,43 +66,43 @@ const slidesData = [
   {
     id: 1,
     content: (
-      <div className="slide-content sm:-mt-8">
+<div className="slide-content sm:-mt-8">
         <div 
-            className="bg-cover bg-orange-300 bg-no-repeat font-redhatdisplay h-[514px] sm:h-[360px]  mt-28 md:px-5 py-[5px] relative w-full"
-            
+            className="bg-cover bg-orange-300 bg-no-repeat font-redhatdisplay h-[514px] mt-28 md:px-5 py-[5px] relative w-full"
+           
           >
-            <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px]  mx-auto w-[59%]  z-[1] sm:w-full">
+            <div className="flex flex-col items-center justify-start mb-[-15px] mt-[97px] mx-auto w-[59%] z-[1] sm:w-full">
               <div className="flex flex-col gap-[19px] items-center justify-start w-full">
                 <Text
-                  className="text-black-900_e5  text-center text-[15px] tracking-[2.00px] uppercase"
+                  className="text-black-900_e5 text-center  text-[15px] tracking-[2.00px] uppercase"
                   size="txtRedHatDisplayRomanMedium14Black900e5"
                 >
-                  vision
+                  Vision
                 </Text>
                 <Text
-                  className="leading-[50.00px] md:text-3xl sm:w-full sm:text-[16px] sm:leading-[35.00px] text-[32px] text-center text-gray-900 tracking-[1.00px] w-full"
+                  className="leading-[50.00px] md:text-3xl sm:text-[17px] sm:leading-[35.00px] text-[32px] text-center text-gray-900 tracking-[1.00px] w-full "
                   size="txtRedHatDisplayRomanRegular32"
                 >
                   <span className="text-gray-900 font-poppins font-normal">
                   To provide future ready {" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-[600]">
-                  AI Powered Security{" "}
+                  AI Powered Security
                   </span>
                   <span className="text-gray-900 font-poppins font-normal">
-                    
+                    {" "}
                     &{" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-[600]">
-                    Property Management for{" "}
+                   Property Management for{" "}
                   </span>
                   <span className="text-gray-900 font-poppins font-normal">
-                   Enterprise & Institutions 
+                  Enterprise & Institutions
                   </span>
                 </Text>
               </div>
             </div>
-            <div className="flex   flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full ">
+            <div className="flex sm:flex-col flex-row sm:gap-5 items-end justify-evenly mt-auto mx-auto w-full">
               <Img
                 className="sm:flex-1 h-[233px] md:h-auto object-cover w-[34%] sm:w-full sm:mt-24"
                 src="images/img_pngwing1.webp"

@@ -36,7 +36,15 @@
   margin: auto;
   color: #fff;
 }
-
+.inner_left{
+  margin-top: 10px;
+  width: 20%; /* Adjust the width as needed */
+  padding: 10px;
+  max-height: 100vh; /* Set the maximum height to 100% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if the content exceeds the height */
+  border-radius: 5px;
+/* border: 2px solid red; */
+}
 .whatsapp-icon-container:hover .whatsapp-info {
   opacity: 1;
   visibility: visible;
@@ -51,5 +59,9 @@
   }
   .whatsapp-icon-container{
     bottom: 2rem;
+  }
+  .inner_left{
+    width: 100%;
+    max-height: 100%;
   }
 }

@@ -3,11 +3,14 @@ import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { Img, Text } from "components";
 import { CiMenuFries } from "react-icons/ci";
 import Sidebar from "./Sidebar";
+
  import "./header.css"
+import { Dropdown } from "rsuite";
 const Header = (props) => {
   const location = useLocation();
   const navigate = useNavigate();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -23,6 +26,14 @@ const Header = (props) => {
     }
   }, []);
 
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsDropdownOpen(false);
+  };
   return (
     <>
       <header className={props.className}>
@@ -44,7 +55,7 @@ const Header = (props) => {
               />
             </NavLink>
             <Text onClick={()=>navigate('/')}
-              className={` sm:mt-[-0.5%] cursor-pointer bg-clip-text bg-gradient sm:text-base capitalize ml-2 text-transparent text-xl tracking-[0.25px] sm:w-[80%] ${
+              className={` sm:mt-[-0.5%] cursor-pointer bg-clip-text text-orange-400 bg-gradient sm:text-base capitalize ml-2 text-xl tracking-[0.25px] sm:w-[80%] ${
                 location.pathname === "/" ? "active-link" : ""
               }`}
               size="txtPoppinsRegular20"
@@ -87,15 +98,72 @@ const Header = (props) => {
                   : ""
               }`}
             >
-              <li>
+              <li className="relative" 
+               onMouseEnter={() => setIsDropdownOpen(true)}
+              
+              >
+             
                 <Text
                   className={`capitalize  mb-0.5 hover:text-orange-400 text-base text-white-A700 tracking-[0.16px] ${
                     location.pathname === "/services"  ? "active-link" : "breadcrumb-link"
                   }`}
                   size="txtPoppinsMedium16"
+                 
                 >
                   Services
                 </Text>
+                {isDropdownOpen && (
+                 <ul
+                 onMouseLeave={() => setIsDropdownOpen(false)}
+                 className="absolute left-50 top-10 bg-black-900 shadow-md rounded-md py-2  w-52">
+                 <NavLink to="/guards" onClick={closeDropdown}>
+                   <li className="hover:text-orange-400 text-white-A700 cursor-pointer pl-6  py-2  transition-colors duration-300" >
+                   Security Guards
+                   </li>
+                 </NavLink>
+                 <NavLink to="/infrastructure" onClick={closeDropdown}>
+                   <li className="hover:text-orange-400 text-white-A700 cursor-pointer px-4 py-2  transition-colors duration-300 pl-6">
+                     Security Infra
+                   </li>
+                 </NavLink>
+                 <NavLink to="/training" onClick={closeDropdown}>
+                   <li className="hover:text-orange-400 text-white-A700 cursor-pointer px-4 py-2  transition-colors duration-300 pl-6">
+                     Security Training
+                   </li>
+                 </NavLink>
+                 <NavLink to="/Audits" onClick={closeDropdown}>
+                   <li className="hover:text-orange-400 text-white-A700 cursor-pointer px-4 py-2  transition-colors duration-300 pl-6">
+                     Security Audits
+                   </li>
+                 </NavLink>
+                 <NavLink to="/drones" onClick={closeDropdown}>
+                   <li className="hover:text-orange-400 text-white-A700 cursor-pointer px-4 py-2  transition-colors duration-300 pl-6">
+                     Drones
+                   </li>
+                 </NavLink>
+                 <NavLink to="/investigation" onClick={closeDropdown}>
+                   <li className="hover:text-orange-400 text-white-A700 cursor-pointer px-4 py-2  transition-colors duration-300 pl-6">
+                    Investigation
+                   </li>
+                 </NavLink>
+                 <NavLink to="/risk-assessment" onClick={closeDropdown}>
+                   <li className="hover:text-orange-400 text-white-A700 cursor-pointer px-4 py-2  transition-colors duration-300 pl-6">
+                     Risk-Assessment
+                   </li>
+                 </NavLink>
+                 <NavLink to="/risk-assessment" onClick={closeDropdown}>
+                   <li className="hover:text-orange-400 text-white-A700 cursor-pointer px-4 py-2  transition-colors duration-300 pl-6">
+                     Housekeeping
+                   </li>
+                 </NavLink>
+                 <NavLink to="/risk-assessment" onClick={closeDropdown}>
+                   <li className="hover:text-orange-400 text-white-A700 cursor-pointer px-4 py-2  transition-colors duration-300 pl-6">
+                     NRI Properties
+                   </li>
+                 </NavLink>
+               </ul>
+               
+                )}
               </li>
             </NavLink>
             <NavLink
@@ -137,23 +205,7 @@ const Header = (props) => {
               </li>
             </NavLink>
           </ul>
-          {/* <div className="bouncingDiv bg-white-A700 flex md:flex-1 flex-col items-start justify-end   md:ml-[0] ml-[207px] md:mt-0  p-[5px]  rounded-[21px] pr-4  md:w-full sm:hidden">
-            <div className="flex flex-row gap-3 items-start justify-start  md:w-full ">
-              <div className="bg-gradient  flex flex-col h-[31px] items-center justify-start p-[9px] rounded-[15px]">
-                <Img
-                  className="h-[11px] w-[11px] "
-                  src="images/img_call.svg"
-                  alt="call"
-                />
-              </div>
-              <Text
-                className="mt-1.5 text-black-900 text-sm tracking-[0.25px]"
-                size="txtPoppinsMedium16"
-              >
-                +91 91007 92007
-              </Text>
-            </div>
-          </div> */}
+      
         
         </div>
         

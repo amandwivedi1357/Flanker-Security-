@@ -68,8 +68,8 @@ const Audits = () => {
         <div className="md:h-[848px] h-[675px] md:px-5 relative w-full ">
           <div className="absolute h-[648px] inset-[0] justify-center  w-full">
             <Img
-              className="h-[648px] m-auto object-cover w-full sm:h-[487px]"
-              src="images/img_rectangle21985_1.webp"
+              className="h-[648px] m-auto object-cover brightness-50 w-full sm:h-[487px]"
+              src="images/paperwork.jpg "
               alt="rectangle21985"
             />
             <div className="absolute flex flex-col gap-[22px] h-max inset-[0] items-center justify-center m-auto sm:mt-48">
@@ -80,7 +80,7 @@ const Audits = () => {
               Security Audits
               </Text>
               <Text
-                className="text-[15px] text-center text-white-A700 tracking-[0.50px]"
+                className="text-[15px] -mt-[15px] text-center text-white-A700 tracking-[0.50px]"
                 size="txtLatoRegular15"
               >
                 Ensuring Safety with Strategic Audits.
@@ -89,19 +89,20 @@ const Audits = () => {
           </div>
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full " />
         </div>
-        <Img
+        {/* <Img
                 className="h-[488px] sm:h-auto object-cover w-full sm:block sm:-mt-[22rem] hidden"
                 src={comp}
                 alt="rectangle22116"
-              />
-        <div className=" flex flex-col items-center justify-start p-[82px] sm:pt-0 pb-0 md:px-10 sm:px-5 w-full">
-          <div className="flex md:flex-col flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] mx-auto w-full">
+              /> */}
+        <div className=" flex flex-row sm:flex-col sm:pt-0 inner_left  justify-start gap-12 p-[100px] pb-0 pt-0 md:px-10 sm:px-5 w-full sm:w-full sm:-mt-[22rem]">
+          <div className="flex w-[70%] sm:w-full md:flex-col -mt-[2rem] flex-row gap-[52px] items-start justify-start max-w-[1239px] mb-[52px] overflow-y-auto">
+          
             <div className="flex md:flex-1 flex-col items-start justify-start md:mt-0 mt-[13px] w-full md:w-full">
-              <Img
+              {/* <Img
                 className="sm:hidden h-[488px] sm:h-auto object-cover w-full rounded-xl"
                 src={comp}
                 alt="rectangle22116"
-              />
+              /> */}
               <Text
                 className="mt-[37px] md:text-3xl sm:mt-5 sm:text-[28px] text-[32px] text-black-900 tracking-[0.25px]"
                 size="txtOpenSansRomanBold32"
@@ -125,29 +126,29 @@ const Audits = () => {
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 	Identifying Vulnerabilities:</span>
-                  <br />
+                 <Text className="text-black-900_01 font-lato text-left text-xl font-bold"> 	Identifying Vulnerabilities:</Text>
+                 
                   	Assessing the organization's infrastructure, networks, and systems to uncover potential vulnerabilities that could be exploited by malicious actors.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 sm:mt-4 font-lato text-left text-xl font-bold"> 		Risk Assessment:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 sm:mt-4 font-lato text-left text-xl font-bold"> 		Risk Assessment:</Text>
+                
                   Evaluating potential risks and their impact on the organisation's assets, operations, and reputation.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 sm:mt-4 font-lato text-left text-xl font-bold"> 		Compliance Verification:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 sm:mt-4 font-lato text-left text-xl font-bold"> 		Compliance Verification:</Text>
+                  
                   	Ensuring that the organisation complies with relevant industry regulations, standards, and legal requirements, such as GDPR, HIPAA, or ISO 27001.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 sm:mt-4 font-lato text-left text-xl font-bold"> 		Policy Compliance:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 sm:mt-4 font-lato text-left text-xl font-bold"> 		Policy Compliance:</Text>
+                  
                   	Verifying adherence to internal security policies and procedures to maintain a consistent and secure operational environment.
                  
                 </>
@@ -163,21 +164,21 @@ const Audits = () => {
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Internal Audits:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold"> 		Internal Audits:</Text>
+                 
                   Conducted by the organisation's internal team to assess the effectiveness of its security controls and policies.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">	External Audits:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold">	External Audits:</Text>
+                 
                   	Carried out by third-party auditors to provide an unbiased evaluation of an organisation's security posture.
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">Physical Security Audits:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold">Physical Security Audits:</Text>
+                  
                   	Assessing the physical security measures in place, such as access controls, surveillance systems, and environmental controls.
                 </>
                 <br />
@@ -194,29 +195,29 @@ const Audits = () => {
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Risk Assessment:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold"> 		Risk Assessment:</Text>
+                 
                   	Assessing the organization's infrastructure, networks, and systems to uncover potential vulnerabilities that could be exploited by malicious actors.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold">Security Policy Review:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold">Security Policy Review:</Text>
+                
                   	Evaluating the effectiveness of existing security policies and suggesting improvements.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 	Incident Response Planning:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold"> 	Incident Response Planning:</Text>
+                
                   	Ensuring that the organisation complies with relevant industry regulations, standards, and legal requirements, such as GDPR, HIPAA, or ISO 27001.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Policy Compliance:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold"> 		Policy Compliance:</Text>
+                  
                   	Verifying adherence to internal security policies and procedures to maintain a consistent and secure operational environment.
                  
                 </>
@@ -232,29 +233,29 @@ const Audits = () => {
                 size="txtLatoRegular15Black900cc"
               >
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 	Identifying Vulnerabilities:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold"> 	Identifying Vulnerabilities:</Text>
+                 
                   	Assessing the organization's infrastructure, networks, and systems to uncover potential vulnerabilities that could be exploited by malicious actors.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Risk Assessment:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold"> 		Risk Assessment:</Text>
+                  
                   Evaluating potential risks and their impact on the organisation's assets, operations, and reputation.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Compliance Verification:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold"> 		Compliance Verification:</Text>
+                 
                   	Ensuring that the organisation complies with relevant industry regulations, standards, and legal requirements, such as GDPR, HIPAA, or ISO 27001.
                  
                 </>
                 <br />
                 <>
-                 <span className="text-black-900_01 font-lato text-left text-xl font-bold"> 		Policy Compliance:</span>
-                  <br />
+                 <Text className="text-black-900_01 mt-3 font-lato text-left text-xl font-bold"> 		Policy Compliance:</Text>
+                  
                   	Verifying adherence to internal security policies and procedures to maintain a consistent and secure operational environment.
                  
                 </>
@@ -358,8 +359,8 @@ const Audits = () => {
           </div>
           <QuickLinks/>
         </div>
-        <Banner/>
-        <Footer className="flex items-center justify-center sm:-mt-[9rem] mt-[29px] md:px-5 w-full bg-[#070710]" />
+        {/* <Banner/> */}
+        <Footer className="flex items-center justify-center sm:-mt-[9rem] mt-[49px] md:px-5 w-full bg-[#070710]" />
       </div>
       {toast && <Toast message={toast.message} type={toast.type} onClose={handleCloseToast} />}
     </>

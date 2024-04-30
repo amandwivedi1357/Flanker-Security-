@@ -441,11 +441,11 @@ const ServicesOnePage = () => {
           <Header className="absolute flex flex-col inset-x-[0] items-center justify-center mx-auto top-[0] w-full" />
         </div>
         <div
-          className=" bg-gray-200 sm:-mt-64 flex flex-col font-redhatdisplay items-center justify-end p-[52px] md:px-10 sm:px-4 w-full "
+          className=" bg-gray-200 sm:-mt-64 flex flex-col font-redhatdisplay items-center justify-end p-[100px] md:px-10 sm:px-4 w-full "
           ref={serviceCardsRef}
         >
-          <div className="flex flex-col items-start justify-start max-w-[1239px] sm:mt-0 mt-[40px] mx-auto w-full">
-            <div className="flex flex-col gap-[22px] sm:gap-[2px] items-start justify-start sm:-mt-4">
+          <div className="flex flex-col items-start justify-start max-w-[1239px] sm:mt-0 mx-auto w-full">
+            <div className="flex flex-col gap-[12px] sm:gap-[2px] items-start justify-start sm:-mt-4">
               <Text
                 className="text-gray-600 text-base tracking-[2.00px] uppercase sm:text-[14px] "
                 size="txtRedHatDisplayRomanMedium14"
@@ -474,7 +474,7 @@ const ServicesOnePage = () => {
                   <img className="vector" src={data.image} alt="guard" />
                   <Text
                     size="txtOpenSansRomanBold24"
-                    className=" mt-12 text-xl mb-2 ml-6 md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className=" mt-8 text-xl mb-2 ml-6 md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
                   >
                     {data.title}
                   </Text>
@@ -594,8 +594,8 @@ const ServicesOnePage = () => {
   </div>
 </div>
 
-        <div className="bg-gray-200  flex flex-col font-redhatdisplay items-start justify-start mt-[57px] sm:pb-5 sm:mt-0 sm:-mb-8 md:pl-10 sm:pl-5 pl-[50px] w-full">
-          <div className="flex mt-24 sm:mt-2 flex-col gap-[22px] w-[90%] sm:gap-[2px]  items-start justify-start">
+        <div className="bg-gray-200  flex flex-row sm:flex-col font-redhatdisplay items-start   justify-between mt-[57px] sm:pb-5 sm:mt-0 sm:-mb-8 md:pl-10 sm:pl-5 pl-[100px] w-full">
+          <div className="flex  sm:w-full mt-24 w-[50%] sm:mt-2 flex-col gap-[12px] sm:gap-[2px]  items-start justify-start">
                 <Text
                   className="text-gray-600 text-base sm:text-[14px] tracking-[2.00px] sm:pt-5 uppercase"
                   size="txtRedHatDisplayRomanMedium14"
@@ -603,24 +603,24 @@ const ServicesOnePage = () => {
                   premium services
                 </Text>
                 <Text
-                  className="capitalize sm:-mt-2 text-4xl font-[600] sm:text-[18px] md:text-[34px] text-gray-900 tracking-[1.00px]"
+                  className="capitalize sm:-mt-2 text-4xl font-[600] sm:text-[18px] md:text-[34px] text-gray-900 tracking-[1.00px] sm:w-full "
                   size="txtPoppinsBold60"
                 >
                   Property management services
                 </Text>
-              </div>
-          <div className="w-full sm:hidden flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1339px] mx-auto ">
+
+                <div className="w-full sm:hidden flex md:flex-col flex-row md:gap-10 items-center justify-between max-w-[1339px] mx-auto mt-12">
             <div className="flex flex-col md:gap-10 gap-[76px] items-start justify-start sm:-ml-1  md:ml-[0]">
               
-              <div className="flex sm:mx-auto sm:pb-6 sm:flex-col flex-row font-opensans sm:gap-[55px] items-center justify-between w-full ">
+              <div className="flex sm:mx-auto sm:pb-6  gap-12 sm:flex-col flex-row font-opensans sm:gap-[55px] items-center justify-between w-full ">
                 <div
                   onMouseEnter={() => setIsHovered1(true)}
                   onMouseLeave={() => setIsHovered1(false)}
-                  className="bg-white-A700 sm:-ml-4 transition bg-white duration-300 ease-in-out shadow-2xl cursor-pointer hover:bg-orange-400 flex sm:flex-1 flex-col items-start justify-end p-6 sm:px-5 rounded-xl w-[46%] sm:w-[100%] sm:py-12"
+                  className="bg-white-A700 sm:-ml-4 transition bg-white duration-300 ease-in-out shadow-2xl cursor-pointer hover:bg-orange-400 flex sm:flex-1 flex-col items-start justify-end p-6 sm:px-5 rounded-md w-[266px] h-[255px] sm:w-[100%] sm:py-12"
                   onClick={() => navigate("/housekeeping")}
                 >
                   <Img
-                    className="h-[60px] mt-[34px] w-[60px]"
+                    className="vector1"
                     src={
                       isHovered1
                         ? "images/img_cleaningcart.svg"
@@ -629,7 +629,7 @@ const ServicesOnePage = () => {
                     alt="cleaningcart"
                   />
                   <Text
-                    className="md:ml-[0] ml-[3px] mt-[52px] text-xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
+                    className="md:ml-[0] ml-[3px] mt-[2rem] text-xl md:text-[22px] text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     Housekeeping
@@ -644,11 +644,11 @@ const ServicesOnePage = () => {
                 <div
                   onMouseEnter={() => setIsHovered2(true)}
                   onMouseLeave={() => setIsHovered2(false)}
-                  className="bg-white-A700 sm:-ml-4 transition bg-white duration-300 ease-in-out cursor-pointer   shadow-2xl hover:bg-orange-400 border border-gray-500_1e border-solid flex sm:flex-1 flex-col items-start justify-end p-[27px] sm:px-5 rounded-xl w-[46%] sm:w-[100%] sm:py-12"
+                  className="bg-white-A700 sm:-ml-4 transition bg-white duration-300 ease-in-out cursor-pointer   shadow-2xl hover:bg-orange-400 border border-gray-500_1e border-solid flex sm:flex-1 flex-col items-start justify-end p-[27px] sm:px-5 rounded-md w-[266px] h-[255px]  sm:w-[100%] sm:py-12 "
                   onClick={() => navigate("/nri-properties")}
                 >
                   <Img
-                    className="h-[50px] mt-[43px] w-[50px]"
+                    className="vector1"
                     src={
                       isHovered2
                         ? "images/img_propertyagent.svg"
@@ -657,7 +657,7 @@ const ServicesOnePage = () => {
                     alt="propertyagent"
                   />
                   <Text
-                    className="mt-[50px] text-xl md:text-[22px]  text-black-900 sm:text-xl tracking-[0.25px]"
+                    className=" mt-[2rem]  text-xl md:text-[22px]  text-black-900 sm:text-xl tracking-[0.25px]"
                     size="txtOpenSansRomanBold24"
                   >
                     NRI Property
@@ -671,12 +671,16 @@ const ServicesOnePage = () => {
                 </div>
               </div>
             </div>
-            <Img
-              className="h-[576px] md:h-auto object-cover sm:hidden  sm:-ml-2"
+            {/*  */}
+          </div>
+              </div>
+              <div className="flex   w-[45%] float-right">
+              <Img
+              className="h-[578px] w-[100%] md:h-auto object-cover sm:hidden sm:-ml-2 float-right"
               src="images/img_rectangle22115.webp"
               alt="rectangle22115"
-            />
-          </div>
+              />
+              </div>
           <div className="sm:block hidden mt-6">
           <div className="bg-gray-200 hidden sm:block w-full">
   <div className="grid grid-cols-2 gap-2  w-[95%]">
@@ -712,7 +716,7 @@ const ServicesOnePage = () => {
           </div>
         </div>
 
-        <Banner />
+        {/* <Banner /> */}
         <Footer className="flex items-center justify-center mt-[29px] sm:-mt-56 md:px-5 w-full  bg-[#070710]" />
       </div>
     </>
